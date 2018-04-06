@@ -1,0 +1,20 @@
+{
+  "database": {
+    "host": "couchbase://localhost",
+    "username": "Administrator",
+    "password": "Administrator"
+  },
+  "cookie_64": "f56931b180a522c21c17ba9274d07b0934a366bef09a7b43db9006a06b97bc3cf4a4e2c2ae77d11d3c38c6f17310eac0fbbb8da5eb1d1ae57eaef133abbf5ec8",
+  "cookie_32": "20c2f69c5d03cd82deb2203bc9b1701fad3b7c3a7d3d045c43bb6994ccb44afd",
+  "host": "localhost",
+  "port": "80",
+  "api_gateway": {
+    "port": "50000"
+  },
+  "apiservice": {
+    "port": "50001"
+  },
+  "userservice": {
+    "port": "50003"
+  }
+}

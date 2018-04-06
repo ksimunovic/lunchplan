@@ -11,9 +11,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/couchbase/gocb"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"net/rpc"
 )
 
 type Session struct {
@@ -33,6 +33,18 @@ type Config struct {
 	ApiService struct {
 		Port string `json:"port"`
 	} `json:"apiservice"`
+	UserService struct {
+		Port string `json:"port"`
+	} `json:"userservice"`
+}
+
+type ValReply struct {
+	Data string
+	Err  string
+}
+type ValReply2 struct {
+	Data map[string]interface{}
+	Err  string
 }
 
 var config Config
@@ -63,7 +75,6 @@ func LoadConfiguration() Config {
 	}
 }
 
-var bucket *gocb.Bucket
 
 func Validate(next http.HandlerFunc) http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
@@ -71,17 +82,27 @@ func Validate(next http.HandlerFunc) http.HandlerFunc {
 		if authorizationHeader != "" {
 			bearerToken := strings.Split(authorizationHeader, " ")
 			if len(bearerToken) == 2 {
-				var session Session
-				_, err := bucket.Get(bearerToken[1], &session)
+
+				data := map[string]interface{}{
+					"bearerToken": bearerToken[1],
+				}
+
+				c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)
 				if err != nil {
-					w.WriteHeader(401)
-					w.Write([]byte(err.Error()))
+					fmt.Println(err)
 					return
 				}
-				req.Header.Set("PID", session.Pid)
-				bucket.Touch(bearerToken[1], 0, 3600)
-				next(w, req)
+				var result ValReply2
+				err = c.Call("Server.Validate", data, &result)
+				if err != nil {
+					w.Write([]byte(err.Error()))
+				} else {
+					req.Header.Set("PID", result.Data["pid"].(string))
+					next(w, req)
+				}
+
 			}
+			//TODO: Implementacija za cookie based auth
 		} else {
 			req.Header.Set("PID", "")
 			next(w, req)
@@ -97,19 +118,12 @@ func handler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Request) 
 }
 
 func main() {
-	fmt.Println("Starting the Go server...")
-
 	u, _ := url.Parse("http://localhost:" + LoadConfiguration().ApiService.Port)
 	apiProxy := httputil.NewSingleHostReverseProxy(u)
 
 	router := mux.NewRouter().StrictSlash(false)
 	router.HandleFunc("/api/{rest:.*}", Validate(handler(apiProxy)))
 
-	cluster, _ := gocb.Connect(LoadConfiguration().Database.Host)
-	cluster.Authenticate(gocb.PasswordAuthenticator{
-		Username: LoadConfiguration().Database.Username,
-		Password: LoadConfiguration().Database.Password,
-	})
-	bucket, _ = cluster.OpenBucket("default", "")
+	fmt.Println("API Gateway is up and running...")
 	log.Fatal(http.ListenAndServe(":80", handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
 }

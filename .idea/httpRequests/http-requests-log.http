@@ -1,0 +1,424 @@
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T120719.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T120628.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T120549.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T115906.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T115838.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T115738.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T115652.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T115520.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T115433.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T114822.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T114232.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T113917.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T113440.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T113434.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer e30220c4-da80-42f6-b025-333f07572e3b
+
+<> 2018-04-06T113417.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer e30220c4-da80-42f6-b025-333f07572e3b
+
+<> 2018-04-06T090138.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer e30220c4-da80-42f6-b025-333f07572e3b
+
+<> 2018-04-06T090122.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T090115.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T090010.200.json
+
+###
+
+POST http://localhost/api/register
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2",
+  "firstname": "Karlo",
+  "lastname": "Šimunović"
+}
+
+<> 2018-04-06T085946.404.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T085936.404.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+<> 2018-04-06T085931.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+<> 2018-04-06T085851.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T085844.404.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T085828.404.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer {{auth_token}}
+
+<> 2018-04-06T085339.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer {{auth_token}}
+
+<> 2018-04-06T085244.200.txt
+
+###
+
+GET http://localhost:50000
+
+<> 2018-04-06T083746.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+<> 2018-04-05T104001.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+<> 2018-04-05T103908.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+<> 2018-04-05T101227.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+<> 2018-04-05T100904.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+
+<> 2018-04-05T100830.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-05T100824.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-05T100757.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+
+<> 2018-04-05T100738.200.txt
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+
+<> 2018-04-04T113458.200.json
+
+###
+
+POST http://localhost/api/blog
+Content-Type: application/json
+Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+
+<> 2018-04-04T113455.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+
+<> 2018-04-04T113450.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+
+<> 2018-04-04T113328.401.txt
+
+###
+
+POST http://localhost/api/blog
+Content-Type: application/json
+Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+
+<> 2018-04-04T113321.401.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+
+<> 2018-04-04T113306.401.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-04T113300.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-04T113235.401.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-04T113231.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer a3d9f4f9-22f1-4cc0-8d50-1e445a8a01ea
+
+<> 2018-04-04T113151.401.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-04T113147.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-04T113139.200.json
+
+###
+

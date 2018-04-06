@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/couchbase/gocb"
-	uuid "github.com/satori/go.uuid"
+	"github.com/satori/go.uuid"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -40,6 +40,12 @@ type Blog struct {
 }
 type ValReply struct {
 	Data string
+	Err  string
+}
+
+type ValReply2 struct {
+	Data map[string]interface{}
+	List map[string][]interface{}
 	Err  string
 }
 
@@ -89,7 +95,7 @@ func (s *Server) Negate(i int64, reply *int64) error {
 	return nil
 }
 
-func (s *Server) Login(data map[string]interface{}, reply *ValReply) error {
+func (s *Server) Login(data map[string]interface{}, reply *ValReply2) error {
 	var account Account
 	_, err := bucket.Get(data["email"].(string), &account)
 	if err != nil {
@@ -105,6 +111,7 @@ func (s *Server) Login(data map[string]interface{}, reply *ValReply) error {
 	}
 	var result map[string]interface{}
 	result = make(map[string]interface{})
+
 	temp1, _ := uuid.NewV4()
 	result["pid"] = temp1.String()
 	_, err = bucket.Insert(result["pid"].(string), &session, 3600)
@@ -112,8 +119,7 @@ func (s *Server) Login(data map[string]interface{}, reply *ValReply) error {
 		return err
 	}
 
-	temp2, _ := json.Marshal(result)
-	reply.Data = string(temp2)
+	reply.Data = result
 	return nil
 }
 
@@ -167,7 +173,7 @@ func (s *Server) Blog(data map[string]interface{}, reply *ValReply) error {
 	var blog Blog
 	_ = json.Unmarshal(temp0, &blog)
 	blog.Type = "blog"
-	// blog.Pid = req.Header.Get("pid")
+
 	blog.Timestamp = int(time.Now().Unix())
 	temp1, _ := uuid.NewV4()
 	_, err := bucket.Insert(temp1.String(), blog, 0)
@@ -180,7 +186,7 @@ func (s *Server) Blog(data map[string]interface{}, reply *ValReply) error {
 	return nil
 }
 
-func (s *Server) Blogs(data map[string]interface{}, reply *ValReply) error {
+func (s *Server) Blogs(data map[string]interface{}, reply *ValReply2) error {
 	pid := data["pid"].(string)
 
 	var n1qlParams []interface{}
@@ -191,6 +197,7 @@ func (s *Server) Blogs(data map[string]interface{}, reply *ValReply) error {
 	if err != nil {
 		return err
 	}
+/*
 	var row Blog
 	var result []Blog
 	for rows.Next(&row) {
@@ -198,12 +205,46 @@ func (s *Server) Blogs(data map[string]interface{}, reply *ValReply) error {
 		row = Blog{}
 	}
 	rows.Close()
+*/
+
+	var row map[string]interface{}
+	var result []map[string]interface{}
+	for rows.Next(&row) {
+		result = append(result, row)
+		row = make(map[string]interface{})
+	}
+	rows.Close()
+
 	if result == nil {
-		result = make([]Blog, 0)
+		result = make([]map[string]interface{}, 0)
 	}
 
-	temp2, _ := json.Marshal(result)
-	reply.Data = string(temp2)
+	//temp2, _ := json.Marshal(result)
+	//reply.Data = string(temp2)
+	//reply.Data = result
+	//reply.List = result
+	reply.List = make(map[string][]interface{})
+	slice := make([]interface{}, len(result))
+	for i, v := range result {
+		slice[i] = v
+	}
+	reply.List["blogs"] = slice
+	return nil
+}
+
+func (s *Server) Validate(data map[string]interface{}, reply *ValReply2) error {
+
+	bearerToken := data["bearerToken"].(string)
+
+	var session Session
+	_, err := bucket.Get(bearerToken, &session)
+	if err != nil {
+		return err
+	}
+	bucket.Touch(bearerToken, 0, 3600)
+
+	reply.Data = make(map[string]interface{})
+	reply.Data["pid"] = session.Pid
 	return nil
 }
 
@@ -215,9 +256,9 @@ func main() {
 		Username: LoadConfiguration().Database.Username,
 		Password: LoadConfiguration().Database.Password,
 	})
-	bucket, _ = cluster.OpenBucket("default", "")
+	bucket, _ = cluster.OpenBucket("userservice", "")
 	rpc.Register(new(Server))
-	fmt.Println("UserService RPC server online!")
+	fmt.Println("User Service RPC server online!")
 	ln, err := net.Listen("tcp", ":"+LoadConfiguration().UserService.Port)
 	if err != nil {
 		fmt.Println(err)

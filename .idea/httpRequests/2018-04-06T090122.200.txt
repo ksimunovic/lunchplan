@@ -1,0 +1,1 @@
+reading body gob: wrong type (map[string]interface {}) for received field ValReply.Data

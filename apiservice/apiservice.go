@@ -9,7 +9,6 @@ import (
 	"net/rpc"
 	"os"
 
-	"github.com/couchbase/gocb"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
@@ -32,8 +31,13 @@ type ValReply struct {
 	Err  string
 }
 
+type ValReply2 struct {
+	Data map[string]interface{}
+	List []interface{}
+	Err  string
+}
+
 var config Config
-var bucket *gocb.Bucket
 
 func LoadConfiguration() Config {
 	if (Config{}) != config {
@@ -77,7 +81,7 @@ func UserService(method string) http.HandlerFunc {
 			fmt.Println(err)
 			return
 		}
-		var result ValReply
+		var result ValReply2
 		err = c.Call("Server."+method, data, &result)
 		if err != nil {
 			w.Write([]byte(err.Error()))
@@ -89,7 +93,6 @@ func UserService(method string) http.HandlerFunc {
 }
 
 func main() {
-	fmt.Println("ApiService is up and running...")
 	router := mux.NewRouter().StrictSlash(true)
 	for _, route := range routes {
 		router.Methods(route.Method).
@@ -97,11 +100,7 @@ func main() {
 			Name(route.Name).
 			Handler(route.HandlerFunc)
 	}
-	cluster, _ := gocb.Connect(LoadConfiguration().Database.Host)
-	cluster.Authenticate(gocb.PasswordAuthenticator{
-		Username: LoadConfiguration().Database.Username,
-		Password: LoadConfiguration().Database.Password,
-	})
-	bucket, _ = cluster.OpenBucket("default", "")
+
+	fmt.Println("API Service is up and running...")
 	log.Fatal(http.ListenAndServe(":"+LoadConfiguration().ApiService.Port, handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
 }
