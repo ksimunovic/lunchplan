@@ -1,91 +1,7 @@
 GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+Authorization: Bearer 06c05668-5f02-4818-93c9-7affc888d930
 
-<> 2018-04-06T120719.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T120628.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T120549.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T115906.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T115838.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T115738.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T115652.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T115520.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T115433.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T114822.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T114232.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T113917.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T113440.200.txt
+<> 2018-04-07T095637.200.json
 
 ###
 
@@ -93,44 +9,38 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value50",
+  "email": "value2",
   "password": "value2"
 }
 
-<> 2018-04-06T113434.200.json
+<> 2018-04-07T095631.200.json
 
 ###
 
 GET http://localhost/api/blogs
-Authorization: Bearer e30220c4-da80-42f6-b025-333f07572e3b
+Authorization: Bearer 61334565-44bf-4b27-9473-e40d693452e3
 
-<> 2018-04-06T113417.200.txt
+<> 2018-04-06T021304.200.json
 
 ###
 
-GET http://localhost/api/blogs
-Authorization: Bearer e30220c4-da80-42f6-b025-333f07572e3b
+POST http://localhost/api/blog
+Content-Type: application/json
+Authorization: Bearer 61334565-44bf-4b27-9473-e40d693452e3
 
-<> 2018-04-06T090138.200.txt
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+
+<> 2018-04-06T021259.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer e30220c4-da80-42f6-b025-333f07572e3b
+Authorization: Bearer 61334565-44bf-4b27-9473-e40d693452e3
 
-<> 2018-04-06T090122.200.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-06T090115.200.json
+<> 2018-04-06T021255.200.json
 
 ###
 
@@ -138,11 +48,11 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value50",
+  "email": "value2",
   "password": "value2"
 }
 
-<> 2018-04-06T090010.200.json
+<> 2018-04-06T021249.200.json
 
 ###
 
@@ -150,51 +60,46 @@ POST http://localhost/api/register
 Content-Type: application/json
 
 {
-  "email": "value50",
+  "email": "value2",
   "password": "value2",
   "firstname": "Karlo",
   "lastname": "Šimunović"
 }
 
-<> 2018-04-06T085946.404.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-06T085936.404.txt
+<> 2018-04-06T021246.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+Authorization: Bearer 57a91930-44db-474d-aba9-0db3c1cb984a
 
-<> 2018-04-06T085931.200.txt
+<> 2018-04-06T021112.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value2",
+  "password": "value2"
+}
+
+<> 2018-04-06T021047.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
+
+<> 2018-04-06T020844.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
 
-<> 2018-04-06T085851.200.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-06T085844.404.txt
+<> 2018-04-06T020804.200.txt
 
 ###
 
@@ -202,161 +107,77 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value50",
+  "email": "value2",
   "password": "value2"
 }
 
-<> 2018-04-06T085828.404.txt
+<> 2018-04-06T020229.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer {{auth_token}}
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
 
-<> 2018-04-06T085339.200.txt
+<> 2018-04-06T020218.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value2",
+  "password": "value2"
+}
+
+<> 2018-04-06T020144.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer {{auth_token}}
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
 
-<> 2018-04-06T085244.200.txt
-
-###
-
-GET http://localhost:50000
-
-<> 2018-04-06T083746.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
-
-<> 2018-04-05T104001.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
-
-<> 2018-04-05T103908.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
-
-<> 2018-04-05T101227.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
-
-<> 2018-04-05T100904.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 0cec3ed8-3b4d-4ba5-8090-dcd2425309f8
-
-<> 2018-04-05T100830.200.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-05T100824.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-05T100757.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
-
-<> 2018-04-05T100738.200.txt
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
-
-<> 2018-04-04T113458.200.json
-
-###
-
-POST http://localhost/api/blog
-Content-Type: application/json
-Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
-
-{
-    "title":"Naslov",
-    "content":"Nekakav dugački tekst"
-}
-
-<> 2018-04-04T113455.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
-
-<> 2018-04-04T113450.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
-
-<> 2018-04-04T113328.401.txt
-
-###
-
-POST http://localhost/api/blog
-Content-Type: application/json
-Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
-
-{
-    "title":"Naslov",
-    "content":"Nekakav dugački tekst"
-}
-
-<> 2018-04-04T113321.401.txt
+<> 2018-04-06T020053.200.txt
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer 19a69ffe-ff1f-475a-880c-4c406c22af2c
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
 
-<> 2018-04-04T113306.401.txt
+<> 2018-04-06T015942.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
+
+<> 2018-04-06T015859.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
+
+<> 2018-04-06T015834.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
+
+<> 2018-04-06T015807.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value2",
+  "password": "value2"
+}
+
+<> 2018-04-06T015719.200.json
 
 ###
 
@@ -368,33 +189,80 @@ Content-Type: application/json
   "password": "value2"
 }
 
-<> 2018-04-04T113300.200.json
+<> 2018-04-06T015642.200.txt
+
+###
+
+POST http://localhost/api/register
+Content-Type: application/json
+
+{
+  "email": "value2",
+  "password": "value2",
+  "firstname": "Karlo",
+  "lastname": "Šimunović"
+}
+
+<> 2018-04-06T015628.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T015614.200.txt
 
 ###
 
 GET http://localhost/api/account
 Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
 
-<> 2018-04-04T113235.401.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-04T113231.200.json
+<> 2018-04-06T014716.200.txt
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer a3d9f4f9-22f1-4cc0-8d50-1e445a8a01ea
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
 
-<> 2018-04-04T113151.401.txt
+<> 2018-04-06T014449.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T014435.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T013917.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T013548.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T013215.200.txt
 
 ###
 
@@ -406,7 +274,68 @@ Content-Type: application/json
   "password": "value2"
 }
 
-<> 2018-04-04T113147.200.json
+<> 2018-04-06T013008.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T012956.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T012740.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T012216.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T012214.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T012207.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T012202.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T011225.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
+
+<> 2018-04-06T010710.200.txt
 
 ###
 
@@ -418,7 +347,95 @@ Content-Type: application/json
   "password": "value2"
 }
 
-<> 2018-04-04T113139.200.json
+<> 2018-04-06T010707.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer 1dbb73b5-6a20-4bb3-aca4-c98915490e06
+
+<> 2018-04-06T010656.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 1dbb73b5-6a20-4bb3-aca4-c98915490e06
+
+<> 2018-04-06T010641.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value2",
+  "password": "value2"
+}
+
+<> 2018-04-06T010637.200.json
+
+###
+
+POST http://localhost/api/register
+Content-Type: application/json
+
+{
+  "email": "value2",
+  "password": "value2",
+  "firstname": "Karlo",
+  "lastname": "Šimunović"
+}
+
+<> 2018-04-06T010633.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value2",
+  "password": "value2"
+}
+
+<> 2018-04-06T010625.200.txt
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T010615.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "value50",
+  "password": "value2"
+}
+
+<> 2018-04-06T010604.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+
+<> 2018-04-06T125419.200.json
+
+###
+
+GET http://localhost/api/blogs
+Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
 
 ###
 

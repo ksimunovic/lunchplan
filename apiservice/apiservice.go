@@ -26,16 +26,6 @@ type Config struct {
 		Port string `json:"port"`
 	} `json:"apiservice"`
 }
-type ValReply struct {
-	Data string
-	Err  string
-}
-
-type ValReply2 struct {
-	Data map[string]interface{}
-	List []interface{}
-	Err  string
-}
 
 var config Config
 
@@ -81,13 +71,14 @@ func UserService(method string) http.HandlerFunc {
 			fmt.Println(err)
 			return
 		}
-		var result ValReply2
+
+		var result []byte
 		err = c.Call("Server."+method, data, &result)
 		if err != nil {
 			w.Write([]byte(err.Error()))
 		} else {
 			w.Header().Set("Content-Type", "application/json; charset=utf-8")
-			json.NewEncoder(w).Encode(result)
+			w.Write(result)
 		}
 	}
 }

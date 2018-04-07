@@ -38,16 +38,6 @@ type Blog struct {
 	Content   string `json:"content,omitempty"`
 	Timestamp int    `json:"timestamp,omitempty"`
 }
-type ValReply struct {
-	Data string
-	Err  string
-}
-
-type ValReply2 struct {
-	Data map[string]interface{}
-	List map[string][]interface{}
-	Err  string
-}
 
 type Config struct {
 	Database struct {
@@ -95,7 +85,7 @@ func (s *Server) Negate(i int64, reply *int64) error {
 	return nil
 }
 
-func (s *Server) Login(data map[string]interface{}, reply *ValReply2) error {
+func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error {
 	var account Account
 	_, err := bucket.Get(data["email"].(string), &account)
 	if err != nil {
@@ -119,11 +109,11 @@ func (s *Server) Login(data map[string]interface{}, reply *ValReply2) error {
 		return err
 	}
 
-	reply.Data = result
+	*jsonResponse, _ = json.Marshal(result)
 	return nil
 }
 
-func (s *Server) Register(data map[string]interface{}, reply *ValReply) error {
+func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) error {
 
 	temp1, _ := uuid.NewV4()
 	id := temp1.String()
@@ -149,24 +139,23 @@ func (s *Server) Register(data map[string]interface{}, reply *ValReply) error {
 		return err
 	}
 
-	temp2, _ := json.Marshal(account)
-	reply.Data = string(temp2)
+	*jsonResponse, _ = json.Marshal(account)
 	return nil
 }
 
-func (s *Server) GetAccount(data map[string]interface{}, reply *ValReply) error {
+func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) error {
 	pid := data["pid"].(string)
 	var profile Profile
 	_, err := bucket.Get(pid, &profile)
 	if err != nil {
 		return err
 	}
-	temp2, _ := json.Marshal(profile)
-	reply.Data = string(temp2)
+
+	*jsonResponse, _ = json.Marshal(profile)
 	return nil
 }
 
-func (s *Server) Blog(data map[string]interface{}, reply *ValReply) error {
+func (s *Server) Blog(data map[string]interface{}, jsonResponse *[]byte) error {
 
 	temp0, _ := json.Marshal(data)
 
@@ -181,12 +170,11 @@ func (s *Server) Blog(data map[string]interface{}, reply *ValReply) error {
 		return err
 	}
 
-	temp2, _ := json.Marshal(blog)
-	reply.Data = string(temp2)
+	*jsonResponse, _ = json.Marshal(blog)
 	return nil
 }
 
-func (s *Server) Blogs(data map[string]interface{}, reply *ValReply2) error {
+func (s *Server) Blogs(data map[string]interface{}, jsonResponse *[]byte) error {
 	pid := data["pid"].(string)
 
 	var n1qlParams []interface{}
@@ -197,15 +185,6 @@ func (s *Server) Blogs(data map[string]interface{}, reply *ValReply2) error {
 	if err != nil {
 		return err
 	}
-/*
-	var row Blog
-	var result []Blog
-	for rows.Next(&row) {
-		result = append(result, row)
-		row = Blog{}
-	}
-	rows.Close()
-*/
 
 	var row map[string]interface{}
 	var result []map[string]interface{}
@@ -219,20 +198,11 @@ func (s *Server) Blogs(data map[string]interface{}, reply *ValReply2) error {
 		result = make([]map[string]interface{}, 0)
 	}
 
-	//temp2, _ := json.Marshal(result)
-	//reply.Data = string(temp2)
-	//reply.Data = result
-	//reply.List = result
-	reply.List = make(map[string][]interface{})
-	slice := make([]interface{}, len(result))
-	for i, v := range result {
-		slice[i] = v
-	}
-	reply.List["blogs"] = slice
+	*jsonResponse, _ = json.Marshal(result)
 	return nil
 }
 
-func (s *Server) Validate(data map[string]interface{}, reply *ValReply2) error {
+func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) error {
 
 	bearerToken := data["bearerToken"].(string)
 
@@ -243,8 +213,7 @@ func (s *Server) Validate(data map[string]interface{}, reply *ValReply2) error {
 	}
 	bucket.Touch(bearerToken, 0, 3600)
 
-	reply.Data = make(map[string]interface{})
-	reply.Data["pid"] = session.Pid
+	*jsonResponse, _ = json.Marshal(session)
 	return nil
 }
 

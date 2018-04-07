@@ -7,7 +7,7 @@ POST http://localhost/api/register
 Content-Type: application/json
 
 {
-  "email": "value50",
+  "email": "value2",
   "password": "value2",
   "firstname": "Karlo",
   "lastname": "Šimunović"
@@ -21,10 +21,10 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value50",
+  "email": "value2",
   "password": "value2"
 }
-> {% client.global.set("auth_token", response.body.Data.pid); %}
+> {% client.global.set("auth_token", response.body.pid); %}
 
 ### Dohvaćanje accounta s JWT tokenom
 GET http://localhost/api/account

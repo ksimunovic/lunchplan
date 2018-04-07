@@ -38,15 +38,6 @@ type Config struct {
 	} `json:"userservice"`
 }
 
-type ValReply struct {
-	Data string
-	Err  string
-}
-type ValReply2 struct {
-	Data map[string]interface{}
-	Err  string
-}
-
 var config Config
 
 func LoadConfiguration() Config {
@@ -75,7 +66,6 @@ func LoadConfiguration() Config {
 	}
 }
 
-
 func Validate(next http.HandlerFunc) http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
 		authorizationHeader := req.Header.Get("authorization")
@@ -92,12 +82,15 @@ func Validate(next http.HandlerFunc) http.HandlerFunc {
 					fmt.Println(err)
 					return
 				}
-				var result ValReply2
+
+				var result []byte
+				var profile map[string]string
 				err = c.Call("Server.Validate", data, &result)
 				if err != nil {
 					w.Write([]byte(err.Error()))
 				} else {
-					req.Header.Set("PID", result.Data["pid"].(string))
+					_ = json.Unmarshal(result, &profile)
+					req.Header.Set("PID", profile["pid"])
 					next(w, req)
 				}
 
@@ -118,6 +111,12 @@ func handler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Request) 
 }
 
 func main() {
+	logPath := "development.log"
+
+	openLogFile(logPath)
+
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+
 	u, _ := url.Parse("http://localhost:" + LoadConfiguration().ApiService.Port)
 	apiProxy := httputil.NewSingleHostReverseProxy(u)
 
@@ -125,5 +124,29 @@ func main() {
 	router.HandleFunc("/api/{rest:.*}", Validate(handler(apiProxy)))
 
 	fmt.Println("API Gateway is up and running...")
-	log.Fatal(http.ListenAndServe(":80", handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
+	log.Fatal(http.ListenAndServe(":80", logRequest(handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router))))
+}
+
+func logRequest(handler http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		requestDump, err := httputil.DumpRequest(r, true)
+		if err != nil {
+			log.Println(err)
+		}
+		log.Println(string(requestDump))
+
+		handler.ServeHTTP(w, r)
+	})
+}
+
+func openLogFile(logfile string) {
+	if logfile != "" {
+		lf, err := os.OpenFile(logfile, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0640)
+
+		if err != nil {
+			log.Fatal("OpenLogfile: os.OpenFile:", err)
+		}
+
+		log.SetOutput(lf)
+	}
 }

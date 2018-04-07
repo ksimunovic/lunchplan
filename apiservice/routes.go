@@ -31,14 +31,12 @@ var routes = Routes{
 		"GET",
 		"/account",
 		UserService("GetAccount"),
-	},
-	Route{
+	}, Route{
 		"Blogs",
 		"GET",
 		"/blogs",
 		UserService("Blogs"),
-	},
-	Route{
+	}, Route{
 		"Blog",
 		"POST",
 		"/blog",
