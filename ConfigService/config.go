@@ -20,10 +20,13 @@ type Config struct {
 	} `json:"api_gateway"`
 	ApiService struct {
 		Port string `json:"port"`
-	} `json:"apiservice"`
+	} `json:"ApiService"`
 	UserService struct {
 		Port string `json:"port"`
-	} `json:"userservice"`
+	} `json:"UserService"`
+	MealService struct {
+		Port string `json:"port"`
+	} `json:"UserService"`
 }
 
 func main() {
@@ -39,6 +42,7 @@ func main() {
 		ApiGateway:  struct{ Port string `json:"port"` }{Port: "50000"},
 		ApiService:  struct{ Port string `json:"port"` }{Port: "50001"},
 		UserService: struct{ Port string `json:"port"` }{Port: "50003"},
+		MealService: struct{ Port string `json:"port"` }{Port: "50004"},
 	}
 
 	configJson, _ := json.Marshal(config)

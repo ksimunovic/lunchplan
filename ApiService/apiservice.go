@@ -21,10 +21,10 @@ type Config struct {
 	} `json:"database"`
 	UserService struct {
 		Port string `json:"port"`
-	} `json:"userservice"`
+	} `json:"UserService"`
 	ApiService struct {
 		Port string `json:"port"`
-	} `json:"apiservice"`
+	} `json:"ApiService"`
 }
 
 var config Config
@@ -60,10 +60,10 @@ func UserService(method string) http.HandlerFunc {
 		_ = json.NewDecoder(req.Body).Decode(&data)
 		if len(data) == 0 {
 			data = map[string]interface{}{
-				"pid": req.Header.Get("pid"),
+				"sid": req.Header.Get("sid"),
 			}
 		} else {
-			data["pid"] = req.Header.Get("pid")
+			data["sid"] = req.Header.Get("sid")
 		}
 
 		c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)

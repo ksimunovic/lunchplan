@@ -1,0 +1,2889 @@
+2018/04/07 13:26:40 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:27:11 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:28:19 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:28:39 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:29:31 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:29:53 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:31:32 apigateway.go:136: POST /api/register HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 118
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra",
+  "firstname": "Karlo",
+  "lastname": "Šimunović"
+}
+2018/04/07 13:31:36 apigateway.go:136: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/07 13:31:40 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac183cd050255c1a6ecb
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:32:14 apigateway.go:136: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/07 13:32:21 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:32:30 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:32:38 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:32:39 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 13:32:40 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/07 21:11:36 apigateway.go:136: GET / HTTP/1.1
+Host: 192.168.100.10
+Accept: */*
+User-Agent: avast! Antivirus
+
+
+2018/04/07 21:11:38 apigateway.go:136: GET /HNAP1/ HTTP/1.1
+Host: 192.168.100.10
+Connection: close
+Accept: */*
+Connection: Close
+User-Agent: avast! Antivirus
+
+
+2018/04/07 21:27:10 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:12 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=647839
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:14 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:14 apigateway.go:136: GET /_1523129232910/rexdot.gif?l=30&id=..FAVHCE8w_3s821ZGD_prQY.s3y7wcXxvie3k4EtqH.Q7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D647839&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=647839
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:14 apigateway.go:136: GET /_1523129231724/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D630489&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=630489
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:16 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=647839
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"3a1af7c3-8a89-4f8a-8c54-91a9c4a5c8c7","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"ac04e652-e99d-4ff4-b2eb-de669ef57ba2","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:27:16 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=647839
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:16 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=630489
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"6620aad0-5037-4177-9698-d3212cee2869","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"b808cf6a-e66a-4a23-a336-3aac8a7cc8c0","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:27:18 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=185444
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:20 apigateway.go:136: GET /_1523129238476/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D185444&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=185444
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:27:20 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=185444
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"c63a8234-668f-4f91-85c5-9a090eb23555","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"99685a30-e35c-4860-9c4d-71b150d3d2d4","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:27:20 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=185444
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:28:30 apigateway.go:136: GET /_1523129308766/rexdot.gif?l=30&id=16CaBusbf4cNy488gOuQX.WWDiFdZqdUGnoxZa3vMvf.j7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&ref=&screen=1366x768&col=24&window=1366x608 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/search.php?searchid=35489121
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:28:30 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/search.php?searchid=35489121
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"01dd213d-1087-4f45-93cf-630c87b43f65","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"be9aedc7-8fb0-4b71-9e3b-9168d00d8e8b","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:28:53 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:28:55 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:28:55 apigateway.go:136: GET /_1523129333724/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D630489%26highlight%3Dapokalipso&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:28:55 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"8bbc9a3a-a564-4c9c-8722-16d784dc25a3","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"8ddeb165-4908-42f8-9e0d-158823969843","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:28:56 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:28:58 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:28:58 apigateway.go:136: GET /_1523129336552/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D630489%26highlight%3Dapokalipso&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:00 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"ccab8209-7641-4194-a534-0a1b07697f82","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"8111922a-2f9d-4690-8a25-e5166119e76c","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:29:00 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:01 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:01 apigateway.go:136: GET /_1523129340188/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D630489%26highlight%3Dapokalipso&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:02 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"95254699-cc81-4513-93dc-111f716735d8","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"eab4a3b4-e185-42c8-a289-e7138814395b","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:29:16 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=67619059&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:18 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=67619059&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:18 apigateway.go:136: GET /_1523129357178/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D67619059%26highlight%3Dapokalipso%23post67619059&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=67619059&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:19 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=67619059&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"fb51aa93-001e-4a89-9ad4-345b53c0fe48","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"23c69977-22f8-496b-92f7-7852e2478baf","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:29:22 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63925897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:23 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63955671&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:24 apigateway.go:136: GET /_1523129362442/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D63925897%26highlight%3Dapokalipso%23post63925897&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=63925897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:24 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=63925897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"77f9d3bc-e9a0-4db8-84d0-01616e8f2114","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"b29098b8-6baf-4f04-b713-f2f58adaba2d","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:29:24 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63925897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:25 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63955671&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:25 apigateway.go:136: GET /_1523129363968/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D63955671%26highlight%3Dapokalipso%23post63955671&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=63955671&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:26 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=63955671&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"075544ed-394e-43ba-bd90-b774ce1fcae5","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"3cc5bdc3-5640-4985-957b-d39329039d1d","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:29:29 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63051897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:30 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63051897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:30 apigateway.go:136: GET /_1523129369058/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D63051897%26highlight%3Dapokalipso%23post63051897&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=63051897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:30 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=63051897&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"562f223f-8263-4048-af1c-e0ed2279fcdd","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"c08d4328-3b14-4d41-a0a0-89d75604ddc5","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:29:34 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:36 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:36 apigateway.go:136: GET /_1523129374824/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D63014141%26highlight%3Dapokalipso%23post63014141&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:29:37 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"dba89e08-2b9e-4c86-932d-61d6dfdfa7e5","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"3abd08ce-d46d-4566-a6ab-5b6bda5ba3d9","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:31:41 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso&page=155
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:31:42 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso&page=155
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:31:42 apigateway.go:136: GET /_1523129501352/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D630489%26highlight%3Dapokalipso%26page%3D155&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D63014141%26highlight%3Dapokalipso&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso&page=155
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:31:43 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=630489&highlight=apokalipso&page=155
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"67a37744-15f1-4259-b852-4d9bcb4757bc","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"138e2357-656a-4724-b3f1-1bbcfe74931f","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:31:55 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:31:56 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:31:57 apigateway.go:136: GET /_1523129515440/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D63014141%26highlight%3Dapokalipso%23post63014141&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:31:57 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=63014141&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"edfeaf90-4037-4f9c-80c5-c18a90b0475a","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"959ffe69-01f3-477b-9c36-2a2ba4f8dfcb","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:33:26 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=62708389&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:27 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=62708389&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:27 apigateway.go:136: GET /_1523129606096/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D62708389%26highlight%3Dapokalipso%23post62708389&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=62708389&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:28 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=62708389&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"82525836-184b-4561-a70a-a3ab9189c608","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"8ff8a522-5590-44df-a372-f27d915bf1f0","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:33:46 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=61448199&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:47 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=61448199&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:47 apigateway.go:136: GET /_1523129626270/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D61448199%26highlight%3Dapokalipso%23post61448199&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=61448199&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:48 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=61448199&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"b0838241-192f-440d-99e4-7144ad67c6bf","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"41376651-bacb-47a7-820d-2ddb9537f792","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:33:53 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60902903&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:55 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60902903&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:55 apigateway.go:136: GET /_1523129633980/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D60902903%26highlight%3Dapokalipso%23post60902903&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=60902903&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:33:56 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=60902903&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"a75c3bf9-63e6-4465-9b2e-01e485a2127e","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"5eb6cf34-de86-4d89-9dfd-629bf39c5eb5","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:34:56 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60134003&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:34:57 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60134003&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:34:57 apigateway.go:136: GET /_1523129696234/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D60134003%26highlight%3Dapokalipso%23post60134003&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=60134003&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:34:58 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=60134003&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"48cb92f9-aa5e-4483-acf9-623f322c8e58","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"b7f27c79-8d90-49db-b7ca-71cbcf51e694","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:34:58 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60151505&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:35:00 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60151505&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:35:00 apigateway.go:136: GET /_1523129699150/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D60151505%26highlight%3Dapokalipso%23post60151505&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489121&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=60151505&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:35:00 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=60151505&highlight=apokalipso
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"62f20c15-fa2e-4b42-ba44-2ccfc9b265bd","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"ff2bb479-6005-44d8-a162-f93a35f4c497","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:35:48 apigateway.go:136: GET /_1523129746764/rexdot.gif?l=30&id=16CaBusbf4cNy488gOuQX.WWDiFdZqdUGnoxZa3vMvf.j7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D60151505%26highlight%3Dapokalipso&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/search.php?searchid=35489325
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:35:48 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/search.php?searchid=35489325
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"22b7d34d-3d79-4f54-a961-eb5067a23407","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"94295f33-64e1-4928-aeea-6a9f5619565c","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:35:52 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60518487&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:35:54 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=60518487&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:35:55 apigateway.go:136: GET /_1523129753028/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D60518487%26highlight%3Ddesperado%23post60518487&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=60518487&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:35:55 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=60518487&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"fca94516-2c08-49df-a6ea-0f2aeb8f0373","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"189af12f-78ad-45f9-84b5-a039d80eaade","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:36:00 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=58555895&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:02 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=58555895&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:02 apigateway.go:136: GET /_1523129760760/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D58555895%26highlight%3Ddesperado%23post58555895&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=58555895&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:02 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=58555895&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"4eea9a99-0c17-4361-9378-17bae2355cec","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"0eafc1fc-8e60-4f2f-8c13-d15ffa51c1ec","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:36:03 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=56075937&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:05 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=56075937&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:05 apigateway.go:136: GET /_1523129763880/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D56075937%26highlight%3Ddesperado%23post56075937&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=56075937&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:06 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=56075937&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"3598da9a-65e7-4bbc-bd91-128754e23f53","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"e58a4c58-df71-4a5f-99f0-d409110cde0c","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:36:09 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=55087755&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:11 apigateway.go:136: GET /_1523129769394/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D55087755%26highlight%3Ddesperado%23post55087755&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=55087755&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:11 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=55087755&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"3551073d-fa01-4e7e-a8a0-675aace682f7","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"b59506ec-6bf4-4817-81c7-63be03cb4bc8","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:36:13 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=55087755&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:22 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=51873313&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:23 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=51873313&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:24 apigateway.go:136: GET /_1523129782440/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D51873313%26highlight%3Ddesperado%23post51873313&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=51873313&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:24 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=51873313&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"60c1e11b-a74f-4610-85b9-9973ddbda55a","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"b4897464-83ad-487e-a5ed-502ed3023d23","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:36:29 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=54242862&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:30 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=54242862&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:30 apigateway.go:136: GET /_1523129789164/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D54242862%26highlight%3Ddesperado%23post54242862&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=54242862&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:36:31 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=54242862&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"0c606cfe-0c32-490e-b193-22e50646743f","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"abe85102-985c-492a-b2fe-031373952c89","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:37:19 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=42249462&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:37:20 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?p=42249462&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:37:20 apigateway.go:136: GET /_1523129838906/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Fp%3D42249462%26highlight%3Ddesperado%23post42249462&ref=http%3A%2F%2Fwww.forum.hr%2Fsearch.php%3Fsearchid%3D35489325&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?p=42249462&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:37:21 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?p=42249462&highlight=desperado
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"abfda248-0818-4b15-b67f-132432f0b274","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"90fd6d36-c55a-4b83-8630-2f68dcbfc7a6","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:39:07 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=62708389&postcount=3062
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:09 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=62708389&postcount=3062
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:09 apigateway.go:136: GET /_1523129947772/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowpost.php%3Fp%3D62708389%26postcount%3D3062&ref=&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showpost.php?p=62708389&postcount=3062
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:09 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showpost.php?p=62708389&postcount=3062
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"c0c349b8-55bc-4ef7-a13f-2034ebeae3ff","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"f8126957-df0e-48f5-a141-6246f9cf1bfa","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:39:13 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=60902903&postcount=3008
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:14 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=60902903&postcount=3008
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:14 apigateway.go:136: GET /_1523129953258/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowpost.php%3Fp%3D60902903%26postcount%3D3008&ref=&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showpost.php?p=60902903&postcount=3008
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:14 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showpost.php?p=60902903&postcount=3008
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"6bca7ec0-6bb9-4995-94ac-f498f470b204","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"32085eba-cedc-414d-81c0-7ebd9f0686d0","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:39:20 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=60134003&postcount=2953
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:21 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=60134003&postcount=2953
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:21 apigateway.go:136: GET /_1523129960348/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowpost.php%3Fp%3D60134003%26postcount%3D2953&ref=&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showpost.php?p=60134003&postcount=2953
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:22 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showpost.php?p=60134003&postcount=2953
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"2b3aa077-2c21-44fb-a7e7-bcba1a4e195e","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"191cbf6f-8c2e-42e4-af9d-559895929d8f","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:39:26 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=63014141&postcount=3077
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:28 apigateway.go:136: GET /_1523129966866/rexdot.gif?l=30&id=.FtAUnCB89i3uQbbZLYrbpQ5T.QiWKyyod2hryXPjlz.z7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowpost.php%3Fp%3D63014141%26postcount%3D3077&ref=&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showpost.php?p=63014141&postcount=3077
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 21:39:28 apigateway.go:136: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showpost.php?p=63014141&postcount=3077
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"d89304e3-ba03-4e3b-a384-0b3e8d4d6778","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"4d2e42d1-1a34-4311-8ede-22bdb7f43d74","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/07 21:39:30 apigateway.go:136: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showpost.php?p=63014141&postcount=3077
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 22:01:17 apigateway.go:136: GET /hit?t38.11;rhttps%3A//www.google.hr/;s1366*768*24;uhttp%3A//windows-activator.net/kmsauto-activation-for-office-2016/;0.8861240241354958 HTTP/1.1
+Host: counter.yadro.ru
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://windows-activator.net/kmsauto-activation-for-office-2016/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 22:01:26 apigateway.go:136: GET /metrika/watch.js HTTP/1.1
+Host: mc.yandex.ru
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://windows-activator.net/kmsauto-activation-for-office-2016/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 22:01:42 apigateway.go:136: GET /hit?t38.11;rhttp%3A//windows-activator.net/kmsauto-activation-for-office-2016/;s1366*768*24;uhttp%3A//windows-activator.net/download2/%3Fa1%3Dhttp%3A//windows-activator.net/download/235/%26b1%3DKMSAuto-Net-Portable.zip;0.7412728519833826 HTTP/1.1
+Host: counter.yadro.ru
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://windows-activator.net/download2/?a1=http://windows-activator.net/download/235/&b1=KMSAuto-Net-Portable.zip
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/07 22:49:33 apigateway.go:136: GET /nmedianet.js?cid=8CU5MR7H8 HTTP/1.1
+Host: contextual.media.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: visitor-id=1622930010844114000V10; data-mm=59445a77-1268-4600-8850-170f09079fa9~~3; data-xu=HdqBEXI01EQWkh5~~3
+Referer: http://www.snapfiles.com/get/tshutdown.html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 08:46:11 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/08 08:46:56 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/08 09:06:26 apigateway.go:136: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/08 09:10:14 apigateway.go:140: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/08 09:28:22 apigateway.go:139: GET /spcjs.php?id=1&target=_blank HTTP/1.1
+Host: udarem.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://uploaded.net/file/qt8666d2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 18:40:12 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/08 18:40:18 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5aca45ec3cd05019203a89c2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/08 18:40:25 apigateway.go:139: POST /api/blog HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5aca45ec3cd05019203a89c2
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/08 18:41:08 apigateway.go:139: GET /door.js?id=638 HTTP/1.1
+Host: test-script.dotmetrics.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Dnt: 1
+Referer: http://www.index.hr/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 18:41:28 apigateway.go:139: GET /door.js?id=329 HTTP/1.1
+Host: test-script.dotmetrics.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Dnt: 1
+Referer: http://www.index.hr/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 18:41:28 apigateway.go:139: GET /stf.js HTTP/1.1
+Host: t.contentinsights.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Dnt: 1
+Referer: http://www.index.hr/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 18:41:41 apigateway.go:139: GET /door.js?id=638 HTTP/1.1
+Host: test-script.dotmetrics.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Dnt: 1
+Referer: http://www.index.hr/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:33:37 apigateway.go:139: GET /live/boost/ra-558ac14e7f79bff7/_ate.track.config_resp HTTP/1.1
+Host: m.addthisedge.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://anticonsumption.com/materialism/please-let-me-talk-you-out-of-buying-that-new-car/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:33:37 apigateway.go:139: GET /live/red_lojson/300lo.json?si=5aca526cc883f9cc&bkl=0&bl=1&pdt=1556&sid=5aca526cc883f9cc&pub=ra-558ac14e7f79bff7&rev=v8.3.0-wp&ln=en&pc=men&cb=0&ab=-&dp=anticonsumption.com&dr=www.google.hr&fp=materialism%2Fplease-let-me-talk-you-out-of-buying-that-new-car%2F&fr=&of=0&pd=0&irt=0&vcl=0&md=0&ct=1&tct=0&abt=0&cdn=0&pi=1&rb=4&gen=100&chr=UTF-8&colc=1523208816606&jsl=8321&uvs=5aca526cd375a150000&skipb=1&callback=addthis.cbs.oln9_190618480731168270 HTTP/1.1
+Host: m.addthis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: uid=5a759b2137b20d30; uvc=31%7C11%2C29%7C12%2C10%7C13%2C2%7C14%2C8%7C15; loc=MDAwMDBFVUhSMDAyMjU4MTk2MDAwMDAwMDBDVg==; na_tc=Y; na_id=2018020419251793220770227549; mus=0; ssc=google%3B4; bku=maG99wPk5N3zekJ1
+Referer: http://anticonsumption.com/materialism/please-let-me-talk-you-out-of-buying-that-new-car/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:36:47 apigateway.go:139: GET /live/red_lojson/100eng.json?sh=4366&ph=4480&ivh=645&dt=138564&pdt=1556&ict=&pct=0&perf=widget%7C1556%7C1222%2Clojson%7C7514%7C624%2Csh%7C7518%7C0%2Csh%7C7526%7C542&rndr=render_toolbox%7C20892&cmenu=null&ppd=0&ppl=0&fbe=&xmv=0&xms=0&xmlc=0&jsfw=jquery%2Cfacebook&jsfwv=jquery-1.12.4%2Cfacebook-unk&al=men&scr=0&scv=0&apiu=0&ba=1&sid=5aca526cc883f9cc&rev=v8.3.0-wp&pub=ra-558ac14e7f79bff7&dp=anticonsumption.com&fp=materialism%2Fplease-let-me-talk-you-out-of-buying-that-new-car%2F&pfm=1&icns= HTTP/1.1
+Host: m.addthis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: uid=5a759b2137b20d30; uvc=31%7C11%2C29%7C12%2C10%7C13%2C2%7C14%2C9%7C15; loc=MDAwMDBFVUhSMDAyMjU4MTk2MDAwMDAwMDBDVg==; na_tc=Y; na_id=2018020419251793220770227549; mus=0; ssc=google%3B4; bku=maG99wPk5N3zekJ1
+Referer: http://anticonsumption.com/materialism/please-let-me-talk-you-out-of-buying-that-new-car/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:41:27 apigateway.go:139: GET /pview?event=pview&version=st_insights.js&lang=en&fpc=1824876-162a659385e-7a570baf-1&sessionID=1523209287800.94919&hostname=www.najboljiauto.com&location=%2Ftag%2Fhonda-civic-ili-toyota-corolla%2F&product=ga&publisher=anonymous&st_optout=false&refQuery=&refDomain=www.google.hr&ufa=9713aa0&ufb=2749152&ufd=334f03c&url=http%3A%2F%2Fwww.najboljiauto.com%2Ftag%2Fhonda-civic-ili-toyota-corolla%2F&sharURL=&buttonType=ERROR&destination=ERROR&source=ERROR&title=Honda%20Civic%20ili%20Toyota%20Corolla%3F%20%7C%20najboljiauto.com&ts1523209287800.0=&async_exp=true&sop=true HTTP/1.1
+Host: l.sharethis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: __stid=CvQGA1px7NsAAAASQD4dAw==
+Origin: http://www.najboljiauto.com
+Referer: http://www.najboljiauto.com/tag/honda-civic-ili-toyota-corolla/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:41:30 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: gars.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.najboljiauto.com/tag/honda-civic-ili-toyota-corolla/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:41:36 apigateway.go:139: GET /pview?event=pview&version=st_insights.js&lang=en&fpc=1824876-162a659385e-7a570baf-2&sessionID=1523209294966.85559&hostname=www.najboljiauto.com&location=%2Fautomobili-koje-preporucujem-toyota-corolla-honda-civic%2F&product=ga&publisher=anonymous&st_optout=false&refQuery=&refDomain=www.google.hr&ufa=9713aa0&ufb=2749152&ufd=334f03c&url=http%3A%2F%2Fwww.najboljiauto.com%2Fautomobili-koje-preporucujem-toyota-corolla-honda-civic%2F&sharURL=&buttonType=ERROR&destination=ERROR&source=ERROR&title=Automobili%20koje%20preporu%C4%8Dujem%3A%20Toyota%20Corolla%2C%20Honda%20Civic%20%7C%20najboljiauto.com&ts1523209294966.0=&async_exp=true&sop=true HTTP/1.1
+Host: l.sharethis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: __stid=CvQGA1px7NsAAAASQD4dAw==
+Origin: http://www.najboljiauto.com
+Referer: http://www.najboljiauto.com/automobili-koje-preporucujem-toyota-corolla-honda-civic/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:41:37 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: gars.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.najboljiauto.com/automobili-koje-preporucujem-toyota-corolla-honda-civic/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:42:43 apigateway.go:139: GET /pview?event=pview&version=st_insights.js&lang=en&fpc=1824876-162a659385e-7a570baf-3&sessionID=1523209363886.40194&hostname=www.najboljiauto.com&location=%2Fuvoz-automobila-iz-svajcarske%2F&product=ga&publisher=anonymous&st_optout=false&refQuery=automobili-koje-preporucujem-toyota-corolla-honda-civic&refDomain=www.najboljiauto.com&ufa=9713aa0&ufb=2749152&ufd=334f03c&url=http%3A%2F%2Fwww.najboljiauto.com%2Fuvoz-automobila-iz-svajcarske%2F&sharURL=&buttonType=ERROR&destination=ERROR&source=ERROR&title=Uvoz%20automobila%20iz%20%C5%A0vajcarske%20%7C%20najboljiauto.com&ts1523209363898.0=&async_exp=true&sop=true HTTP/1.1
+Host: l.sharethis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: __stid=CvQGA1px7NsAAAASQD4dAw==
+Origin: http://www.najboljiauto.com
+Referer: http://www.najboljiauto.com/uvoz-automobila-iz-svajcarske/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:42:45 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: gars.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.najboljiauto.com/uvoz-automobila-iz-svajcarske/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:44:23 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:44:25 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:44:25 apigateway.go:139: GET /_1523209463172/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:44:26 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"cbcf64d3-d2e9-404f-838f-7270fc4a81b0","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"055c97d6-6408-4295-be37-0c768c674993","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:47:19 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:47:21 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:47:21 apigateway.go:139: GET /_1523209639454/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D2&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:47:21 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"ac6be198-a3b7-4ef4-b82b-7d2e89c4423e","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"439c9f2f-f853-46d7-bbca-e4bc01f5b432","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:51:03 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:51:05 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:51:05 apigateway.go:139: GET /_1523209863362/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D3&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D2&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:51:05 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"8c317424-a3e8-4f90-b28c-dbc216e254b3","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"60473c5c-62f6-480d-a3f5-379ab17c853e","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:52:14 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:52:15 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:52:15 apigateway.go:139: GET /_1523209934070/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D4&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D3&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:52:15 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"86b97693-df1c-4432-890d-ee737649e4a3","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"95a2d0f0-90e9-429b-9cd4-486820b2f8fe","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:53:08 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=5
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:53:10 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=5
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:53:10 apigateway.go:139: GET /_1523209988960/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D5&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D4&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=5
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:53:10 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=5
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"f9410bc4-61e7-4160-a1a4-8a76ca2b5eed","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"b64918cf-705b-4f7c-b578-03b718bba629","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:53:58 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=6
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:53:59 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=6
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:54:00 apigateway.go:139: GET /_1523210038424/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D6&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D5&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=6
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:54:00 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=6
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"5813ea0b-a661-4e22-a11e-02d0db197713","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"185c3f40-fdf4-4afa-8de5-2f5274a74b6f","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:55:43 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=7
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:55:44 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=7
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:55:45 apigateway.go:139: GET /_1523210143420/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D7&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D6&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=7
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:55:45 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=7
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"78cd88fd-1c6e-45eb-a034-1a313dc17b94","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"da07d159-c7a7-4c5b-9480-599e77ce9156","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:57:11 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=8
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:57:12 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=8
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:57:12 apigateway.go:139: GET /_1523210231234/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D8&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D7&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=8
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:57:13 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=8
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"30e8ed36-28a4-4159-8d17-1af7e9d52e20","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"231317d5-18d0-4736-b88c-781cfeb9099e","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:58:18 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=9
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:58:19 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=9
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:58:19 apigateway.go:139: GET /_1523210297856/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D9&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D8&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=9
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:58:19 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=9
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"949077e3-6fd2-4c00-a61e-89a9a22774ec","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"c039a24b-efa1-4ab6-a211-aa73df99ad5f","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 19:59:27 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=10
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:59:29 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=10
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:59:29 apigateway.go:139: GET /_1523210367768/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D10&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D9&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=10
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 19:59:29 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=10
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"b4c689bc-acb7-4691-88db-371e74d1b93e","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"1c636622-9a76-41b1-b889-2325b1b45b5e","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 20:00:54 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=11
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:00:56 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=11
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:00:56 apigateway.go:139: GET /_1523210454898/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D11&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1036303%26page%3D10&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=11
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:00:56 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1036303&page=11
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"c6790209-dc0e-4190-bc89-244935c9f7f0","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"8b86a0eb-9437-46a3-992d-cdc6b5149742","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 20:39:51 apigateway.go:139: GET /a/mediative/sites/redflagdeals.js HTTP/1.1
+Host: cdn.mediative.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://forums.redflagdeals.com/honda-civic-toyota-corolla-178886/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:39:53 apigateway.go:139: GET /a/mediative/sites/redflagdeals.js HTTP/1.1
+Host: cdn.mediative.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://forums.redflagdeals.com/honda-civic-toyota-corolla-178886/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:39:55 apigateway.go:139: GET /reach?tc_s=1494 HTTP/1.1
+Host: engage.commander1.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: TCID=2018031015562411983193539
+Referer: http://forums.redflagdeals.com/honda-civic-toyota-corolla-178886/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:39:57 apigateway.go:139: POST / HTTP/1.1
+Host: api.amplitude.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 1099
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Origin: http://forums.redflagdeals.com
+Referer: http://forums.redflagdeals.com/honda-civic-toyota-corolla-178886/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+client=2d535ad6134bafa3bca40344f3b4b1a5&e=%5B%7B%22device_id%22%3A%2246c1b67f-fe31-4630-b625-2a6b0a9e4dd1%22%2C%22user_id%22%3A%2246c1b67f-fe31-4630-b625-2a6b0a9e4dd1%22%2C%22timestamp%22%3A1523212797454%2C%22event_id%22%3A1%2C%22session_id%22%3A1523212797450%2C%22event_type%22%3A%22%24identify%22%2C%22version_name%22%3Anull%2C%22platform%22%3A%22Web%22%2C%22os_name%22%3A%22Firefox%22%2C%22os_version%22%3A%2259%22%2C%22device_model%22%3A%22Windows%22%2C%22language%22%3A%22en-US%22%2C%22api_properties%22%3A%7B%7D%2C%22event_properties%22%3A%7B%7D%2C%22user_properties%22%3A%7B%22%24setOnce%22%3A%7B%22initial_referrer%22%3A%22https%3A%2F%2Fwww.google.hr%2F%22%2C%22initial_referring_domain%22%3A%22www.google.hr%22%7D%2C%22%24set%22%3A%7B%22referrer%22%3A%22https%3A%2F%2Fwww.google.hr%2F%22%2C%22referring_domain%22%3A%22www.google.hr%22%7D%7D%2C%22uuid%22%3A%22aaf76870-be17-4fdd-8c8e-417c4ea96488%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-js%22%2C%22version%22%3A%222.9.0%22%7D%2C%22sequence_number%22%3A1%7D%5D&v=2&upload_time=1523212797470&checksum=4f79e3f606721a13d26e705ab1cacb5c
+2018/04/08 20:39:57 apigateway.go:139: GET /pages/scripts/0013/6905.js?423114 HTTP/1.1
+Host: dnn506yrbagrg.cloudfront.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://forums.redflagdeals.com/honda-civic-toyota-corolla-178886/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:40:58 apigateway.go:139: GET /pview?event=pview&version=st_insights.js&lang=en&fpc=1824876-162a659385e-7a570baf-4&sessionID=1523212855710.10306&hostname=www.najboljiauto.com&location=%2Fmilos-andelkovic-polovna-honda-civic-za-preporuku-ili-ne%2F&product=ga&publisher=anonymous&st_optout=false&refQuery=&refDomain=www.google.hr&ufa=9713aa0&ufb=2749152&ufd=334f03c&url=http%3A%2F%2Fwww.najboljiauto.com%2Fmilos-andelkovic-polovna-honda-civic-za-preporuku-ili-ne%2F&sharURL=&buttonType=ERROR&destination=ERROR&source=ERROR&title=Milo%C5%A1%20An%C4%91elkovi%C4%87%3A%20Polovna%20Honda%20Civic%20za%20preporuku%20ili%20ne%3F%20%7C%20najboljiauto.com&ts1523212855712.0=&async_exp=true&sop=true HTTP/1.1
+Host: l.sharethis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: __stid=CvQGA1px7NsAAAASQD4dAw==
+Origin: http://www.najboljiauto.com
+Referer: http://www.najboljiauto.com/milos-andelkovic-polovna-honda-civic-za-preporuku-ili-ne/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:40:58 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1048263
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:40:59 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: gars.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.najboljiauto.com/milos-andelkovic-polovna-honda-civic-za-preporuku-ili-ne/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:41:00 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1048263
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:41:00 apigateway.go:139: GET /_1523212855396/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1048263&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1048263
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:41:00 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1048263
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"44f5b597-56cd-4106-bb04-20b1d42685a8","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"e3176f73-4a45-40e5-8c36-37f668c7383b","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 20:43:04 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://autoportal.hr/clanak/test_rabljeni_civic
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:43:05 apigateway.go:139: GET /ads-iframe/adsnative/?category=news&display_bidding_enabled=0&stories_allowed=1&service=dynamic&position=top&display_allowed=1&video_allowed=1&provider=adsnative&thumbnails_allowed=1&experiment=taboola_via_polymorph&variant=fallthrough&display_only=0&sandbox_display=1&links_allowed=1&doublewide_allowed=1&shortname=autoportalhr&forum_pk=3126869&forum_shortname=autoportalhr&safetylevel=30&t=1523212982&anchorColor=%23191919&colorScheme=light&sourceUrl=http%3A%2F%2Fautoportal.hr%2Fclanak%2Ftest_rabljeni_civic&typeface=sans-serif&disqus_version=ac1b13f HTTP/1.1
+Host: disqusads.com
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://autoportal.hr/clanak/test_rabljeni_civic
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:44:26 apigateway.go:139: GET /_1523213065732/rexdot.gif?l=30&id=nFua.0fpdz5koI05QxzNWbcc71ZYHYLoMUMBV.GaAyr.S7&fr=1&fv=Shockwave%20Flash%2029.0%20r0&tz=-120&href=http%3A//www.testvoznja.net/index.php%3Foption%3Dcom_content%26view%3Darticle%26id%3D1689%3Atoyota-corolla-verso-16-vvt-i%26catid%3D48%3Anekategorizirano%26Itemid%3D72&ref=https%3A//www.google.hr/&screen=1366x768&col=24 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.testvoznja.net/index.php?option=com_content&view=article&id=1689:toyota-corolla-verso-16-vvt-i&catid=48:nekategorizirano&Itemid=72
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:45:15 apigateway.go:139: GET /_1523213114658/rexdot.gif?l=30&id=nFua.0fpdz5koI05QxzNWbcc71ZYHYLoMUMBV.GaAyr.S7&fr=1&fv=Shockwave%20Flash%2029.0%20r0&tz=-120&href=http%3A//www.testvoznja.net/index.php%3Foption%3Dcom_content%26view%3Darticle%26id%3D1705%3Ailavi-stroj%26catid%3D48%3Anekategorizirano%26Itemid%3D72&ref=http%3A//www.testvoznja.net/index.php%3Foption%3Dcom_content%26view%3Darticle%26id%3D1689%3Atoyota-corolla-verso-16-vvt-i%26catid%3D48%3Anekategorizirano%26Itemid%3D72&screen=1366x768&col=24 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.testvoznja.net/index.php?option=com_content&view=article&id=1705:ilavi-stroj&catid=48:nekategorizirano&Itemid=72
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:08 apigateway.go:139: GET /c/hotjar-439196.js?sv=5 HTTP/1.1
+Host: static.hotjar.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.index.hr/oglasi/honda-civic-1-6-16v/oid/538471
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:08 apigateway.go:139: GET /door.js?id=638 HTTP/1.1
+Host: test-script.dotmetrics.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: DotMetrics.UniqueUserIdentityCookie=UserID=373f33f6-9bde-4943-83fb-c07e96ef8442&Created=02/22/2018 10:04:59&UserMode=2&guid=9b8a6ed2-63fe-4faf-a8ba-22a699d4e82e&ver=1; DotMetrics.DeviceKey=DeviceID=9a1a949a089abaf7987cee92fc4b41d524ef3795dd52c8031f9b178364bffd3d
+Referer: http://www.index.hr/oglasi/honda-civic-1-6-16v/oid/538471
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:10 apigateway.go:139: GET /door.js?id=638 HTTP/1.1
+Host: test-script.dotmetrics.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: DotMetrics.UniqueUserIdentityCookie=UserID=373f33f6-9bde-4943-83fb-c07e96ef8442&Created=02/22/2018 10:04:59&UserMode=2&guid=9b8a6ed2-63fe-4faf-a8ba-22a699d4e82e&ver=1; DotMetrics.DeviceKey=DeviceID=9a1a949a089abaf7987cee92fc4b41d524ef3795dd52c8031f9b178364bffd3d
+Referer: http://www.index.hr/oglasi/honda-civic-1-6-16v/oid/538471
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:10 apigateway.go:139: GET /live/boost/ra-55f013ef7688b2bd/_ate.track.config_resp HTTP/1.1
+Host: m.addthisedge.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.index.hr/oglasi/honda-civic-1-6-16v/oid/538471
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:10 apigateway.go:139: GET /live/red_lojson/300lo.json?si=5aca64d9d06a25ca&bkl=0&bl=1&pdt=530&sid=5aca64d9d06a25ca&pub=ra-55f013ef7688b2bd&rev=v8.3.0-wp&ln=en&pc=men&cb=0&ab=-&dp=www.index.hr&dr=www.google.hr&fp=oglasi%2Fhonda-civic-1-6-16v%2Foid%2F538471&fr=&of=0&pd=1&irt=1&vcl=1&md=0&ct=1&tct=0&abt=0&cdn=0&pi=1&rb=4&gen=100&chr=UTF-8&colc=1523213530452&jsl=129&uvs=5aca64d9e75a07d8000&skipb=1&callback=addthis.cbs.oln9_70730785518427150 HTTP/1.1
+Host: m.addthis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: uid=5a759b2137b20d30; uvc=31%7C11%2C29%7C12%2C10%7C13%2C2%7C14%2C9%7C15; loc=MDAwMDBFVUhSMDAyMjU4MTk2MDAwMDAwMDBDVg==; na_tc=Y; na_id=2018020419251793220770227549; mus=0; ssc=google%3B4; bku=maG99wPk5N3zekJ1
+Referer: http://www.index.hr/oglasi/honda-civic-1-6-16v/oid/538471
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:21 apigateway.go:139: GET /door.js?id=2394 HTTP/1.1
+Host: script.dotmetrics.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: DotMetrics.UniqueUserIdentityCookie=UserID=373f33f6-9bde-4943-83fb-c07e96ef8442&Created=02/22/2018 10:04:59&UserMode=2&guid=9b8a6ed2-63fe-4faf-a8ba-22a699d4e82e&ver=1; DotMetrics.DeviceKey=DeviceID=9a1a949a089abaf7987cee92fc4b41d524ef3795dd52c8031f9b178364bffd3d
+Referer: http://autozona.rtl.hr/auti-i-ljudi/auti-i-ljudi/honda-civic-16-16v/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:22 apigateway.go:139: GET /live/red_lojson/100eng.json?sh=0&ph=2506&ivh=645&dt=0&pdt=530&ict=&pct=0&perf=widget%7C530%7C2934%2Clojson%7C5654%7C94%2Csh%7C5662%7C0%2Csh%7C5676%7C56&rndr=render_toolbox%7C16506&cmenu=null&ppd=0&ppl=0&fbe=&xmv=0&xms=0&xmlc=0&jsfw=jquery%2Chammer%2Cgoogleanalytics%2Cfacebook&jsfwv=jquery-2.1.1%2Chammer-2.0.4%2Cgoogleanalytics-analytics.js%2Cfacebook-unk&al=men&scr=0&scv=0&apiu=0&ba=1&sid=5aca64d9d06a25ca&rev=v8.3.0-wp&pub=ra-55f013ef7688b2bd&dp=www.index.hr&fp=oglasi%2Fhonda-civic-1-6-16v%2Foid%2F538471&pfm=1&icns= HTTP/1.1
+Host: m.addthis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: uid=5a759b2137b20d30; uvc=31%7C11%2C29%7C12%2C10%7C13%2C2%7C14%2C10%7C15; loc=MDAwMDBFVUhSMDAyMjU4MTk2MDAwMDAwMDBDVg==; na_tc=Y; na_id=2018020419251793220770227549; mus=0; ssc=google%3B4; bku=maG99wPk5N3zekJ1
+Referer: http://www.index.hr/oglasi/honda-civic-1-6-16v/oid/538471
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:52:23 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://autozona.rtl.hr/auti-i-ljudi/auti-i-ljudi/honda-civic-16-16v/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:56:23 apigateway.go:139: GET /script.aspx?partnerid=200036 HTTP/1.1
+Host: hr-engine.intextad.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:56:25 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:56:26 apigateway.go:139: GET /generic/generic.php?ref=35459&area=290x350&&tabl=4&logo=1&logo_type=5&left=1&title_color=bf0000&h_title_color=bf0000&title_underline=1&h_title_underline=1&font=arial&fsi=11&background_color=ffffff&nourl=0&background_opacity=100&hover_back=transparent&border_color=ffffff&border_style=simple&border_radius=5&text_color=000000&url_color=bf0000&h_text_color=000000&h_url_color=bf0000&url_underline=0&h_url_underline=1&&tt=Skidanje+kilometara+i+kako+ga+otkriti+-+Magazin&mk=Skidanje+kilometara+i+kako+ga+otkriti&md=Skidanje+kilometara+i+kako+ga+otkriti+-+Kupnja&q=http%3A//www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti&cs=utf-8 HTTP/1.1
+Host: hr.search.etargetnet.com
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:56:26 apigateway.go:139: GET /script.aspx?partnerid=200036 HTTP/1.1
+Host: hr-engine.intextad.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:56:27 apigateway.go:139: GET /live/boost/xa-4b028b9005ecc674/_ate.track.config_resp HTTP/1.1
+Host: m.addthisedge.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:56:27 apigateway.go:139: GET /live/red_lojson/300lo.json?si=5aca65d910c243d6&bkl=0&bl=1&pdt=1626&sid=5aca65d910c243d6&pub=xa-4b028b9005ecc674&rev=v8.3.0-wp&ln=en&pc=men&cb=0&ab=-&dp=www.automotorisport.hr&dr=www.google.hr&fp=clanak%2Fskidanje-kilometara-i-kako-ga-otkriti&fr=&of=0&pd=0&irt=0&vcl=0&md=0&ct=1&tct=0&abt=0&cdn=0&pi=1&rb=4&gen=100&chr=ISO-8859-2&mk=Skidanje%2Ckilometara%2Ci%2Ckako%2Cga%2Cotkriti&colc=1523213787960&jsl=161&uvs=5aca65d9705f7285000&skipb=1&callback=addthis.cbs.oln9_00295756236116695440 HTTP/1.1
+Host: m.addthis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: uid=5a759b2137b20d30; uvc=31%7C11%2C29%7C12%2C10%7C13%2C2%7C14%2C11%7C15; loc=MDAwMDBFVUhSMDAyMjU4MTk2MDAwMDAwMDBDVg==; na_tc=Y; na_id=2018020419251793220770227549; mus=0; ssc=google%3B4%2Cfacebook%3B1; bku=maG99wPk5N3zekJ1
+Referer: http://www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:57:21 apigateway.go:139: GET /live/red_lojson/100eng.json?sh=1557&ph=4042&ivh=645&dt=55240&pdt=1626&ict=&pct=0&perf=widget%7C1626%7C578%2Clojson%7C6886%7C26%2Csh%7C6890%7C0%2Csh%7C6900%7C32&rndr=render_toolbox%7C11952&cmenu=null&ppd=0&ppl=0&fbe=&xmv=0&xms=0&xmlc=0&jsfw=jquery%2Cgoogleanalytics%2Cfacebook&jsfwv=jquery-1.8.2%2Cgoogleanalytics-ga.js%2Cfacebook-unk&al=men&scr=0&scv=0&apiu=0&ba=1&sid=5aca65d910c243d6&rev=v8.3.0-wp&pub=xa-4b028b9005ecc674&dp=www.automotorisport.hr&fp=clanak%2Fskidanje-kilometara-i-kako-ga-otkriti&pfm=1&icns= HTTP/1.1
+Host: m.addthis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: uid=5a759b2137b20d30; uvc=31%7C11%2C29%7C12%2C10%7C13%2C2%7C14%2C12%7C15; loc=MDAwMDBFVUhSMDAyMjU4MTk2MDAwMDAwMDBDVg==; na_tc=Y; na_id=2018020419251793220770227549; mus=0; ssc=google%3B4%2Cfacebook%3B1; bku=maG99wPk5N3zekJ1
+Referer: http://www.automotorisport.hr/clanak/skidanje-kilometara-i-kako-ga-otkriti
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:58:13 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:58:14 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:58:14 apigateway.go:139: GET /_1523213893058/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1011443&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1011443
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 20:58:15 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1011443
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"3c2eba66-4b9b-47ee-abaa-e59dbc8c1267","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"7b280055-7e63-48c4-93c6-f43e0c917a40","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 21:00:32 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:00:33 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:00:33 apigateway.go:139: GET /_1523214031956/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1011443%26page%3D2&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1011443&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:00:34 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"8529cfc3-ccd1-40ef-8821-1e5289cc7960","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"40379f81-8b1a-42ab-bf9f-e3890ff8ce92","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 21:04:51 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:04:53 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:04:53 apigateway.go:139: GET /_1523214291938/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1011443%26page%3D3&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1011443%26page%3D2&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:04:53 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"a5f36d34-4a39-46f0-b815-bd0389025924","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"869ce228-99b9-47e0-a25c-b8a7b78a22f0","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 21:09:11 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:09:12 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:09:12 apigateway.go:139: GET /_1523214551076/rexdot.gif?l=30&id=nFtAVI._8w9NaAeZRQqrT2XFT.P1AayyoguhrzCLjlz.27&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1011443%26page%3D4&ref=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D1011443%26page%3D3&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:09:13 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=1011443&page=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"2b374be8-430f-4b62-9c7a-e53fefe1dd30","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"dbc8c34e-3cd2-43ac-affb-742cc6935af7","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 21:16:03 apigateway.go:139: GET /pview?event=pview&version=st_insights.js&lang=en&fpc=1824876-162a659385e-7a570baf-5&sessionID=1523214963786.81380&hostname=www.najboljiauto.com&location=%2Fzelim-da-sa-plinom-unistim-motor-toyote%2F&product=ga&publisher=anonymous&st_optout=false&refQuery=&refDomain=www.google.hr&ufa=9713aa0&ufb=2749152&ufd=334f03c&url=http%3A%2F%2Fwww.najboljiauto.com%2Fzelim-da-sa-plinom-unistim-motor-toyote%2F&sharURL=&buttonType=ERROR&destination=ERROR&source=ERROR&title=%C5%BDelim%20da%20sa%20plinom%20uni%C5%A1tim%20motor%20Toyote%20%7C%20najboljiauto.com&ts1523214963788.0=&async_exp=true&sop=true HTTP/1.1
+Host: l.sharethis.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: __stid=CvQGA1px7NsAAAASQD4dAw==
+Origin: http://www.najboljiauto.com
+Referer: http://www.najboljiauto.com/zelim-da-sa-plinom-unistim-motor-toyote/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:16:05 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: gars.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.najboljiauto.com/zelim-da-sa-plinom-unistim-motor-toyote/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:18:12 apigateway.go:139: GET /xgemius.js HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.testoviautomobila.net/dajte-mi-savjet-benzinac-dizelas-ili-plin/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:19:23 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=172598
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:19:25 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=172598
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:19:26 apigateway.go:139: GET /_1523215163994/rexdot.gif?l=30&id=ApU64ScZb70S0ZPPIaTfjWXFnH31AcyNNe6k4AN84ub.K7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D172598&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=172598
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:19:26 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=172598
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"32536480-ea33-4b2f-844c-dd95caf3b7b6","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"c4ea2eae-9715-45e6-bc8c-0896be912ff1","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/08 21:20:18 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=602536
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:20:20 apigateway.go:139: GET /script.aspx?partnerid=116220 HTTP/1.1
+Host: hr-engine.xclaimwords.net
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://www.forum.hr/showthread.php?t=602536
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:20:20 apigateway.go:139: GET /_1523215219106/rexdot.gif?l=30&id=ApU64ScZb70S0ZPPIaTfjWXFnH31AcyNNe6k4AN84ub.K7&fr=1&tz=-120&fv=Shockwave%20Flash%2029.0%20r0&href=http%3A%2F%2Fwww.forum.hr%2Fshowthread.php%3Ft%3D602536&ref=https%3A%2F%2Fwww.google.hr%2F&screen=1366x768&col=24&window=1366x645 HTTP/1.1
+Host: hr.hit.gemius.pl
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: Gdyn=KlGKUMGGQMGG0NxRx5HZyHM5ssGMpGK7Bs4xLbGHFHaBQKQyLs2rnDxtyccNUBGHnSw8oFCnGcG1oaKnHSm7QSMrbH8PGGaGswoPg191RFnG
+Referer: http://www.forum.hr/showthread.php?t=602536
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+
+2018/04/08 21:20:21 apigateway.go:139: POST /ut/v3 HTTP/1.1
+Host: ib.adnxs.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 305
+Content-Type: text/plain
+Cookie: anj=dTM7k!M4.wgO1O:ghqdmU(3$-S)XwB#pMTiaA0]b'$Dpo^lZTpeD1W+044)d+]Uf-?(/aiqy^sMTsLy=n#H45-$RHW1j'q/gv$p1s$#JFg'ihr_(QYUSaACXcyCqXjFq]ge8=rRfTB>ylis+R0Z6*MV69[:-!3#]!]vs5l+V>zZ>@#h-*+P-t>?vB9jv8Bgi1^<dpN/s1u^q0m3nVQ#?cd9TyIe7sX-Hr:.3<wXs>8GobM-hG!@nA::wZ9.p<CzfQU3JcgoLde8=dHh01D]f[w?viHW2ifT<Tv9O'?DSU$+28l=$B#C)esjB]@9bIk7G$./^hTXprKTYr[h:sXNAGT<Y>Xpj'aK+!!66kpYi$vxAa09xZt-?eo:R7?nQRUkoPR*tM[RA<efJYai^2XeUw)%^TyizrYr?L$/J=j?</jya[*PHfRa).8'y!*0dl!1=ed7XKLc; uuid2=8441342350326172431; icu=ChgIyf0yEAoYAyADKAMw46Oj1QU4A0ADSAMQ46Oj1QUYAg..
+Origin: http://www.forum.hr
+Referer: http://www.forum.hr/showthread.php?t=602536
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+
+{"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"a4199307-87ba-4d12-ab5c-4a09c8fff5f3","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"49457b96-31f1-45aa-a714-31022ecd0785","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}

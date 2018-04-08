@@ -1,46 +1,20 @@
-GET http://localhost/api/blogs
-Authorization: Bearer 06c05668-5f02-4818-93c9-7affc888d930
-
-<> 2018-04-07T095637.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value2",
-  "password": "value2"
-}
-
-<> 2018-04-07T095631.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 61334565-44bf-4b27-9473-e40d693452e3
-
-<> 2018-04-06T021304.200.json
-
-###
-
 POST http://localhost/api/blog
 Content-Type: application/json
-Authorization: Bearer 61334565-44bf-4b27-9473-e40d693452e3
+Authorization: Bearer 5aca45ec3cd05019203a89c2
 
 {
     "title":"Naslov",
     "content":"Nekakav dugački tekst"
 }
 
-<> 2018-04-06T021259.200.json
+<> 2018-04-08T064025.200.txt
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer 61334565-44bf-4b27-9473-e40d693452e3
+Authorization: Bearer 5aca45ec3cd05019203a89c2
 
-<> 2018-04-06T021255.200.json
+<> 2018-04-08T064019.200.json
 
 ###
 
@@ -48,11 +22,105 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value2",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T021249.200.json
+<> 2018-04-08T064013.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-08T091014.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-08T090626.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-08T085256.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-08T084612.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-07T013241.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-07T013239.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-07T013238.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-07T013231.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+
+<> 2018-04-07T013221.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-04-07T013214.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8ac183cd050255c1a6ecb
+
+<> 2018-04-07T013140.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-04-07T013136.200.json
 
 ###
 
@@ -60,20 +128,123 @@ POST http://localhost/api/register
 Content-Type: application/json
 
 {
-  "email": "value2",
-  "password": "value2",
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra",
   "firstname": "Karlo",
   "lastname": "Šimunović"
 }
 
-<> 2018-04-06T021246.200.json
+<> 2018-04-07T013133.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer 57a91930-44db-474d-aba9-0db3c1cb984a
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
 
-<> 2018-04-06T021112.200.json
+<> 2018-04-07T013038.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012931.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012819.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012759.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012708.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012613.200.json
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012509.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012412.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012107.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012043.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T012016.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T011748.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T011726.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T011715.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a89e3cd05020f04279f6
+
+<> 2018-04-07T011648.200.txt
 
 ###
 
@@ -81,25 +252,39 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value2",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T021047.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
-
-<> 2018-04-06T020844.200.json
+<> 2018-04-07T011646.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
+Authorization: Bearer 5ac8a8243cd0500508039b2f
 
-<> 2018-04-06T020804.200.txt
+<> 2018-04-07T011622.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a8243cd0500508039b2f
+
+<> 2018-04-07T011542.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a8243cd0500508039b2f
+
+<> 2018-04-07T011539.200.txt
+
+###
+
+GET http://localhost/api/account
+Authorization: Bearer 5ac8a8243cd0500508039b2f
+
+<> 2018-04-07T011448.200.txt
 
 ###
 
@@ -107,18 +292,18 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value2",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T020229.200.json
+<> 2018-04-07T011444.200.json
 
 ###
 
 GET http://localhost/api/account
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
+Authorization: Bearer 5ac8a6e13cd0502b5c57e6ba
 
-<> 2018-04-06T020218.200.txt
+<> 2018-04-07T010934.200.txt
 
 ###
 
@@ -126,46 +311,11 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value2",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T020144.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
-
-<> 2018-04-06T020053.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
-
-<> 2018-04-06T015942.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
-
-<> 2018-04-06T015859.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
-
-<> 2018-04-06T015834.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 48e8e6b3-5a17-46a1-a6a7-ac8e1fe5990e
-
-<> 2018-04-06T015807.200.txt
+<> 2018-04-07T010921.200.json
 
 ###
 
@@ -173,11 +323,11 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value2",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T015719.200.json
+<> 2018-04-07T010706.200.json
 
 ###
 
@@ -185,11 +335,71 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value50",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T015642.200.txt
+<> 2018-04-07T010516.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-04-07T010015.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-04-07T125914.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-04-07T125900.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-04-07T125254.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-04-07T125120.200.json
 
 ###
 
@@ -197,13 +407,13 @@ POST http://localhost/api/register
 Content-Type: application/json
 
 {
-  "email": "value2",
-  "password": "value2",
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra",
   "firstname": "Karlo",
   "lastname": "Šimunović"
 }
 
-<> 2018-04-06T015628.200.json
+<> 2018-04-07T125117.200.json
 
 ###
 
@@ -211,58 +421,11 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value50",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T015614.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T014716.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T014449.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T014435.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T013917.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T013548.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T013215.200.txt
+<> 2018-04-07T123704.200.json
 
 ###
 
@@ -270,172 +433,11 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "value50",
-  "password": "value2"
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-06T013008.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T012956.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T012740.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T012216.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T012214.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T012207.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T012202.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T011225.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 181521e2-d136-45b3-938c-37bea4c8b34f
-
-<> 2018-04-06T010710.200.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-06T010707.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer 1dbb73b5-6a20-4bb3-aca4-c98915490e06
-
-<> 2018-04-06T010656.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 1dbb73b5-6a20-4bb3-aca4-c98915490e06
-
-<> 2018-04-06T010641.200.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value2",
-  "password": "value2"
-}
-
-<> 2018-04-06T010637.200.json
-
-###
-
-POST http://localhost/api/register
-Content-Type: application/json
-
-{
-  "email": "value2",
-  "password": "value2",
-  "firstname": "Karlo",
-  "lastname": "Šimunović"
-}
-
-<> 2018-04-06T010633.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value2",
-  "password": "value2"
-}
-
-<> 2018-04-06T010625.200.txt
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-06T010615.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "value50",
-  "password": "value2"
-}
-
-<> 2018-04-06T010604.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
-
-<> 2018-04-06T125419.200.json
-
-###
-
-GET http://localhost/api/blogs
-Authorization: Bearer bb707228-5d4d-444c-8aa1-c1fda7af0b13
+<> 2018-04-07T123632.200.json
 
 ###
 

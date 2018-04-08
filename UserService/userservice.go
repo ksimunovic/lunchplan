@@ -14,22 +14,26 @@ import (
 	"github.com/couchbase/gocb"
 	"github.com/satori/go.uuid"
 	"golang.org/x/crypto/bcrypt"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
+	"errors"
 )
 
+
 type Account struct {
-	Type     string `json:"type,omitempty"`
-	Pid      string `json:"pid,omitempty"`
-	Email    string `json:"email,omitempty"`
-	Password string `json:"password,omitempty"`
+	Profile  Profile `json:"profile,omitempty"`
+	Email    string  `json:"email,omitempty"`
+	Password string  `json:"password,omitempty"`
 }
 type Profile struct {
-	Type      string `json:"type,omitempty"`
-	Firstname string `json:"firstname,omitempty"`
-	Lastname  string `json:"lastname,omitempty"`
+	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Firstname string        `json:"firstname,omitempty"`
+	Lastname  string        `json:"lastname,omitempty"`
 }
 type Session struct {
-	Type string `json:"type,omitempty"`
-	Pid  string `json:"pid,omitempty"`
+	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Profile   Profile       `json:"profile,omitempty"`
+	CreatedAt time.Time     `json:”created_at,omitempty” bson:"createdAt"`
 }
 type Blog struct {
 	Type      string `json:"type,omitempty"`
@@ -45,9 +49,9 @@ type Config struct {
 		Username string `json:"username"`
 		Password string `json:"password"`
 	} `json:"database"`
-	UserService struct {
+	MealService struct {
 		Port string `json:"port"`
-	} `json:"userservice"`
+	} `json:"UserService"`
 }
 
 var config Config
@@ -86,28 +90,36 @@ func (s *Server) Negate(i int64, reply *int64) error {
 }
 
 func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error {
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+	c := sessionCopy.DB("UserService").C("account")
+
 	var account Account
-	_, err := bucket.Get(data["email"].(string), &account)
-	if err != nil {
-		return err
-	}
+	err := c.Find(bson.M{"email": data["email"].(string)}).One(&account)
+
+	//TODO: Handle unknown email
+
 	err = bcrypt.CompareHashAndPassword([]byte(account.Password), []byte(data["password"].(string)))
 	if err != nil {
 		return err
 	}
+
+	i := bson.NewObjectId()
 	session := Session{
-		Type: "session",
-		Pid:  account.Pid,
+		Id:        i,
+		Profile:   account.Profile,
+		CreatedAt: time.Now(),
 	}
+
+	c = sessionCopy.DB("UserService").C("session")
+	if err := c.Insert(session); err != nil {
+		panic(err)
+	}
+
 	var result map[string]interface{}
 	result = make(map[string]interface{})
-
-	temp1, _ := uuid.NewV4()
-	result["pid"] = temp1.String()
-	_, err = bucket.Insert(result["pid"].(string), &session, 3600)
-	if err != nil {
-		return err
-	}
+	result["sid"] = i.Hex()
 
 	*jsonResponse, _ = json.Marshal(result)
 	return nil
@@ -115,28 +127,30 @@ func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error 
 
 func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) error {
 
-	temp1, _ := uuid.NewV4()
-	id := temp1.String()
 	passwordHash, _ := bcrypt.GenerateFromPassword([]byte(data["password"].(string)), 10)
-	account := Account{
-		Type:     "account",
-		Pid:      id,
-		Email:    data["email"].(string),
-		Password: string(passwordHash),
-	}
+	i := bson.NewObjectId()
 	profile := Profile{
-		Type:      "profile",
+		Id:        i,
 		Firstname: data["firstname"].(string),
 		Lastname:  data["lastname"].(string),
 	}
-
-	_, err := bucket.Insert(id, profile, 0)
-	if err != nil {
-		return err
+	account := Account{
+		Profile:  profile,
+		Email:    data["email"].(string),
+		Password: string(passwordHash),
 	}
-	_, err = bucket.Insert(data["email"].(string), account, 0)
-	if err != nil {
-		return err
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	c := sessionCopy.DB("UserService").C("profile")
+	if err := c.Insert(profile); err != nil {
+		panic(err)
+	}
+
+	c = sessionCopy.DB("UserService").C("account")
+	if err := c.Insert(account); err != nil {
+		panic(err)
 	}
 
 	*jsonResponse, _ = json.Marshal(account)
@@ -144,14 +158,18 @@ func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) err
 }
 
 func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) error {
-	pid := data["pid"].(string)
-	var profile Profile
-	_, err := bucket.Get(pid, &profile)
-	if err != nil {
-		return err
-	}
+	sessionId := data["sid"].(string)
 
-	*jsonResponse, _ = json.Marshal(profile)
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+	c := sessionCopy.DB("UserService").C("session")
+
+	var session Session
+	_ = c.Find(bson.M{"_id": bson.ObjectIdHex(sessionId)}).One(&session)
+
+	//TODO: Add served_by field for load balancing testing
+
+	*jsonResponse, _ = json.Marshal(session.Profile)
 	return nil
 }
 
@@ -206,29 +224,49 @@ func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) err
 
 	bearerToken := data["bearerToken"].(string)
 
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+	c := sessionCopy.DB("UserService").C("session")
+
 	var session Session
-	_, err := bucket.Get(bearerToken, &session)
+	err := c.Find(bson.M{"_id": bson.ObjectIdHex(bearerToken)}).One(&session)
 	if err != nil {
-		return err
+		return errors.New("Invalid session")
 	}
-	bucket.Touch(bearerToken, 0, 3600)
+
+	c.Update(bson.M{"_id": bson.ObjectIdHex(bearerToken)}, bson.M{"$set": bson.M{"createdat": time.Now()}})
 
 	*jsonResponse, _ = json.Marshal(session)
 	return nil
 }
 
 var bucket *gocb.Bucket
+var dbSession *mgo.Session
 
 func main() {
-	cluster, _ := gocb.Connect(LoadConfiguration().Database.Host)
-	cluster.Authenticate(gocb.PasswordAuthenticator{
-		Username: LoadConfiguration().Database.Username,
-		Password: LoadConfiguration().Database.Password,
-	})
-	bucket, _ = cluster.OpenBucket("userservice", "")
+
+	mongoDBDialInfo := &mgo.DialInfo{
+		Addrs:    []string{"localhost:27017"},
+		Timeout:  60 * time.Second,
+		Database: "UserService",
+		Username: "root",
+		Password: "root",
+	}
+
+	mongoSession, err := mgo.DialWithInfo(mongoDBDialInfo)
+	if err != nil {
+		log.Fatalf("CreateSession: %s\n", err)
+	}
+
+	defer mongoSession.Close()
+	mongoSession.SetMode(mgo.Monotonic, true)
+
+	dbSession = mongoSession.Copy()
+	defer mongoSession.Close()
+
 	rpc.Register(new(Server))
 	fmt.Println("User Service RPC server online!")
-	ln, err := net.Listen("tcp", ":"+LoadConfiguration().UserService.Port)
+	ln, err := net.Listen("tcp", ":"+LoadConfiguration().MealService.Port)
 	if err != nil {
 		fmt.Println(err)
 		return

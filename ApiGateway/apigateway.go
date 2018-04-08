@@ -32,10 +32,10 @@ type Config struct {
 	} `json:"api_gateway"`
 	ApiService struct {
 		Port string `json:"port"`
-	} `json:"apiservice"`
+	} `json:"ApiService"`
 	UserService struct {
 		Port string `json:"port"`
-	} `json:"userservice"`
+	} `json:"UserService"`
 }
 
 var config Config
@@ -84,20 +84,23 @@ func Validate(next http.HandlerFunc) http.HandlerFunc {
 				}
 
 				var result []byte
-				var profile map[string]string
+				var profile map[string]interface{}
 				err = c.Call("Server.Validate", data, &result)
 				if err != nil {
-					w.Write([]byte(err.Error()))
+					profile = make(map[string]interface{})
+					profile["error"] = err.Error()
+					json, _ := json.Marshal(profile)
+					w.Write(json)
 				} else {
 					_ = json.Unmarshal(result, &profile)
-					req.Header.Set("PID", profile["pid"])
+					req.Header.Set("sid", profile["id"].(string))
 					next(w, req)
 				}
 
 			}
 			//TODO: Implementacija za cookie based auth
 		} else {
-			req.Header.Set("PID", "")
+			req.Header.Set("sid", "")
 			next(w, req)
 		}
 	})
