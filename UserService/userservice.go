@@ -11,14 +11,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/couchbase/gocb"
-	"github.com/satori/go.uuid"
 	"golang.org/x/crypto/bcrypt"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 	"errors"
 )
-
 
 type Account struct {
 	Profile  Profile `json:"profile,omitempty"`
@@ -29,18 +26,19 @@ type Profile struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Firstname string        `json:"firstname,omitempty"`
 	Lastname  string        `json:"lastname,omitempty"`
+	ServedBy  string        `json:"served_by,omitempty"`
 }
 type Session struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Profile   Profile       `json:"profile,omitempty"`
-	CreatedAt time.Time     `json:”created_at,omitempty” bson:"createdAt"`
+	CreatedAt time.Time     `json:"created_at,omitempty" bson:"createdAt"`
 }
 type Blog struct {
-	Type      string `json:"type,omitempty"`
-	Pid       string `json:"pid,omitempty"`
-	Title     string `json:"title,omitempty"`
-	Content   string `json:"content,omitempty"`
-	Timestamp int    `json:"timestamp,omitempty"`
+	Type      string  `json:"type,omitempty"`
+	Profile   Profile `json:"profile,omitempty"`
+	Title     string  `json:"title,omitempty"`
+	Content   string  `json:"content,omitempty"`
+	Timestamp int     `json:"timestamp,omitempty"`
 }
 
 type Config struct {
@@ -49,9 +47,9 @@ type Config struct {
 		Username string `json:"username"`
 		Password string `json:"password"`
 	} `json:"database"`
-	MealService struct {
+	UserService struct {
 		Port string `json:"port"`
-	} `json:"UserService"`
+	} `json:"user_service"`
 }
 
 var config Config
@@ -80,6 +78,31 @@ func LoadConfiguration() Config {
 		}
 		return config
 	}
+}
+
+func GetIP() string {
+	name, err := os.Hostname()
+	if err != nil {
+		panic(err)
+	}
+	addrs, err := net.InterfaceAddrs()
+	if err != nil {
+		return "error"
+	}
+	var realIp string
+
+	for _, address := range addrs {
+		if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
+				realIp = ipnet.IP.String()
+			}
+		}
+	}
+	if realIp != "" {
+		return name + " " + realIp
+	}
+
+	return name + " unkownIP"
 }
 
 type Server struct{}
@@ -140,6 +163,8 @@ func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) err
 		Password: string(passwordHash),
 	}
 
+	//TODO: Missing email validation - ili?
+
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
 
@@ -159,7 +184,6 @@ func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) err
 
 func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) error {
 	sessionId := data["sid"].(string)
-
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
 	c := sessionCopy.DB("UserService").C("session")
@@ -167,25 +191,32 @@ func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) e
 	var session Session
 	_ = c.Find(bson.M{"_id": bson.ObjectIdHex(sessionId)}).One(&session)
 
-	//TODO: Add served_by field for load balancing testing
+	session.Profile.ServedBy = GetIP()
 
 	*jsonResponse, _ = json.Marshal(session.Profile)
 	return nil
 }
 
 func (s *Server) Blog(data map[string]interface{}, jsonResponse *[]byte) error {
+	sessionId := data["sid"].(string)
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+	c := sessionCopy.DB("UserService").C("session")
+
+	var session Session
+	_ = c.Find(bson.M{"_id": bson.ObjectIdHex(sessionId)}).One(&session)
 
 	temp0, _ := json.Marshal(data)
 
 	var blog Blog
 	_ = json.Unmarshal(temp0, &blog)
 	blog.Type = "blog"
-
+	blog.Profile = session.Profile
 	blog.Timestamp = int(time.Now().Unix())
-	temp1, _ := uuid.NewV4()
-	_, err := bucket.Insert(temp1.String(), blog, 0)
-	if err != nil {
-		return err
+
+	c = sessionCopy.DB("UserService").C("blog")
+	if err := c.Insert(blog); err != nil {
+		panic(err)
 	}
 
 	*jsonResponse, _ = json.Marshal(blog)
@@ -193,30 +224,19 @@ func (s *Server) Blog(data map[string]interface{}, jsonResponse *[]byte) error {
 }
 
 func (s *Server) Blogs(data map[string]interface{}, jsonResponse *[]byte) error {
-	pid := data["pid"].(string)
+	sessionId := data["sid"].(string)
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+	c := sessionCopy.DB("UserService").C("session")
 
-	var n1qlParams []interface{}
-	n1qlParams = append(n1qlParams, pid)
-	query := gocb.NewN1qlQuery("SELECT `" + bucket.Name() + "`.* FROM `" + bucket.Name() + "` WHERE type = 'blog' AND pid = $1")
-	query.Consistency(gocb.RequestPlus)
-	rows, err := bucket.ExecuteN1qlQuery(query, n1qlParams)
-	if err != nil {
-		return err
-	}
+	var session Session
+	_ = c.Find(bson.M{"_id": bson.ObjectIdHex(sessionId)}).One(&session)
 
-	var row map[string]interface{}
-	var result []map[string]interface{}
-	for rows.Next(&row) {
-		result = append(result, row)
-		row = make(map[string]interface{})
-	}
-	rows.Close()
+	c = sessionCopy.DB("UserService").C("blog")
+	var results []Blog
+	_ = c.Find(bson.M{"profile._id": bson.ObjectIdHex(session.Profile.Id.Hex())}).All(&results)
 
-	if result == nil {
-		result = make([]map[string]interface{}, 0)
-	}
-
-	*jsonResponse, _ = json.Marshal(result)
+	*jsonResponse, _ = json.Marshal(results)
 	return nil
 }
 
@@ -240,7 +260,6 @@ func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) err
 	return nil
 }
 
-var bucket *gocb.Bucket
 var dbSession *mgo.Session
 
 func main() {
@@ -266,7 +285,7 @@ func main() {
 
 	rpc.Register(new(Server))
 	fmt.Println("User Service RPC server online!")
-	ln, err := net.Listen("tcp", ":"+LoadConfiguration().MealService.Port)
+	ln, err := net.Listen("tcp", ":"+LoadConfiguration().UserService.Port)
 	if err != nil {
 		fmt.Println(err)
 		return

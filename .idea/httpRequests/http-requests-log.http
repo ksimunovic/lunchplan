@@ -1,20 +1,438 @@
-POST http://localhost/api/blog
+GET http://localhost/api/meal/all
 Content-Type: application/json
-Authorization: Bearer 5aca45ec3cd05019203a89c2
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T091146.200.json
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T091140.200.txt
+
+###
+
+DELETE http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T091135.200.json
+
+###
+
+DELETE http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T091055.200.txt
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T091053.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T091048.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T091045.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T085517.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T085455.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T085403.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc1
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T085349.200.txt
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc1
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T085256.200.txt
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc1
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T085105.200.txt
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc1
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T085031.200.txt
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc1
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T084857.200.txt
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T084850.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T084759.200.txt
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T084741.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T084726.200.txt
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T084719.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T084706.200.txt
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc1
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T084338.200.txt
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T084311.200.json
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T084256.200.json
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T083856.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T083855.200.json
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T083838.200.json
+
+###
+
+POST http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+    "title":"WHAaat?",
+    "content":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T083834.200.json
+
+###
+
+GET http://localhost/api/meal/5ade281d239c97ba4400e6cc
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T083832.200.json
+
+###
+
+GET http://localhost/api/meal/all
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T083829.200.json
+
+###
+
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T083824.200.txt
+
+###
+
+POST http://localhost/api/meal
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
 
 {
     "title":"Naslov",
-    "content":"Nekakav dugački tekst"
+    "description":"Nekakav dugački tekst"
 }
 
-<> 2018-04-08T064025.200.txt
+<> 2018-04-23T083821.200.json
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5aca45ec3cd05019203a89c2
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
 
-<> 2018-04-08T064019.200.json
+<> 2018-04-23T083701.200.json
+
+###
+
+POST http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+    "title":"WHAaat?",
+    "content":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T083656.200.json
+
+###
+
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T083633.200.json
+
+###
+
+POST http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+    "title":"Naslov222",
+    "content":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T083622.200.json
+
+###
+
+POST http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+{
+    "title":"Naslov222",
+    "content":"Izmjenjeni content meal-a"
+}
+
+<> 2018-04-23T083612.200.txt
+
+###
+
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T083529.200.json
+
+###
+
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5ade22303cd050284811e0c3
+
+<> 2018-04-23T081308.200.json
 
 ###
 
@@ -26,70 +444,39 @@ Content-Type: application/json
   "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-08T064013.200.json
+<> 2018-04-23T081304.200.json
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5adce88a3cd050284811e0c2
 
-<> 2018-04-08T091014.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
-
-<> 2018-04-08T090626.200.txt
+<> 2018-04-23T081244.200.txt
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5adce88a3cd050284811e0c2
 
-<> 2018-04-08T085256.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
-
-<> 2018-04-08T084612.200.txt
+<> 2018-04-22T095735.200.json
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5adce88a3cd050284811e0c2
 
-<> 2018-04-07T013241.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
-
-<> 2018-04-07T013239.200.json
+<> 2018-04-22T095532.200.json
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
+Content-Type: application/json
+Authorization: Bearer 5adce88a3cd050284811e0c2
 
-<> 2018-04-07T013238.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
-
-<> 2018-04-07T013231.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac3e3cd0502fd88589c4
-
-<> 2018-04-07T013221.200.json
+<> 2018-04-22T095453.200.txt
 
 ###
 
@@ -97,347 +484,49 @@ POST http://localhost/api/login
 Content-Type: application/json
 
 {
-  "email": "probniEmail",
+  "email": "peroslav@gmail.com",
   "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-04-07T013214.200.json
+<> 2018-04-22T095450.200.json
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8ac183cd050255c1a6ecb
-
-<> 2018-04-07T013140.200.json
-
-###
-
-POST http://localhost/api/login
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
 Content-Type: application/json
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
 
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T013136.200.json
+<> 2018-04-22T095436.200.json
 
 ###
 
-POST http://localhost/api/register
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
 Content-Type: application/json
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
 
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra",
-  "firstname": "Karlo",
-  "lastname": "Šimunović"
-}
-
-<> 2018-04-07T013133.200.json
+<> 2018-04-22T095212.200.json
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T013038.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012931.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012819.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012759.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012708.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012613.200.json
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012509.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012412.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012107.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012043.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T012016.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T011748.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T011726.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T011715.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a89e3cd05020f04279f6
-
-<> 2018-04-07T011648.200.txt
-
-###
-
-POST http://localhost/api/login
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
 Content-Type: application/json
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
 
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T011646.200.json
+<> 2018-04-22T095120.200.txt
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a8243cd0500508039b2f
-
-<> 2018-04-07T011622.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a8243cd0500508039b2f
-
-<> 2018-04-07T011542.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a8243cd0500508039b2f
-
-<> 2018-04-07T011539.200.txt
-
-###
-
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a8243cd0500508039b2f
-
-<> 2018-04-07T011448.200.txt
-
-###
-
-POST http://localhost/api/login
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
 Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T011444.200.json
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
 
 ###
 
-GET http://localhost/api/account
-Authorization: Bearer 5ac8a6e13cd0502b5c57e6ba
-
-<> 2018-04-07T010934.200.txt
-
-###
-
-POST http://localhost/api/login
+GET http://localhost/api/meal/5adcbf25239c97ba4400d321
 Content-Type: application/json
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
 
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T010921.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T010706.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T010516.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T010015.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T125914.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T125900.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T125254.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T125120.200.json
-
-###
-
-POST http://localhost/api/register
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra",
-  "firstname": "Karlo",
-  "lastname": "Šimunović"
-}
-
-<> 2018-04-07T125117.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T123704.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-04-07T123632.200.json
+<> 2018-04-22T094316.200.txt
 
 ###
 

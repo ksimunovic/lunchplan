@@ -19,12 +19,15 @@ type Config struct {
 		Username string `json:"username"`
 		Password string `json:"password"`
 	} `json:"database"`
-	UserService struct {
-		Port string `json:"port"`
-	} `json:"UserService"`
 	ApiService struct {
 		Port string `json:"port"`
-	} `json:"ApiService"`
+	} `json:"api_service"`
+	UserService struct {
+		Port string `json:"port"`
+	} `json:"user_service"`
+	MealService struct {
+		Port string `json:"port"`
+	} `json:"meal_service"`
 }
 
 var config Config
@@ -67,6 +70,41 @@ func UserService(method string) http.HandlerFunc {
 		}
 
 		c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+
+		var result []byte
+		err = c.Call("Server."+method, data, &result)
+		if err != nil {
+			w.Write([]byte(err.Error()))
+		} else {
+			w.Header().Set("Content-Type", "application/json; charset=utf-8")
+			w.Write(result)
+		}
+	}
+}
+
+func MealService(method string) http.HandlerFunc {
+	return func(w http.ResponseWriter, req *http.Request) {
+
+		var data map[string]interface{}
+		_ = json.NewDecoder(req.Body).Decode(&data)
+		if len(data) == 0 {
+			data = map[string]interface{}{
+				"sid": req.Header.Get("sid"),
+			}
+		} else {
+			data["sid"] = req.Header.Get("sid")
+		}
+
+		getVars := mux.Vars(req)
+		for k, v := range getVars {
+			data["get_" + k] = v
+		}
+
+		c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().MealService.Port)
 		if err != nil {
 			fmt.Println(err)
 			return

@@ -32,10 +32,11 @@ type Config struct {
 	} `json:"api_gateway"`
 	ApiService struct {
 		Port string `json:"port"`
-	} `json:"ApiService"`
+	} `json:"api_service"`
 	UserService struct {
 		Port string `json:"port"`
-	} `json:"UserService"`
+	} `json:"user_service"`
+
 }
 
 var config Config

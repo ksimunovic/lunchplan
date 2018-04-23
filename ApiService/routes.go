@@ -42,4 +42,35 @@ var routes = Routes{
 		"/blog",
 		UserService("Blog"),
 	},
+	Route{
+		"Create",
+		"POST",
+		"/meal",
+		MealService("Create"),
+	},
+	Route{
+		"GetAllMeals",
+		"GET",
+		"/meal/all",
+		MealService("GetAllMeals"),
+	},
+	Route{
+		"Read",
+		"GET",
+		"/meal/{id}",
+		MealService("Read"),
+	},
+	Route{
+		"Update",
+		"POST",
+		"/meal/{id}",
+		MealService("Update"),
+	},
+	Route{
+		"Delete",
+		"DELETE",
+		"/meal/{id}",
+		MealService("Delete"),
+	},
+
 }

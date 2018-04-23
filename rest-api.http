@@ -1,8 +1,6 @@
 GET http://localhost:50000/
 
-<> 2018-04-04T092752.200.json
-
-### Registracija
+### Registracija prvog usera
 POST http://localhost/api/register
 Content-Type: application/json
 
@@ -13,10 +11,19 @@ Content-Type: application/json
   "lastname": "Šimunović"
 }
 
-<> 2018-04-04T093631.200.json
-<> 2018-04-04T093624.200.txt
 
-### Login
+### Registracija drugog usera
+POST http://localhost/api/register
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra",
+  "firstname": "Pero",
+  "lastname": "Slav"
+}
+
+### Login Karlo
 POST http://localhost/api/login
 Content-Type: application/json
 
@@ -26,13 +33,21 @@ Content-Type: application/json
 }
 > {% client.global.set("auth_token", response.body.sid); %}
 
-### Dohvaćanje accounta s JWT tokenom
+### Login Peroslav
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+> {% client.global.set("auth_token", response.body.sid); %}
+
+### Dohvaćanje info o  accountu s JWT tokenom
 GET http://localhost/api/account
 Authorization: Bearer {{auth_token}}
 
-<> 2018-04-04T093743.200.json
-
-### Dohvaćanje blogova s JWT tokenom
+### Unos blog posta
 POST http://localhost/api/blog
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
@@ -42,13 +57,51 @@ Authorization: Bearer {{auth_token}}
     "content":"Nekakav dugački tekst"
 }
 
-<> 2018-04-04T093859.200.json
-
-
-### Dohvaćanje blogova s JWT tokenom
+### Dohvaćanje svih blog postova korisnika
 GET http://localhost/api/blogs
 Authorization: Bearer {{auth_token}}
 
-<> 2018-04-04T093904.200.json
-<> 2018-04-04T093722.200.json
+### --------MEAL SERVICE
+
+
+### Create - Unos meal-a
+POST http://localhost/api/meal
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+    "title":"Naslov",
+    "description":"Nekakav dugački tekst"
+}
+
+
+### GetAllMeals - Dohvaćanje svih meal-ova ulogiranog korisnika
+GET http://localhost/api/meal/all
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+> {% client.global.set("meal1", response.body[0].id); %}
+
+
+### Read - Dohvaćanje meal-a prema id-u
+GET http://localhost/api/meal/{{meal1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+### Update - Ažuriranje meal-a
+POST http://localhost/api/meal/{{meal1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+
+### Delete - Brisanje meal-a
+DELETE http://localhost/api/meal/{{meal1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
 ###

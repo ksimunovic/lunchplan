@@ -2887,3 +2887,1680 @@ Referer: http://www.forum.hr/showthread.php?t=602536
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
 
 {"tags":[{"sizes":[{"width":1,"height":1}],"primary_size":{"width":1,"height":1},"uuid":"a4199307-87ba-4d12-ab5c-4a09c8fff5f3","id":9528113,"allow_smaller_sizes":false,"ad_types":["video","banner"]}],"uuid":"49457b96-31f1-45aa-a714-31022ecd0785","member_id":2662,"sdk":{"source":"ast","version":"0.14.0"}}
+2018/04/20 19:38:55 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:39:30 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:39:44 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:40:46 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:41:06 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:41:53 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:42:03 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:43:24 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:43:57 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:53:02 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:53:02 apigateway.go:139: POST /login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Content-Length: 65
+Content-Type: application/json
+Sid: 
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+X-Forwarded-For: 127.0.0.1
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:54:38 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:54:38 apigateway.go:139: POST /login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Content-Length: 65
+Content-Type: application/json
+Sid: 
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+X-Forwarded-For: 127.0.0.1
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:54:49 apigateway.go:139: POST /api/register HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 118
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra",
+  "firstname": "Karlo",
+  "lastname": "Šimunović"
+}
+2018/04/20 19:54:49 apigateway.go:139: POST /register HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Content-Length: 118
+Content-Type: application/json
+Sid: 
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+X-Forwarded-For: 127.0.0.1
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra",
+  "firstname": "Karlo",
+  "lastname": "Šimunović"
+}
+2018/04/20 19:55:31 apigateway.go:139: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/20 19:55:37 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 19:55:40 apigateway.go:139: POST /api/blog HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/20 19:56:00 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 19:56:38 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:02:50 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:04:39 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:04:42 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:05:32 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:19:18 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:20:16 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:21:14 apigateway.go:139: POST /api/blog HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/20 20:22:46 apigateway.go:139: POST /api/blog HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/20 20:22:54 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:27:43 apigateway.go:139: POST /api/blog HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/20 20:28:08 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:32:28 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:33:33 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:34:23 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:34:40 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:38:44 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:38:53 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:38:57 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:39:54 apigateway.go:139: GET /api/blogs HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:39:59 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:45:40 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/20 20:46:28 apigateway.go:139: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ada29933cd050268881a408
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 18:19:22 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 18:19:26 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer {{auth_token}}
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:20:21 apigateway.go:140: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb60a3cd05026305f1fd6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 18:21:01 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 18:21:10 apigateway.go:140: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 18:21:47 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:36:48 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:38:32 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:40:27 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:41:24 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:42:21 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:43:48 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:44:11 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:45:53 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:49:55 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:55:22 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 18:58:12 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Length: 64
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "content":"Nekakav dugački tekst"
+}
+2018/04/22 19:02:57 apigateway.go:140: GET /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:03:06 apigateway.go:140: GET /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:03:53 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:04:42 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:04:49 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:05:07 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:05:48 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:08:25 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:10:02 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:10:02 apigateway.go:140: GET /meal/all/ HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:10:24 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcb66d3cd05011d89b299f
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:20:55 apigateway.go:140: POST /api/register HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 117
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra",
+  "firstname": "Pero",
+  "lastname": "Slav"
+}
+2018/04/22 19:21:17 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 72
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 19:21:21 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc48d3cd05011d89b29a1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:22:10 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc48d3cd05011d89b29a1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:24:09 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc48d3cd05011d89b29a1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:24:43 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 19:24:47 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc55b3cd05011d89b29a2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:29:02 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc55b3cd05011d89b29a2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:29:11 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc55b3cd05011d89b29a2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:30:03 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc55b3cd05011d89b29a2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:31:31 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc55b3cd05011d89b29a2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 19:31:52 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc55b3cd05011d89b29a2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:54:27 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcc55b3cd05011d89b29a2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:54:33 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 20:54:36 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcda693cd05011d89b29a3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:55:07 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer undefined
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:55:38 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer undefined
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:56:39 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 72
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 20:56:53 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 72
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 20:56:55 apigateway.go:140: GET /api/account HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdaf53cd050284811e0c0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:57:03 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdaf53cd050284811e0c0
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:57:15 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 20:57:20 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:57:25 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:57:50 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:58:47 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 20:59:53 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:02:14 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:06:55 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:07:28 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:11:32 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:11:32 reverseproxy.go:321: http: proxy error: EOF
+2018/04/22 21:12:34 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:16:24 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:16:53 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:17:37 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:29:54 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:30:30 reverseproxy.go:321: http: proxy error: EOF
+2018/04/22 21:39:04 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:40:07 reverseproxy.go:321: http: proxy error: EOF
+2018/04/22 21:42:41 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:42:56 reverseproxy.go:321: http: proxy error: EOF
+2018/04/22 21:43:16 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:44:44 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:50:17 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:52:12 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:54:36 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adcdb0c3cd050284811e0c1
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:54:50 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 72
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/22 21:54:53 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adce88a3cd050284811e0c2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:55:32 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adce88a3cd050284811e0c2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/22 21:57:34 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adce88a3cd050284811e0c2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:12:44 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5adce88a3cd050284811e0c2
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:13:04 apigateway.go:140: POST /api/login HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Connection: Keep-Alive
+Content-Length: 65
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+2018/04/23 20:13:08 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:35:28 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:36:11 apigateway.go:140: POST /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 70
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov222",
+    "content":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:36:21 apigateway.go:140: POST /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 70
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov222",
+    "content":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:36:33 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:36:56 apigateway.go:140: POST /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 68
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"WHAaat?",
+    "content":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:37:01 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:38:21 apigateway.go:140: POST /api/meal HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 68
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"Naslov",
+    "description":"Nekakav dugački tekst"
+}
+2018/04/23 20:38:24 apigateway.go:140: GET /api/meal/5adcbf25239c97ba4400d321 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:38:29 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:38:32 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:38:34 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 68
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"WHAaat?",
+    "content":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:38:37 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:38:54 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 72
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:38:56 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:42:56 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:43:11 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:43:22 apigateway.go:140: POST /api/meal/ HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:43:38 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc1 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:47:06 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:47:18 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:47:25 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:47:41 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 20:47:59 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:48:50 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:48:57 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc1 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:50:31 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc1 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:51:05 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc1 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:52:55 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc1 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:53:49 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc1 HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:54:03 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:54:55 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 20:55:17 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 21:10:43 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 21:10:48 apigateway.go:140: POST /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Length: 107
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+{
+"id": "5ade281d239c97ba4400e6cc2",
+    "title":"WHAaat?",
+    "description":"Izmjenjeni content meal-a"
+}
+2018/04/23 21:10:52 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 21:10:55 apigateway.go:140: DELETE /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 21:11:35 apigateway.go:140: DELETE /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 21:11:40 apigateway.go:140: GET /api/meal/5ade281d239c97ba4400e6cc HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+
+2018/04/23 21:11:46 apigateway.go:140: GET /api/meal/all HTTP/1.1
+Host: localhost
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 5ade22303cd050284811e0c3
+Connection: Keep-Alive
+Content-Type: application/json
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+
+

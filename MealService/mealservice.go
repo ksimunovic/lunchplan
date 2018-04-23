@@ -11,39 +11,42 @@ import (
 	"os"
 	"time"
 
-	"github.com/couchbase/gocb"
-	"github.com/satori/go.uuid"
-	"golang.org/x/crypto/bcrypt"
+	"gopkg.in/mgo.v2/bson"
+	"gopkg.in/mgo.v2"
+	"errors"
 )
 
 type Account struct {
-	Type     string `json:"type,omitempty"`
-	Pid      string `json:"pid,omitempty"`
-	Email    string `json:"email,omitempty"`
-	Password string `json:"password,omitempty"`
+	Profile  Profile `json:"profile,omitempty"`
+	Email    string  `json:"email,omitempty"`
+	Password string  `json:"password,omitempty"`
 }
 type Profile struct {
-	Type      string `json:"type,omitempty"`
-	Firstname string `json:"firstname,omitempty"`
-	Lastname  string `json:"lastname,omitempty"`
+	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Firstname string        `json:"firstname,omitempty"`
+	Lastname  string        `json:"lastname,omitempty"`
+	ServedBy  string        `json:"served_by,omitempty"`
 }
 type Session struct {
-	Type string `json:"type,omitempty"`
-	Pid  string `json:"pid,omitempty"`
+	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Profile   Profile       `json:"profile,omitempty"`
+	CreatedAt time.Time     `json:"created_at,omitempty" bson:"createdAt"`
 }
 type Blog struct {
-	Type      string `json:"type,omitempty"`
-	Pid       string `json:"pid,omitempty"`
-	Title     string `json:"title,omitempty"`
-	Content   string `json:"content,omitempty"`
-	Timestamp int    `json:"timestamp,omitempty"`
+	Type      string  `json:"type,omitempty"`
+	Profile   Profile `json:"profile,omitempty"`
+	Title     string  `json:"title,omitempty"`
+	Content   string  `json:"content,omitempty"`
+	Timestamp int     `json:"timestamp,omitempty"`
 }
+
 type Meal struct {
-	Type        string `json:"type,omitempty"`
-	Pid         string `json:"pid,omitempty"`
-	Title       string `json:"title,omitempty"`
-	Description string `json:"content,omitempty"`
-	Timestamp   int    `json:"timestamp,omitempty"`
+	Id          bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Title       string        `json:"title,omitempty"`
+	Description string        `json:"description,omitempty"`
+	Profile     Profile       `json:"profile,omitempty"`
+	Timestamp   int           `json:"timestamp,omitempty"`
+	ServedBy    string        `json:"served_by,omitempty"`
 }
 
 type Config struct {
@@ -54,7 +57,10 @@ type Config struct {
 	} `json:"database"`
 	UserService struct {
 		Port string `json:"port"`
-	} `json:"UserService"`
+	} `json:"user_service"`
+	MealService struct {
+		Port string `json:"port"`
+	} `json:"meal_service"`
 }
 
 var config Config
@@ -92,152 +98,234 @@ func (s *Server) Negate(i int64, reply *int64) error {
 	return nil
 }
 
-func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error {
-	var account Account
-	_, err := bucket.Get(data["email"].(string), &account)
+func GetIP() string {
+	name, err := os.Hostname()
 	if err != nil {
-		return err
+		panic(err)
 	}
-	err = bcrypt.CompareHashAndPassword([]byte(account.Password), []byte(data["password"].(string)))
+	addrs, err := net.InterfaceAddrs()
 	if err != nil {
-		return err
+		return "error"
 	}
-	session := Session{
-		Type: "session",
-		Pid:  account.Pid,
-	}
-	var result map[string]interface{}
-	result = make(map[string]interface{})
+	var realIp string
 
-	temp1, _ := uuid.NewV4()
-	result["pid"] = temp1.String()
-	_, err = bucket.Insert(result["pid"].(string), &session, 3600)
-	if err != nil {
-		return err
+	for _, address := range addrs {
+		if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
+				realIp = ipnet.IP.String()
+			}
+		}
+	}
+	if realIp != "" {
+		return name + " " + realIp
 	}
 
-	*jsonResponse, _ = json.Marshal(result)
-	return nil
+	return name + " unkownIP"
 }
 
 func (s *Server) Create(data map[string]interface{}, jsonResponse *[]byte) error {
 
-	temp1, _ := uuid.NewV4()
-	id := temp1.String()
-	passwordHash, _ := bcrypt.GenerateFromPassword([]byte(data["password"].(string)), 10)
-	account := Account{
-		Type:     "account",
-		Pid:      id,
-		Email:    data["email"].(string),
-		Password: string(passwordHash),
+	rpcData := map[string]interface{}{
+		"sid": data["sid"].(string),
 	}
-	profile := Profile{
-		Type:      "profile",
-		Firstname: data["firstname"].(string),
-		Lastname:  data["lastname"].(string),
-	}
-
-	_, err := bucket.Insert(id, profile, 0)
-	if err != nil {
-		return err
-	}
-	_, err = bucket.Insert(data["email"].(string), account, 0)
-	if err != nil {
-		return err
-	}
-
-	*jsonResponse, _ = json.Marshal(account)
-	return nil
-}
-
-func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) error {
-	pid := data["pid"].(string)
 	var profile Profile
-	_, err := bucket.Get(pid, &profile)
+	rpcResult := UserService("GetAccount", rpcData)
+	temp0, _ := json.Marshal(rpcResult)
+	_ = json.Unmarshal(temp0, &profile)
+
+	meal := Meal{
+		Title:       "Saft i tijesto",
+		Description: "Svinjsko mljeveno meso i tjestenina",
+		Profile:     profile,
+		Timestamp:   int(time.Now().Unix()),
+		ServedBy:    GetIP(),
+	}
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	c := sessionCopy.DB("MealService").C("meal")
+	if err := c.Insert(meal); err != nil {
+		panic(err)
+	}
+
+	*jsonResponse, _ = json.Marshal(meal)
+	return nil
+}
+
+func (s *Server) Read(data map[string]interface{}, jsonResponse *[]byte) error {
+
+	rpcData := map[string]interface{}{
+		"sid": data["sid"].(string),
+	}
+	var profile Profile
+	rpcResult := UserService("GetAccount", rpcData)
+	temp0, _ := json.Marshal(rpcResult)
+	_ = json.Unmarshal(temp0, &profile)
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	c := sessionCopy.DB("MealService").C("meal")
+	var result Meal
+	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}).One(&result); err != nil {
+		return errors.New("Meal with id: " + data["get_id"].(string) + " from user: " + profile.Id.String() + " doesn't exist")
+	} else {
+		*jsonResponse, _ = json.Marshal(result)
+	}
+
+	return nil
+}
+
+func (s *Server) Update(data map[string]interface{}, jsonResponse *[]byte) error {
+
+	rpcData := map[string]interface{}{
+		"sid": data["sid"].(string),
+	}
+	var profile Profile
+	rpcResult := UserService("GetAccount", rpcData)
+	temp0, _ := json.Marshal(rpcResult)
+	_ = json.Unmarshal(temp0, &profile)
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	if len(data["get_id"].(string)) != 12 && len(data["get_id"].(string)) != 24 {
+		return errors.New("Invalid meal id in GET parameter")
+	}
+
+	c := sessionCopy.DB("MealService").C("meal")
+	var result Meal
+	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}).One(&result); err != nil {
+		return errors.New("Meal with id: " + data["get_id"].(string) + " from user: " + profile.Id.String() + " doesn't exist")
+	} else {
+		*jsonResponse, _ = json.Marshal(make(map[string]interface{}))
+	}
+
+	if len(data) < 1{
+		return errors.New("Empty data to update")
+	} else if _, ok := data["get_id"]; !ok {
+		return errors.New("Can't update without meal id")
+	}
+
+	data["id"] = data["get_id"]
+
+	finalbody, err := json.Marshal(data)
+	if err != nil {
+		return err
+	}
+	var finalbodymap map[string]interface{}
+	if err = json.Unmarshal(finalbody, &finalbodymap); err != nil{
+		return err
+	}
+
+	change := bson.M{"$set": finalbodymap}
+	err = c.Update(result, change)
 	if err != nil {
 		return err
 	}
 
-	//TODO: Add served by for load balancing testing
-
-	*jsonResponse, _ = json.Marshal(profile)
 	return nil
 }
 
-func (s *Server) Blog(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Delete(data map[string]interface{}, jsonResponse *[]byte) error {
 
-	temp0, _ := json.Marshal(data)
+	rpcData := map[string]interface{}{
+		"sid": data["sid"].(string),
+	}
+	var profile Profile
+	rpcResult := UserService("GetAccount", rpcData)
+	temp0, _ := json.Marshal(rpcResult)
+	_ = json.Unmarshal(temp0, &profile)
 
-	var blog Blog
-	_ = json.Unmarshal(temp0, &blog)
-	blog.Type = "blog"
+	if len(data["get_id"].(string)) != 12 && len(data["get_id"].(string)) != 24 {
+		return errors.New("Invalid meal id in GET parameter")
+	}
 
-	blog.Timestamp = int(time.Now().Unix())
-	temp1, _ := uuid.NewV4()
-	_, err := bucket.Insert(temp1.String(), blog, 0)
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	c := sessionCopy.DB("MealService").C("meal")
+	if err := c.Remove(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}); err != nil {
+		return errors.New("Unable to remove meal with id: " + data["get_id"].(string) + " from user: " + profile.Id.String())
+	} else {
+		*jsonResponse, _ = json.Marshal(make(map[string]interface{}))
+	}
+
+	return nil
+}
+
+func (s *Server) GetAllMeals(data map[string]interface{}, jsonResponse *[]byte) error {
+
+	rpcData := map[string]interface{}{
+		"sid": data["sid"].(string),
+	}
+	var profile Profile
+	rpcResult := UserService("GetAccount", rpcData)
+	temp0, _ := json.Marshal(rpcResult)
+	_ = json.Unmarshal(temp0, &profile)
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	c := sessionCopy.DB("MealService").C("meal")
+	var results []Meal
+	if err := c.Find(bson.M{"profile._id": bson.ObjectIdHex(profile.Id.Hex())}).All(&results); err != nil {
+		panic(err)
+	}
+
+	if len(results) == 0 {
+		results = []Meal{}
+	}
+
+	*jsonResponse, _ = json.Marshal(results)
+	return nil
+}
+
+func UserService(method string, data map[string]interface{}) map[string]interface{} {
+
+	c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)
 	if err != nil {
-		return err
+		return nil
 	}
 
-	*jsonResponse, _ = json.Marshal(blog)
-	return nil
-}
-
-func (s *Server) Blogs(data map[string]interface{}, jsonResponse *[]byte) error {
-	pid := data["pid"].(string)
-
-	var n1qlParams []interface{}
-	n1qlParams = append(n1qlParams, pid)
-	query := gocb.NewN1qlQuery("SELECT `" + bucket.Name() + "`.* FROM `" + bucket.Name() + "` WHERE type = 'blog' AND pid = $1")
-	query.Consistency(gocb.RequestPlus)
-	rows, err := bucket.ExecuteN1qlQuery(query, n1qlParams)
+	var rpcData []byte
+	var result map[string]interface{}
+	err = c.Call("Server."+method, data, &rpcData)
 	if err != nil {
-		return err
+		return nil
+	} else {
+		_ = json.Unmarshal(rpcData, &result)
+		return result
 	}
-
-	var row map[string]interface{}
-	var result []map[string]interface{}
-	for rows.Next(&row) {
-		result = append(result, row)
-		row = make(map[string]interface{})
-	}
-	rows.Close()
-
-	if result == nil {
-		result = make([]map[string]interface{}, 0)
-	}
-
-	*jsonResponse, _ = json.Marshal(result)
-	return nil
 }
 
-func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) error {
-
-	bearerToken := data["bearerToken"].(string)
-
-	var session Session
-	_, err := bucket.Get(bearerToken, &session)
-	if err != nil {
-		return err
-	}
-	bucket.Touch(bearerToken, 0, 3600)
-
-	*jsonResponse, _ = json.Marshal(session)
-	return nil
-}
-
-var bucket *gocb.Bucket
+var dbSession *mgo.Session
 
 func main() {
-	cluster, _ := gocb.Connect(LoadConfiguration().Database.Host)
-	cluster.Authenticate(gocb.PasswordAuthenticator{
-		Username: LoadConfiguration().Database.Username,
-		Password: LoadConfiguration().Database.Password,
-	})
-	bucket, _ = cluster.OpenBucket("MealService", "")
+
+	mongoDBDialInfo := &mgo.DialInfo{
+		Addrs:    []string{"localhost:27017"},
+		Timeout:  60 * time.Second,
+		Database: "MealService",
+		Username: "root",
+		Password: "root",
+	}
+
+	mongoSession, err := mgo.DialWithInfo(mongoDBDialInfo)
+	if err != nil {
+		log.Fatalf("CreateSession: %s\n", err)
+	}
+
+	defer mongoSession.Close()
+	mongoSession.SetMode(mgo.Monotonic, true)
+
+	dbSession = mongoSession.Copy()
+	defer mongoSession.Close()
+
 	rpc.Register(new(Server))
 	fmt.Println("Meal Service RPC server online!")
-	ln, err := net.Listen("tcp", ":"+LoadConfiguration().UserService.Port)
+	ln, err := net.Listen("tcp", ":"+LoadConfiguration().MealService.Port)
 	if err != nil {
 		fmt.Println(err)
 		return
