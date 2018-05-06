@@ -47,20 +47,6 @@ Content-Type: application/json
 GET http://localhost/api/account
 Authorization: Bearer {{auth_token}}
 
-### Unos blog posta
-POST http://localhost/api/blog
-Content-Type: application/json
-Authorization: Bearer {{auth_token}}
-
-{
-    "title":"Naslov",
-    "content":"Nekakav dugački tekst"
-}
-
-### Dohvaćanje svih blog postova korisnika
-GET http://localhost/api/blogs
-Authorization: Bearer {{auth_token}}
-
 ### --------MEAL SERVICE
 
 
@@ -73,14 +59,12 @@ Authorization: Bearer {{auth_token}}
     "title":"Naslov",
     "description":"Nekakav dugački tekst"
 }
+> {% client.global.set("meal1", response.body.id); %}
 
-
-### GetAllMeals - Dohvaćanje svih meal-ova ulogiranog korisnika
+### GetAllUserMeals - Dohvaćanje svih meal-ova ulogiranog korisnika
 GET http://localhost/api/meal/all
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
-
-> {% client.global.set("meal1", response.body[0].id); %}
 
 
 ### Read - Dohvaćanje meal-a prema id-u
@@ -95,7 +79,7 @@ Authorization: Bearer {{auth_token}}
 
 {
 "id": "5ade281d239c97ba4400e6cc2",
-    "title":"WHAaat?",
+    "title":"WHAaat?2",
     "description":"Izmjenjeni content meal-a"
 }
 
@@ -103,5 +87,88 @@ Authorization: Bearer {{auth_token}}
 DELETE http://localhost/api/meal/{{meal1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
+
+###
+
+### Create - Unos tag-a
+POST http://localhost/api/tag
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+    "name":"naslov taga",
+    "meal_id":"5ae4a10c239c97ba44011744"
+}
+
+> {% client.global.set("tag1", response.body.id); %}
+
+### GetAllUSerTags - Dohvaćanje svih tag-ova ulogiranog korisnika
+GET http://localhost/api/tag/all
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+> {% client.global.set("tag1", response.body[0].id); %}
+
+### Read - Dohvaćanje tag-a prema id-u
+GET http://localhost/api/tag/{{tag1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+### Update - Ažuriranje tag-a
+POST http://localhost/api/tag/{{tag1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+    "name":"AžuriranoIme2"
+}
+
+### Delete - Brisanje meal-a
+DELETE http://localhost/api/tag/{{tag1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+###
+
+### Create - Unos calendara-a
+POST http://localhost/api/calendar
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+    "date":"2018-04-28",
+    "meal_id":"5ae4b3323cd05032c8153057"
+}
+
+> {% client.global.set("calendar1", response.body.id); %}
+
+### GetAllUserCalendars - Dohvaćanje svih calendar-a ulogiranog korisnika
+GET http://localhost/api/calendar/all
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+> {% client.global.set("calendar1", response.body[0].id); %}
+
+### Read - Dohvaćanje calendar-a prema id-u
+GET http://localhost/api/calendar/{{calendar1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+
+### Update - Ažuriranje calendar-a
+POST http://localhost/api/calendar/{{calendar1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+    "date":"2018-05-25"
+}
+
+
+### Delete - Brisanje calendar-a
+DELETE http://localhost/api/calendar/{{calendar1}}
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
 
 ###

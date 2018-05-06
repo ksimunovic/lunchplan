@@ -197,49 +197,6 @@ func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) e
 	return nil
 }
 
-func (s *Server) Blog(data map[string]interface{}, jsonResponse *[]byte) error {
-	sessionId := data["sid"].(string)
-	sessionCopy := dbSession.Copy()
-	defer sessionCopy.Close()
-	c := sessionCopy.DB("UserService").C("session")
-
-	var session Session
-	_ = c.Find(bson.M{"_id": bson.ObjectIdHex(sessionId)}).One(&session)
-
-	temp0, _ := json.Marshal(data)
-
-	var blog Blog
-	_ = json.Unmarshal(temp0, &blog)
-	blog.Type = "blog"
-	blog.Profile = session.Profile
-	blog.Timestamp = int(time.Now().Unix())
-
-	c = sessionCopy.DB("UserService").C("blog")
-	if err := c.Insert(blog); err != nil {
-		panic(err)
-	}
-
-	*jsonResponse, _ = json.Marshal(blog)
-	return nil
-}
-
-func (s *Server) Blogs(data map[string]interface{}, jsonResponse *[]byte) error {
-	sessionId := data["sid"].(string)
-	sessionCopy := dbSession.Copy()
-	defer sessionCopy.Close()
-	c := sessionCopy.DB("UserService").C("session")
-
-	var session Session
-	_ = c.Find(bson.M{"_id": bson.ObjectIdHex(sessionId)}).One(&session)
-
-	c = sessionCopy.DB("UserService").C("blog")
-	var results []Blog
-	_ = c.Find(bson.M{"profile._id": bson.ObjectIdHex(session.Profile.Id.Hex())}).All(&results)
-
-	*jsonResponse, _ = json.Marshal(results)
-	return nil
-}
-
 func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) error {
 
 	bearerToken := data["bearerToken"].(string)

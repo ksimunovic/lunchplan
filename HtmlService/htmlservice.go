@@ -65,6 +65,12 @@ func LoadConfiguration() Config {
 	}
 }
 
+func HandlerWrap(h http.Handler) http.HandlerFunc {
+	return func(w http.ResponseWriter, req *http.Request) {
+		h.ServeHTTP(w, req)
+	}
+}
+
 func ServiceCall(method string, servicePort string) http.HandlerFunc {
 	return func(w http.ResponseWriter, req *http.Request) {
 
@@ -80,7 +86,7 @@ func ServiceCall(method string, servicePort string) http.HandlerFunc {
 
 		getVars := mux.Vars(req)
 		for k, v := range getVars {
-			data["get_" + k] = v
+			data["get_"+k] = v
 		}
 
 		c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
@@ -102,6 +108,8 @@ func ServiceCall(method string, servicePort string) http.HandlerFunc {
 
 func main() {
 	router := mux.NewRouter().StrictSlash(true)
+	router.PathPrefix("/static/").Handler(HandlerWrap(http.StripPrefix("/static/", http.FileServer(http.Dir("HtmlService/static")))))
+
 	for _, route := range routes {
 		router.Methods(route.Method).
 			Path(route.Pattern).
@@ -109,6 +117,8 @@ func main() {
 			Handler(route.HandlerFunc)
 	}
 
-	fmt.Println("API Service is up and running...")
-	log.Fatal(http.ListenAndServe(":"+LoadConfiguration().ApiService.Port, handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
+	//http.Handle("/static/", http.FileServer(http.Dir("HtmlService/public/")))
+
+	fmt.Println("HTML Service is up and running...")
+	log.Fatal(http.ListenAndServeTLS(":"+LoadConfiguration().HtmlService.Port , "certs/localhost.crt", "certs/localhost.key" , handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
 }

@@ -1,0 +1,14 @@
+{{define "content"}}
+<div class="container">
+
+    <form class="form-signin" action="/login" method="POST">
+        <h1 class="form-signin-heading text-muted">Login</h1>
+        <input type="text" class="form-control" placeholder="{{.vars.User}}" required="" autofocus="">
+        <input type="password" class="form-control" placeholder="Password" required="">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+            Login
+        </button>
+    </form>
+
+</div>
+{{end}}
