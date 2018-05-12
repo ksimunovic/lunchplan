@@ -1,14 +1,15 @@
 {{define "content"}}
-<div class="container">
-
+<div class="container" style="height: 645px;">
     <form class="form-signin" action="/login" method="POST">
-        <h1 class="form-signin-heading text-muted">Login</h1>
-        <input type="text" class="form-control" placeholder="{{.vars.User}}" required="" autofocus="">
-        <input type="password" class="form-control" placeholder="Password" required="">
+    {{$prev_year:= translate "user_login"}}
+        <h1 class="form-signin-heading text-muted">{{translate "user_login"}}</h1>
+        <input name="email" type="text" class="form-control" placeholder="{{translate "user_username"}}" required=""
+               autofocus="">
+        <input name="password" type="password" class="form-control" placeholder="{{translate "user_password"}}"
+               required="">
         <button class="btn btn-lg btn-primary btn-block" type="submit">
-            Login
+        {{translate "user_login"}}
         </button>
     </form>
-
 </div>
 {{end}}

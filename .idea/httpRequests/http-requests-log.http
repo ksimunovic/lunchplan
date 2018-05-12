@@ -1,3 +1,177 @@
+POST https://localhost/api/meal
+Content-Type: application/json
+Authorization: Bearer 5af4867a3cd0502b14010366
+
+{
+    "title":"Naslov",
+    "description":"Nekakav dugački tekst"
+}
+
+<> 2018-05-10T075058.200.json
+
+###
+
+POST https://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-05-10T075050.200.json
+
+###
+
+POST https://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost/api/meal
+Content-Type: application/json
+Authorization: Bearer undefined
+
+{
+    "title":"Naslov",
+    "description":"Nekakav dugački tekst"
+}
+
+<> 2018-05-10T074857.200.txt
+
+###
+
+POST https://localhost/api/tag
+Content-Type: application/json
+Authorization: Bearer undefined
+
+{
+    "name":"naslov taga",
+    "meal_id":"5ae4a10c239c97ba44011744"
+}
+
+<> 2018-05-10T073951.200.txt
+
+###
+
+POST https://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+GET https://localhost/api/account
+Authorization: Bearer 5af097a83cd0501820f0127c
+
+<> 2018-05-07T081553.200.json
+
+###
+
+GET https://localhost/api/account
+Authorization: Bearer 5af097a83cd0501820f0127c
+
+<> 2018-05-07T081548.200.json
+
+###
+
+GET https://localhost/api/account
+Authorization: Bearer 5af097a83cd0501820f0127c
+
+<> 2018-05-07T081530.200.json
+
+###
+
+POST https://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-05-07T081504.200.json
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST http://localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
 POST http://localhost/api/login
 Content-Type: application/json
 
@@ -270,180 +444,6 @@ Content-Type: application/json
 Authorization: Bearer 5aeda75a3cd0502108044abe
 
 <> 2018-05-05T024552.200.json
-
-###
-
-POST http://localhost/api/calendar/5ae5e05f3cd0501264f6d37f
-Content-Type: application/json
-Authorization: Bearer 5aeda75a3cd0502108044abe
-
-{
-    "date":"2018-05-25"
-}
-
-<> 2018-05-05T024548.200.json
-
-###
-
-GET http://localhost/api/calendar/all
-Content-Type: application/json
-Authorization: Bearer 5aeda75a3cd0502108044abe
-
-<> 2018-05-05T024539.200.json
-
-###
-
-POST http://localhost/api/calendar
-Content-Type: application/json
-Authorization: Bearer 5aeda75a3cd0502108044abe
-
-{
-    "date":"2018-04-28",
-    "meal_id":"5ae4b3323cd05032c8153057"
-}
-
-<> 2018-05-05T024534.200.json
-
-###
-
-GET http://localhost/api/meal/all
-Content-Type: application/json
-Authorization: Bearer 5aeda75a3cd0502108044abe
-
-<> 2018-05-05T024522.200.json
-
-###
-
-POST http://localhost/api/login
-Content-Type: application/json
-
-{
-  "email": "peroslav@gmail.com",
-  "password": "dugackaSigurnaSifra"
-}
-
-<> 2018-05-05T024514.200.json
-
-###
-
-POST http://localhost/api/calendar
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-{
-    "date":"2018-04-28",
-    "meal_id":"5ae218ef239c97ba4400fd95"
-}
-
-<> 2018-05-05T122526.200.txt
-
-###
-
-DELETE http://localhost/api/tag/5ae5dfa83cd050212ca5c89e
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-<> 2018-05-05T122523.200.json
-
-###
-
-POST http://localhost/api/tag/5ae5dfa83cd050212ca5c89e
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-{
-    "name":"AžuriranoIme2"
-}
-
-<> 2018-05-05T122520.200.json
-
-###
-
-GET http://localhost/api/tag/5ae5dfa83cd050212ca5c89e
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-<> 2018-05-05T122518.200.json
-
-###
-
-GET http://localhost/api/tag/all
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-<> 2018-05-05T122514.200.json
-
-###
-
-POST http://localhost/api/tag
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-{
-    "name":"naslov taga",
-    "meal_id":"5ae4a10c239c97ba44011744"
-}
-
-<> 2018-05-05T122510.200.json
-
-###
-
-DELETE http://localhost/api/meal/5aed866e3cd0502eb446e049
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-<> 2018-05-05T122506.200.txt
-
-###
-
-DELETE http://localhost/api/meal/5aed866e3cd0502eb446e049
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-<> 2018-05-05T122502.200.json
-
-###
-
-POST http://localhost/api/meal/5aed866e3cd0502eb446e049
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-{
-"id": "5ade281d239c97ba4400e6cc2",
-    "title":"WHAaat?2",
-    "description":"Izmjenjeni content meal-a"
-}
-
-<> 2018-05-05T122459.200.json
-
-###
-
-GET http://localhost/api/meal/5aed866e3cd0502eb446e049
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-<> 2018-05-05T122453.200.json
-
-###
-
-GET http://localhost/api/meal/all
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-<> 2018-05-05T122449.200.json
-
-###
-
-POST http://localhost/api/meal
-Content-Type: application/json
-Authorization: Bearer 5aed86613cd0502108044abd
-
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst"
-}
-
-<> 2018-05-05T122446.200.json
 
 ###
 

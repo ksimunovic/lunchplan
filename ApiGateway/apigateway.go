@@ -14,6 +14,7 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"net/rpc"
+	"time"
 )
 
 type Session struct {
@@ -39,7 +40,6 @@ type Config struct {
 	UserService struct {
 		Port string `json:"port"`
 	} `json:"user_service"`
-
 }
 
 var config Config
@@ -108,48 +108,81 @@ func ValidateApi(next http.HandlerFunc) http.HandlerFunc {
 	})
 }
 
-
 func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
-		next(w, req)
+//		next(w, req)
 		//TODO: Implementacija za cookie based auth
-		//w.Write([]byte("aaaaaaaa"))
-		/*
-		authorizationHeader := req.Header.Get("authorization")
-		if authorizationHeader != "" {
-			bearerToken := strings.Split(authorizationHeader, " ")
-			if len(bearerToken) == 2 {
 
-				data := map[string]interface{}{
-					"bearerToken": bearerToken[1],
+		cookie, _ := req.Cookie("sid")
+		if cookie != nil && cookie.Value != "" {
+
+			if req.RequestURI == "/logout" {
+				c := &http.Cookie{
+					Name:     "sid",
+					Value:    "",
+					Path:     "/",
+					Expires: time.Unix(0, 0),
+
+					HttpOnly: true,
 				}
 
-				c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)
-				if err != nil {
-					fmt.Println(err)
-					return
+				http.SetCookie(w, c)
+				http.Redirect(w, req, "/login", http.StatusSeeOther)
+			}
+
+			data := map[string]interface{}{
+				"bearerToken": cookie.Value,
+			}
+
+			c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)
+			if err != nil {
+				fmt.Println(err)
+				return
+			}
+
+			var result []byte
+			var profile map[string]interface{}
+			err = c.Call("Server.Validate", data, &result)
+			if err != nil {
+				c := &http.Cookie{
+					Name:     "sid",
+					Value:    "",
+					Path:     "/",
+					Expires: time.Unix(0, 0),
+
+					HttpOnly: true,
 				}
 
-				var result []byte
-				var profile map[string]interface{}
-				err = c.Call("Server.Validate", data, &result)
-				if err != nil {
-					profile = make(map[string]interface{})
-					profile["error"] = err.Error()
-					json, _ := json.Marshal(profile)
-					w.Write(json)
+				http.SetCookie(w, c)
+				http.Redirect(w, req, "/login", http.StatusSeeOther)
+			} else {
+
+				_ = json.Unmarshal(result, &profile)
+				req.Header.Set("sid", profile["id"].(string))
+
+				if req.RequestURI == "/login" {
+					http.Redirect(w, req, "/", http.StatusSeeOther)
 				} else {
-					_ = json.Unmarshal(result, &profile)
-					req.Header.Set("sid", profile["id"].(string))
 					next(w, req)
 				}
-
 			}
-			//TODO: Implementacija za cookie based auth
+
 		} else {
-			req.Header.Set("sid", "")
+			if req.RequestURI != "/login" && !strings.HasPrefix(req.RequestURI, "/static") {
+				c := &http.Cookie{
+					Name:     "sid",
+					Value:    "",
+					Path:     "/",
+					Expires: time.Unix(0, 0),
+
+					HttpOnly: true,
+				}
+
+				http.SetCookie(w, c)
+				http.Redirect(w, req, "/login", http.StatusSeeOther)
+			}
 			next(w, req)
-		}*/
+		}
 	})
 }
 
@@ -200,6 +233,7 @@ func logRequest(handler http.Handler) http.Handler {
 			log.Println(err)
 		}
 		log.Println(string(requestDump))
+		fmt.Println(string(requestDump))
 
 		handler.ServeHTTP(w, r)
 	})

@@ -1,7 +1,7 @@
-GET http://localhost:50000/
+GET https://localhost:50000/
 
 ### Registracija prvog usera
-POST http://localhost/api/register
+POST https://localhost/api/register
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 
 
 ### Registracija drugog usera
-POST http://localhost/api/register
+POST https://localhost/api/register
 Content-Type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-Type: application/json
 }
 
 ### Login Karlo
-POST http://localhost/api/login
+POST https://localhost/api/login
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 > {% client.global.set("auth_token", response.body.sid); %}
 
 ### Login Peroslav
-POST http://localhost/api/login
+POST https://localhost/api/login
 Content-Type: application/json
 
 {
@@ -44,14 +44,14 @@ Content-Type: application/json
 > {% client.global.set("auth_token", response.body.sid); %}
 
 ### Dohvaćanje info o  accountu s JWT tokenom
-GET http://localhost/api/account
+GET https://localhost/api/account
 Authorization: Bearer {{auth_token}}
 
 ### --------MEAL SERVICE
 
 
 ### Create - Unos meal-a
-POST http://localhost/api/meal
+POST https://localhost/api/meal
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
@@ -62,18 +62,18 @@ Authorization: Bearer {{auth_token}}
 > {% client.global.set("meal1", response.body.id); %}
 
 ### GetAllUserMeals - Dohvaćanje svih meal-ova ulogiranog korisnika
-GET http://localhost/api/meal/all
+GET https://localhost/api/meal/all
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 
 ### Read - Dohvaćanje meal-a prema id-u
-GET http://localhost/api/meal/{{meal1}}
+GET https://localhost/api/meal/{{meal1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 ### Update - Ažuriranje meal-a
-POST http://localhost/api/meal/{{meal1}}
+POST https://localhost/api/meal/{{meal1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
@@ -84,14 +84,14 @@ Authorization: Bearer {{auth_token}}
 }
 
 ### Delete - Brisanje meal-a
-DELETE http://localhost/api/meal/{{meal1}}
+DELETE https://localhost/api/meal/{{meal1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 ###
 
 ### Create - Unos tag-a
-POST http://localhost/api/tag
+POST https://localhost/api/tag
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
@@ -103,19 +103,19 @@ Authorization: Bearer {{auth_token}}
 > {% client.global.set("tag1", response.body.id); %}
 
 ### GetAllUSerTags - Dohvaćanje svih tag-ova ulogiranog korisnika
-GET http://localhost/api/tag/all
+GET https://localhost/api/tag/all
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 > {% client.global.set("tag1", response.body[0].id); %}
 
 ### Read - Dohvaćanje tag-a prema id-u
-GET http://localhost/api/tag/{{tag1}}
+GET https://localhost/api/tag/{{tag1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 ### Update - Ažuriranje tag-a
-POST http://localhost/api/tag/{{tag1}}
+POST https://localhost/api/tag/{{tag1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
@@ -124,14 +124,14 @@ Authorization: Bearer {{auth_token}}
 }
 
 ### Delete - Brisanje meal-a
-DELETE http://localhost/api/tag/{{tag1}}
+DELETE https://localhost/api/tag/{{tag1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 ###
 
 ### Create - Unos calendara-a
-POST http://localhost/api/calendar
+POST https://localhost/api/calendar
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
@@ -143,20 +143,20 @@ Authorization: Bearer {{auth_token}}
 > {% client.global.set("calendar1", response.body.id); %}
 
 ### GetAllUserCalendars - Dohvaćanje svih calendar-a ulogiranog korisnika
-GET http://localhost/api/calendar/all
+GET https://localhost/api/calendar/all
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 > {% client.global.set("calendar1", response.body[0].id); %}
 
 ### Read - Dohvaćanje calendar-a prema id-u
-GET http://localhost/api/calendar/{{calendar1}}
+GET https://localhost/api/calendar/{{calendar1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 
 ### Update - Ažuriranje calendar-a
-POST http://localhost/api/calendar/{{calendar1}}
+POST https://localhost/api/calendar/{{calendar1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
@@ -166,7 +166,7 @@ Authorization: Bearer {{auth_token}}
 
 
 ### Delete - Brisanje calendar-a
-DELETE http://localhost/api/calendar/{{calendar1}}
+DELETE https://localhost/api/calendar/{{calendar1}}
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 

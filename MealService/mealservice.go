@@ -30,16 +30,8 @@ type Profile struct {
 type Session struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Profile   Profile       `json:"profile,omitempty"`
-	CreatedAt time.Time     `json:"created_at,omitempty" bson:"createdAt"`
+	Created time.Time     `json:"created,omitempty" bson:"created"`
 }
-type Blog struct {
-	Type      string  `json:"type,omitempty"`
-	Profile   Profile `json:"profile,omitempty"`
-	Title     string  `json:"title,omitempty"`
-	Content   string  `json:"content,omitempty"`
-	Timestamp int     `json:"timestamp,omitempty"`
-}
-
 type Meal struct {
 	Id          bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Title       string        `json:"title,omitempty"`
@@ -135,8 +127,8 @@ func (s *Server) Create(data map[string]interface{}, jsonResponse *[]byte) error
 
 	meal := Meal{
 		Id:          bson.NewObjectId(),
-		Title:       "Saft i tijesto",
-		Description: "Svinjsko mljeveno meso i tjestenina",
+		Title:       data["title"].(string),
+		Description: data["description"].(string),
 		Profile:     profile,
 		Timestamp:   int(time.Now().Unix()),
 		ServedBy:    GetIP(),
@@ -188,12 +180,12 @@ func (s *Server) Update(data map[string]interface{}, jsonResponse *[]byte) error
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
-	sessionCopy := dbSession.Copy()
-	defer sessionCopy.Close()
-
 	if len(data["get_id"].(string)) != 12 && len(data["get_id"].(string)) != 24 {
 		return errors.New("Invalid meal id in GET parameter")
 	}
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
 
 	c := sessionCopy.DB("MealService").C("meal")
 	var result Meal
@@ -265,7 +257,6 @@ func (s *Server) GetAllUserMeals(data map[string]interface{}, jsonResponse *[]by
 	}
 	var profile Profile
 	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
-	//rpcResult := ("GetAccount", rpcData, LoadConfiguration().UserService.Port)
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 

@@ -21,12 +21,19 @@ var routes = Routes{
 		"Index",
 		"GET",
 		"/",
-		Controller.Meal.Index(),
+		Controller.MealController.Index(),
 	},
 	Route{
 		"Login",
 		"GET",
 		"/login",
-		Controller.User.Login(),
+		Controller.UserController.Login(),
+	},
+
+	Route{
+		"Login",
+		"POST",
+		"/login",
+		Controller.UserController.ProcessLogin(),
 	},
 }

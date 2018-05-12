@@ -10,10 +10,52 @@ import (
 	"regexp"
 	"bytes"
 	"fmt"
+	"net/rpc"
+	"encoding/json"
+	"io/ioutil"
+	"os"
+	"log"
 )
 
 type Controller struct {
 	ControllerName string
+}
+
+type Config struct {
+	UserService struct {
+		Port string `json:"port"`
+	} `json:"user_service"`
+	MealService struct {
+		Port string `json:"port"`
+	} `json:"meal_service"`
+}
+
+var config Config
+
+func LoadConfiguration() Config {
+
+	if (Config{}) != config {
+		return config
+	}
+
+	response, err := http.Get("http://localhost:50000/")
+	if err != nil {
+		fmt.Printf("%s", err)
+		return Config{}
+	} else {
+		defer response.Body.Close()
+		body, err := ioutil.ReadAll(response.Body)
+		if err != nil {
+			fmt.Printf("%s", err)
+			os.Exit(1)
+		}
+		config := Config{}
+		jsonErr := json.Unmarshal(body, &config)
+		if jsonErr != nil {
+			log.Fatal(jsonErr)
+		}
+		return config
+	}
 }
 
 func getTemplate(method string, controllerName string) *template.Template {
@@ -24,6 +66,7 @@ func getTemplate(method string, controllerName string) *template.Template {
 
 	funcMap := template.FuncMap{}
 	funcMap["dict"] = dict
+	funcMap["translate"] = translate
 	tmpl.Funcs(funcMap)
 
 	tmpl, _ = tmpl.ParseFiles(lp, fp)
@@ -62,4 +105,37 @@ func render(w http.ResponseWriter, r *http.Request, tpl *template.Template, name
 		return
 	}
 	w.Write(buf.Bytes())
+}
+
+func ServiceCallData(method string, data map[string]interface{}, servicePort string) []byte {
+
+	c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
+	if err != nil {
+		fmt.Println(err.Error())
+		return nil
+	}
+
+	var rpcData []byte
+
+	err = c.Call("Server."+method, data, &rpcData)
+
+	if err != nil {
+		fmt.Println(err.Error())
+		return nil
+	} else {
+		return rpcData
+	}
+}
+
+func translate(key string, args ...interface{}) string {
+	var locale = "en"
+	if v, ok := Locales[locale]; ok {
+		if v2, ok := v[key]; ok {
+			if len(args) > 0 {
+				return fmt.Sprintf(v2, args...)
+			}
+			return v2
+		}
+	}
+	return ""
 }

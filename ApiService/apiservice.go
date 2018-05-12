@@ -78,6 +78,13 @@ func ServiceCall(method string, servicePort string) http.HandlerFunc {
 			data["sid"] = req.Header.Get("sid")
 		}
 
+		if req.RequestURI != "/login" {
+			if len(data["sid"].(string)) != 12 && len(data["sid"].(string)) != 24 {
+				fmt.Println("Invalid sid in request")
+				return
+			}
+		}
+
 		getVars := mux.Vars(req)
 		for k, v := range getVars {
 			data["get_" + k] = v

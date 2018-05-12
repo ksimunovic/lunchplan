@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"net/rpc"
 	"os"
 
 	"github.com/gorilla/handlers"
@@ -71,41 +70,6 @@ func HandlerWrap(h http.Handler) http.HandlerFunc {
 	}
 }
 
-func ServiceCall(method string, servicePort string) http.HandlerFunc {
-	return func(w http.ResponseWriter, req *http.Request) {
-
-		var data map[string]interface{}
-		_ = json.NewDecoder(req.Body).Decode(&data)
-		if len(data) == 0 {
-			data = map[string]interface{}{
-				"sid": req.Header.Get("sid"),
-			}
-		} else {
-			data["sid"] = req.Header.Get("sid")
-		}
-
-		getVars := mux.Vars(req)
-		for k, v := range getVars {
-			data["get_"+k] = v
-		}
-
-		c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
-
-		var result []byte
-		err = c.Call("Server."+method, data, &result)
-		if err != nil {
-			w.Write([]byte(err.Error()))
-		} else {
-			w.Header().Set("Content-Type", "application/json; charset=utf-8")
-			w.Write(result)
-		}
-	}
-}
-
 func main() {
 	router := mux.NewRouter().StrictSlash(true)
 	router.PathPrefix("/static/").Handler(HandlerWrap(http.StripPrefix("/static/", http.FileServer(http.Dir("HtmlService/static")))))
@@ -116,8 +80,6 @@ func main() {
 			Name(route.Name).
 			Handler(route.HandlerFunc)
 	}
-
-	//http.Handle("/static/", http.FileServer(http.Dir("HtmlService/public/")))
 
 	fmt.Println("HTML Service is up and running...")
 	log.Fatal(http.ListenAndServeTLS(":"+LoadConfiguration().HtmlService.Port , "certs/localhost.crt", "certs/localhost.key" , handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))

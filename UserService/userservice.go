@@ -31,14 +31,7 @@ type Profile struct {
 type Session struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Profile   Profile       `json:"profile,omitempty"`
-	CreatedAt time.Time     `json:"created_at,omitempty" bson:"createdAt"`
-}
-type Blog struct {
-	Type      string  `json:"type,omitempty"`
-	Profile   Profile `json:"profile,omitempty"`
-	Title     string  `json:"title,omitempty"`
-	Content   string  `json:"content,omitempty"`
-	Timestamp int     `json:"timestamp,omitempty"`
+	Created time.Time     `json:"created,omitempty" bson:"created"`
 }
 
 type Config struct {
@@ -132,7 +125,7 @@ func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error 
 	session := Session{
 		Id:        i,
 		Profile:   account.Profile,
-		CreatedAt: time.Now(),
+		Created: time.Now(),
 	}
 
 	c = sessionCopy.DB("UserService").C("session")
@@ -184,6 +177,10 @@ func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) err
 
 func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) error {
 	sessionId := data["sid"].(string)
+
+	if len(sessionId) != 12 && len(sessionId) != 24 {
+		return errors.New("Invalid sessionId")
+	}
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
 	c := sessionCopy.DB("UserService").C("session")
@@ -200,6 +197,9 @@ func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) e
 func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) error {
 
 	bearerToken := data["bearerToken"].(string)
+	if len(bearerToken) != 12 && len(bearerToken) != 24 {
+		return errors.New("Invalid bearerToken")
+	}
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -211,7 +211,7 @@ func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) err
 		return errors.New("Invalid session")
 	}
 
-	c.Update(bson.M{"_id": bson.ObjectIdHex(bearerToken)}, bson.M{"$set": bson.M{"createdat": time.Now()}})
+	c.Update(bson.M{"_id": bson.ObjectIdHex(bearerToken)}, bson.M{"$set": bson.M{"created": time.Now()}})
 
 	*jsonResponse, _ = json.Marshal(session)
 	return nil
