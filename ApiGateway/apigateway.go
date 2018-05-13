@@ -49,7 +49,6 @@ func LoadConfiguration() Config {
 	if (Config{}) != config {
 		return config
 	}
-
 	response, err := http.Get("http://localhost:50000/")
 	if err != nil {
 		fmt.Printf("%s", err)
@@ -89,7 +88,8 @@ func ValidateApi(next http.HandlerFunc) http.HandlerFunc {
 
 				var result []byte
 				var profile map[string]interface{}
-				err = c.Call("Server.Validate", data, &result)
+				jsonData, _ := json.Marshal(data)
+				err = c.Call("Server.Validate", jsonData, &result)
 				if err != nil {
 					profile = make(map[string]interface{})
 					profile["error"] = err.Error()
@@ -110,9 +110,6 @@ func ValidateApi(next http.HandlerFunc) http.HandlerFunc {
 
 func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
-//		next(w, req)
-		//TODO: Implementacija za cookie based auth
-
 		cookie, _ := req.Cookie("sid")
 		if cookie != nil && cookie.Value != "" {
 
@@ -142,7 +139,8 @@ func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 
 			var result []byte
 			var profile map[string]interface{}
-			err = c.Call("Server.Validate", data, &result)
+			jsonData, _ := json.Marshal(data)
+			err = c.Call("Server.Validate", jsonData, &result)
 			if err != nil {
 				c := &http.Cookie{
 					Name:     "sid",
@@ -163,6 +161,8 @@ func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 				if req.RequestURI == "/login" {
 					http.Redirect(w, req, "/", http.StatusSeeOther)
 				} else {
+					cookie := http.Cookie{Name: "sid", Path: "/", Value: profile["id"].(string), Expires: time.Now().Add(30 * time.Minute)}
+					http.SetCookie(w, &cookie)
 					next(w, req)
 				}
 			}
@@ -203,7 +203,7 @@ func main() {
 	u, _ := url.Parse("http://localhost:" + LoadConfiguration().ApiService.Port)
 	apiProxy := httputil.NewSingleHostReverseProxy(u)
 
-	h, _ := url.Parse("https://localhost:" + LoadConfiguration().HtmlService.Port)
+	h, _ := url.Parse("http://localhost:" + LoadConfiguration().HtmlService.Port)
 	htmlProxy := httputil.NewSingleHostReverseProxy(h)
 
 	router := mux.NewRouter().StrictSlash(false)
@@ -213,7 +213,7 @@ func main() {
 	fmt.Println("API Gateway is up and running...")
 
 	go http.ListenAndServe(":80", http.HandlerFunc(redirect))
-	log.Fatal(http.ListenAndServeTLS(":443", "certs/localhost.crt", "certs/localhost.key", logRequest(handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router))))
+	log.Fatal(http.ListenAndServeTLS(":4430", "certs/localhost.crt", "certs/localhost.key", logRequest(handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router))))
 }
 
 func redirect(w http.ResponseWriter, req *http.Request) {
@@ -232,16 +232,40 @@ func logRequest(handler http.Handler) http.Handler {
 		if err != nil {
 			log.Println(err)
 		}
-		log.Println(string(requestDump))
-		fmt.Println(string(requestDump))
+		url := r.RequestURI
+		log.Println("[REQUEST] ", url, " ", string(requestDump))
+handler.ServeHTTP(w, r)
+		/*
+		rec := httptest.NewRecorder()
+		handler.ServeHTTP(rec, r)
 
-		handler.ServeHTTP(w, r)
+		dump, err := httputil.DumpResponse(rec.Result(), false)
+		if err != nil {
+			log.Fatal(err)
+		}
+		log.Println( "[RESPONSE] ", url, " ", string(dump))
+
+		// we copy the captured response headers to our new response
+		for k, v := range rec.Header() {
+			w.Header()[k] = v
+		}
+
+		// grab the captured response body
+		data := rec.Body.Bytes()
+
+		w.Write(data)
+		*/
 	})
 }
 
 func openLogFile(logfile string) {
 	if logfile != "" {
-		lf, err := os.OpenFile(logfile, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0640)
+		err := os.Truncate(logfile, 100)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		lf, err := os.OpenFile(logfile, os.O_WRONLY|os.O_CREATE, 0640)
 
 		if err != nil {
 			log.Fatal("OpenLogfile: os.OpenFile:", err)

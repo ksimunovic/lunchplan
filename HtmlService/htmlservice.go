@@ -1,16 +1,18 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"io/ioutil"
+	"os"
+	"encoding/json"
 )
+
+var config Config
 
 type Config struct {
 	Database struct {
@@ -37,8 +39,6 @@ type Config struct {
 		Port string `json:"port"`
 	} `json:"calendar_service"`
 }
-
-var config Config
 
 func LoadConfiguration() Config {
 	if (Config{}) != config {
@@ -82,5 +82,5 @@ func main() {
 	}
 
 	fmt.Println("HTML Service is up and running...")
-	log.Fatal(http.ListenAndServeTLS(":"+LoadConfiguration().HtmlService.Port , "certs/localhost.crt", "certs/localhost.key" , handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
+	log.Fatal(http.ListenAndServe(":"+LoadConfiguration().HtmlService.Port, handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
 }

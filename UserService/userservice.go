@@ -29,8 +29,8 @@ type Profile struct {
 	ServedBy  string        `json:"served_by,omitempty"`
 }
 type Session struct {
-	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
-	Profile   Profile       `json:"profile,omitempty"`
+	Id      bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Profile Profile       `json:"profile,omitempty"`
 	Created time.Time     `json:"created,omitempty" bson:"created"`
 }
 
@@ -52,7 +52,6 @@ func LoadConfiguration() Config {
 	if (Config{}) != config {
 		return config
 	}
-
 	response, err := http.Get("http://localhost:50000/")
 	if err != nil {
 		fmt.Printf("%s", err)
@@ -105,7 +104,10 @@ func (s *Server) Negate(i int64, reply *int64) error {
 	return nil
 }
 
-func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Login(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -123,8 +125,8 @@ func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error 
 
 	i := bson.NewObjectId()
 	session := Session{
-		Id:        i,
-		Profile:   account.Profile,
+		Id:      i,
+		Profile: account.Profile,
 		Created: time.Now(),
 	}
 
@@ -141,7 +143,9 @@ func (s *Server) Login(data map[string]interface{}, jsonResponse *[]byte) error 
 	return nil
 }
 
-func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Register(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
 
 	passwordHash, _ := bcrypt.GenerateFromPassword([]byte(data["password"].(string)), 10)
 	i := bson.NewObjectId()
@@ -175,7 +179,10 @@ func (s *Server) Register(data map[string]interface{}, jsonResponse *[]byte) err
 	return nil
 }
 
-func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) GetAccount(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+	
 	sessionId := data["sid"].(string)
 
 	if len(sessionId) != 12 && len(sessionId) != 24 {
@@ -194,7 +201,9 @@ func (s *Server) GetAccount(data map[string]interface{}, jsonResponse *[]byte) e
 	return nil
 }
 
-func (s *Server) Validate(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Validate(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
 
 	bearerToken := data["bearerToken"].(string)
 	if len(bearerToken) != 12 && len(bearerToken) != 24 {
@@ -224,7 +233,7 @@ func main() {
 	mongoDBDialInfo := &mgo.DialInfo{
 		Addrs:    []string{"localhost:27017"},
 		Timeout:  60 * time.Second,
-		Database: "UserService",
+		Database: "admin",
 		Username: "root",
 		Password: "root",
 	}

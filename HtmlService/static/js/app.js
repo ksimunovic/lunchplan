@@ -1,23 +1,5 @@
+var cities;
 window.addEventListener('load', function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    var checkbox = $('table tbody input[type="checkbox"]');
-    $("#selectAll").click(function () {
-        if (this.checked) {
-            checkbox.each(function () {
-                this.checked = true;
-            });
-        } else {
-            checkbox.each(function () {
-                this.checked = false;
-            });
-        }
-    });
-    checkbox.click(function () {
-        if (!this.checked) {
-            $("#selectAll").prop("checked", false);
-        }
-    });
-
     $('#addEmployeeModal [type="submit"]').on('click', function (e) {
         e.preventDefault();
         let $modal = $(this).closest('.modal');
@@ -91,34 +73,66 @@ window.addEventListener('load', function () {
         let $modal = $(this).closest('.modal');
         let $form = $modal.find('form');
 
-        var formData = objectifyForm($form.serializeArray());
+        let idsArray = $form.serializeArray();
+        $.each(idsArray, function (index, object) {
+            $.ajax({
+                url: "/api/meal/" + object.value,
+                type: 'DELETE',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+                    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+                },
+                dataType: "json",
+                success: function (data) {
+                },
+                error: function () {
+                },
+            });
+        })
         $.ajax({
-            url: "/api/meal/" + $form.find('[name="id"]').val(),
-            type: 'DELETE',
+            url: "/api/meal/all",
+            type: 'GET',
             beforeSend: function (xhr) {
                 xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
-                xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
             },
-            data: JSON.stringify(formData),
-            dataType: "json",
             success: function (data) {
-                $.ajax({
-                    url: "/api/meal/all",
-                    type: 'GET',
-                    beforeSend: function (xhr) {
-                        xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
-                    },
-                    success: function (data) {
-                        loadTable("#meals-table", data);
-                        $form.trigger('reset');
-                        $modal.modal('hide');
-                    },
-                });
-            },
-            error: function () {
+                loadTable("#meals-table", data);
+                $form.trigger('reset');
+                $modal.modal('hide');
             },
         });
     })
+
+
+    cities = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+       /* prefetch: {
+            url: 'static/cities.json',
+            cache: false
+        }*/
+        local: possibleUserTags
+    })
+    cities.initialize();
+
+    var elt = $('.tagsinput');
+    elt.tagsinput({
+        itemValue: 'value',
+        itemText: 'text',
+        typeaheadjs: {
+            name: 'cities',
+            displayKey: 'text',
+            source: cities.ttAdapter()
+        }
+    });
+    elt.tagsinput('add', possibleUserTags[0]);
+    elt.tagsinput('add', possibleUserTags[2]);
+    elt.tagsinput('add', possibleUserTags[3]);
+    elt.tagsinput('add', possibleUserTags[4]);
+    elt.tagsinput('add', possibleUserTags[5]);
+
+    $(".twitter-typeahead").css('display', 'inline');
+
 });
 
 function editEntity(target) {
@@ -145,26 +159,31 @@ function editEntity(target) {
 }
 
 function deleteEntity(target) {
-    let id = $(target).closest('tr').find('[data-field="id"]').html();
     let $modal = $('#deleteEmployeeModal');
-    $.ajax({
-        url: "/api/meal/" + id,
-        type: 'GET',
-        beforeSend: function (xhr) {
-            xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
-        },
-        data: {},
-        success: function (data) {
-            for (var key in data) {
-                if ($modal.find('[name="' + key + '"]').length != 0) {
-                    $modal.find('[name="' + key + '"]').val(data[key]);
-                }
+    let $form = $modal.find('form');
+    $form.find('input[name="id"]').remove();
+    if (target == "checkbox") {
+        $('[name="options[]"]:checked').each(function (index, value) {
+            let val = $(this).closest('tr').find('[data-field="id"]').html();
+            if (val != "") {
+                let input = document.createElement("input");
+                input.type = "text";
+                input.name = "id";
+                input.hidden = "hidden";
+                input.setAttribute('value', val);
+                $form.find('.modal-body')[0].appendChild(input);
             }
-            $modal.modal('show');
-        },
-        error: function () {
-        },
-    });
+        });
+    } else {
+        let val = $(target).closest('tr').find('[data-field="id"]').html();
+        let input = document.createElement("input");
+        input.type = "text";
+        input.name = "id";
+        input.hidden = "hidden";
+        input.setAttribute('value', val);
+        $form.find('.modal-body')[0].appendChild(input);
+        $modal.modal('show');
+    }
 }
 
 function getCookieValue(a) {
@@ -198,6 +217,39 @@ function loadTable(table, data) {
             //alert( key + ": " + value );
         });
         $row.show();
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $("#selectAll").unbind('click');
+    $("#selectAll").click(function () {
+        if (this.checked) {
+            checkbox.each(function () {
+                this.checked = true;
+            });
+        } else {
+            checkbox.each(function () {
+                this.checked = false;
+            });
+        }
+    });
+    let checkboxSpan = $('table tbody .custom-checkbox').on('click', function (e) {
+        if (e.target.type == "checkbox") {
+            return
+        }
+        let chk = $(this).find('input[type="checkbox"]');
+        if (chk.prop('checked') == true) {
+            chk.prop("checked", false);
+        } else {
+            chk.prop("checked", true);
+        }
+    });
+    let checkbox = $('table tbody input[type="checkbox"]');
+    checkbox.removeAttr('checked');
+    checkbox.click(function () {
+        if (!this.checked) {
+            $("#selectAll").prop("checked", false);
+        }
     });
 }
 

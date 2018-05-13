@@ -28,16 +28,17 @@ type Config struct {
 	MealService struct {
 		Port string `json:"port"`
 	} `json:"meal_service"`
+	TagService struct {
+		Port string `json:"port"`
+	} `json:"tag_service"`
 }
 
-var config Config
+var Configuration Config
 
 func LoadConfiguration() Config {
-
-	if (Config{}) != config {
-		return config
+	if (Config{}) != Configuration {
+		return Configuration
 	}
-
 	response, err := http.Get("http://localhost:50000/")
 	if err != nil {
 		fmt.Printf("%s", err)
@@ -57,7 +58,6 @@ func LoadConfiguration() Config {
 		return config
 	}
 }
-
 func getTemplate(method string, controllerName string) *template.Template {
 	lp := filepath.Join("HtmlService", "templates", "layout.html")
 	fp := filepath.Join("HtmlService", "templates", controllerName+"_"+method+".html")
@@ -115,9 +115,14 @@ func ServiceCallData(method string, data map[string]interface{}, servicePort str
 		return nil
 	}
 
-	var rpcData []byte
+	if data["sid"] == "" {
+		fmt.Println("Missing sid from rpc data request")
+		return nil
+	}
 
-	err = c.Call("Server."+method, data, &rpcData)
+	var rpcData []byte
+	jsonData, _ := json.Marshal(data)
+	err = c.Call("Server."+method, jsonData, &rpcData)
 
 	if err != nil {
 		fmt.Println(err.Error())

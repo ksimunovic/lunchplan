@@ -23,6 +23,11 @@ type Meal struct {
 	Timestamp   int           `json:"timestamp,omitempty"`
 	ServedBy    string        `json:"served_by,omitempty"`
 }
+type Tag struct {
+	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Name string        `json:"name,omitempty"`
+	Meal Meal          `json:"meal,omitempty"`
+}
 
 func (c *Controller) Index() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -34,24 +39,26 @@ func (c *Controller) Index() http.HandlerFunc {
 		if rpcData["sid"] == "" {
 			println("HALLO mealcontroller nema sid")
 		}
-/*
-		rpcResult := ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Port);
-		rawJson, _ := json.Marshal(rpcResult)
-		vars := map[string]interface{}{
-			"mealsJson": string(rawJson),
-		}*/
 
-		var result []Meal
+		var allUserMeals []Meal
 		rpcResult := ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Port);
-		if err := json.Unmarshal(rpcResult, &result); err != nil {
+		if err := json.Unmarshal(rpcResult, &allUserMeals); err != nil {
 			println(err.Error())
 			return
 		}
+		allUserMealsJson, _ := json.Marshal(allUserMeals)
 
-		rawJson, _ := json.Marshal(result)
+		var allUserTags []Tag
+		rpcResult = ServiceCallData("GetAllUserTags", rpcData, LoadConfiguration().TagService.Port);
+		if err := json.Unmarshal(rpcResult, &allUserTags); err != nil {
+			println(err.Error())
+			return
+		}
+		allUserTagsJson, _ := json.Marshal(allUserTags)
 
 		vars := map[string]interface{}{
-			"mealsJson": string(rawJson),
+			"mealsJson": string(allUserMealsJson),
+			"tagsJson": string(allUserTagsJson),
 		}
 
 		render(w, r, getTemplate(currentFunctionName(), c.ControllerName), "home", vars)

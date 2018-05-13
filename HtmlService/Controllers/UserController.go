@@ -34,10 +34,8 @@ func (c *Controller) ProcessLogin() http.HandlerFunc {
 			println(err.Error())
 			return
 		}
-
 		if result["sid"] != "" {
-			expiration := time.Now().Add(30 * time.Minute)
-			cookie := http.Cookie{Name: "sid", Value: result["sid"], Expires: expiration}
+			cookie := http.Cookie{Name: "sid", Path: "/", Value: result["sid"], Expires: time.Now().Add(30 * time.Minute)}
 			http.SetCookie(w, &cookie)
 			http.Redirect(w, r, "/", http.StatusSeeOther)
 		} else {

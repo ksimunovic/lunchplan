@@ -28,8 +28,8 @@ type Profile struct {
 	ServedBy  string        `json:"served_by,omitempty"`
 }
 type Session struct {
-	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
-	Profile   Profile       `json:"profile,omitempty"`
+	Id      bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Profile Profile       `json:"profile,omitempty"`
 	Created time.Time     `json:"created,omitempty" bson:"created"`
 }
 type Meal struct {
@@ -39,6 +39,12 @@ type Meal struct {
 	Profile     Profile       `json:"profile,omitempty"`
 	Timestamp   int           `json:"timestamp,omitempty"`
 	ServedBy    string        `json:"served_by,omitempty"`
+	Tags        []Tag         `json:"tags,omitempty"`
+}
+type Tag struct {
+	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Name string        `json:"name,omitempty"`
+	Meal Meal          `json:"meal,omitempty"`
 }
 
 type Config struct {
@@ -53,6 +59,9 @@ type Config struct {
 	MealService struct {
 		Port string `json:"port"`
 	} `json:"meal_service"`
+	TagService struct {
+		Port string `json:"port"`
+	} `json:"tag_service"`
 }
 
 var config Config
@@ -62,7 +71,6 @@ func LoadConfiguration() Config {
 	if (Config{}) != config {
 		return config
 	}
-
 	response, err := http.Get("http://localhost:50000/")
 	if err != nil {
 		fmt.Printf("%s", err)
@@ -115,7 +123,9 @@ func GetIP() string {
 	return name + " unkownIP"
 }
 
-func (s *Server) Create(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
@@ -125,13 +135,30 @@ func (s *Server) Create(data map[string]interface{}, jsonResponse *[]byte) error
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
+	var tags []Tag
+	if data["tags"] != nil {
+		for i := 0; i < len(data["tags"].([]interface{})); i++ {
+			var tag Tag
+			tagData := data["tags"].([]interface{})[i].(map[string]interface{})
+			if tagData["id"].(string) != "" {
+				rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().TagService.Port)
+				temp0, _ := json.Marshal(rpcResult)
+				_ = json.Unmarshal(temp0, &tag)
+			} else {
+				//Kreiraj tag preko rpca i njegov odgovor spremi ovdje, kasnije updejtaj taj isti tag meal_idem asinkrono
+			}
+			tags = append(tags, tag)
+			fmt.Println(tagData["name"].(string))
+		}
+	}
+
 	meal := Meal{
 		Id:          bson.NewObjectId(),
 		Title:       data["title"].(string),
 		Description: data["description"].(string),
 		Profile:     profile,
 		Timestamp:   int(time.Now().Unix()),
-		ServedBy:    GetIP(),
+		Tags:        tags,
 	}
 
 	sessionCopy := dbSession.Copy()
@@ -142,11 +169,15 @@ func (s *Server) Create(data map[string]interface{}, jsonResponse *[]byte) error
 		panic(err)
 	}
 
+	//TODO update all tags async
+
 	*jsonResponse, _ = json.Marshal(meal)
 	return nil
 }
 
-func (s *Server) Read(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
@@ -159,18 +190,25 @@ func (s *Server) Read(data map[string]interface{}, jsonResponse *[]byte) error {
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
 
+	if len(data["get_id"].(string)) != 12 && len(data["get_id"].(string)) != 24 {
+		return errors.New("Invalid meal id in GET parameter")
+	}
+
 	c := sessionCopy.DB("MealService").C("meal")
 	var result Meal
 	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}).One(&result); err != nil {
 		return errors.New("Meal with id: " + data["get_id"].(string) + " from user: " + profile.Id.String() + " doesn't exist")
 	} else {
+		result.ServedBy = GetIP()
 		*jsonResponse, _ = json.Marshal(result)
 	}
 
 	return nil
 }
 
-func (s *Server) Update(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
@@ -223,11 +261,14 @@ func (s *Server) Update(data map[string]interface{}, jsonResponse *[]byte) error
 	return nil
 }
 
-func (s *Server) Delete(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
 	}
+
 	var profile Profile
 	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
 	temp0, _ := json.Marshal(rpcResult)
@@ -250,7 +291,9 @@ func (s *Server) Delete(data map[string]interface{}, jsonResponse *[]byte) error
 	return nil
 }
 
-func (s *Server) GetAllUserMeals(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) GetAllUserMeals(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
@@ -273,6 +316,10 @@ func (s *Server) GetAllUserMeals(data map[string]interface{}, jsonResponse *[]by
 		results = []Meal{}
 	}
 
+	for i := 0; i < len(results); i++ {
+		results[i].ServedBy = GetIP()
+	}
+
 	*jsonResponse, _ = json.Marshal(results)
 	return nil
 }
@@ -286,7 +333,8 @@ func ServiceCallData(method string, data map[string]interface{}, servicePort str
 
 	var rpcData []byte
 	var result map[string]interface{}
-	err = c.Call("Server."+method, data, &rpcData)
+	jsonData, _ := json.Marshal(data)
+	err = c.Call("Server."+method, jsonData, &rpcData)
 	if err != nil {
 		return nil
 	} else {
@@ -302,7 +350,7 @@ func main() {
 	mongoDBDialInfo := &mgo.DialInfo{
 		Addrs:    []string{"localhost:27017"},
 		Timeout:  60 * time.Second,
-		Database: "MealService",
+		Database: "admin",
 		Username: "root",
 		Password: "root",
 	}

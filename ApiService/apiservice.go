@@ -97,7 +97,8 @@ func ServiceCall(method string, servicePort string) http.HandlerFunc {
 		}
 
 		var result []byte
-		err = c.Call("Server."+method, data, &result)
+		jsonData, _ := json.Marshal(data)
+		err = c.Call("Server."+method, jsonData, &result)
 		if err != nil {
 			w.Write([]byte(err.Error()))
 		} else {

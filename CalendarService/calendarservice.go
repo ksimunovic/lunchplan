@@ -113,7 +113,10 @@ func GetIP() string {
 	return name + " unkownIP"
 }
 
-func (s *Server) Create(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+	
 	rpcData := map[string]interface{}{
 		"sid":    data["sid"].(string),
 		"get_id": data["meal_id"].(string),
@@ -150,7 +153,10 @@ func (s *Server) Create(data map[string]interface{}, jsonResponse *[]byte) error
 	return nil
 }
 
-func (s *Server) Read(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -166,7 +172,10 @@ func (s *Server) Read(data map[string]interface{}, jsonResponse *[]byte) error {
 	return nil
 }
 
-func (s *Server) Update(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -206,7 +215,10 @@ func (s *Server) Update(data map[string]interface{}, jsonResponse *[]byte) error
 	return nil
 }
 
-func (s *Server) Delete(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -226,7 +238,10 @@ func (s *Server) Delete(data map[string]interface{}, jsonResponse *[]byte) error
 }
 
 
-func (s *Server) GetAllUserCalendars(data map[string]interface{}, jsonResponse *[]byte) error {
+func (s *Server) GetAllUserCalendars(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+	
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
@@ -263,7 +278,8 @@ func ServiceCallData(method string, data map[string]interface{}, servicePort str
 
 	var rpcData []byte
 	var result map[string]interface{}
-	err = c.Call("Server."+method, data, &rpcData)
+	jsonData, _ := json.Marshal(data)
+	err = c.Call("Server."+method, jsonData, &rpcData)
 	if err != nil {
 		return nil
 	} else {
@@ -279,7 +295,7 @@ func main() {
 	mongoDBDialInfo := &mgo.DialInfo{
 		Addrs:    []string{"localhost:27017"},
 		Timeout:  60 * time.Second,
-		Database: "CalendarService",
+		Database: "admin",
 		Username: "root",
 		Password: "root",
 	}
