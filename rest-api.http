@@ -101,8 +101,7 @@ Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
 {
-    "name":"naslov taga",
-    "meal_id":"5ae4a10c239c97ba44011744"
+    "name":"naslov taga"
 }
 
 > {% client.global.set("tag1", response.body.id); %}

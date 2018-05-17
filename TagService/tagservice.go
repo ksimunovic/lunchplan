@@ -19,7 +19,7 @@ type Profile struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Firstname string        `json:"firstname,omitempty"`
 	Lastname  string        `json:"lastname,omitempty"`
-	ServedBy  string        `json:"served_by,omitempty"`
+	ServedBy  string        `json:"served_by,omitempty" bson:"-"`
 }
 type Meal struct {
 	Id          bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
@@ -28,11 +28,13 @@ type Meal struct {
 	Profile     Profile       `json:"profile,omitempty"`
 	Timestamp   int           `json:"timestamp,omitempty"`
 	ServedBy    string        `json:"served_by,omitempty"`
+	Tags        []Tag         `json:"tags,omitempty"`
 }
 type Tag struct {
 	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Name string        `json:"name,omitempty"`
-	Meal Meal          `json:"meal,omitempty"`
+	Profile     Profile       `json:"profile,omitempty"`
+	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
 }
 
 type Config struct {
@@ -115,24 +117,20 @@ func GetIP() string {
 func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
-	rpcData := map[string]interface{}{
-		"sid":    data["sid"].(string),
-		"get_id": data["meal_id"].(string),
-	}
-	var meal Meal
-	rpcResult := ServiceCallData("Read", rpcData, LoadConfiguration().MealService.Port)
-	temp0, _ := json.Marshal(rpcResult)
-	_ = json.Unmarshal(temp0, &meal)
 
-	if meal.Id == "" {
-		return errors.New("Meal with id " + meal.Id.String() + " doesn't exist")
+	rpcData := map[string]interface{}{
+		"sid": data["sid"].(string),
+	}
+	var profile Profile
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	if err := json.Unmarshal(rpcResult, &profile); err != nil {
+		println(err.Error())
 	}
 
 	tag := Tag{
 		Id:   bson.NewObjectId(),
 		Name: data["name"].(string),
-		Meal: meal,
+		Profile: profile,
 	}
 
 	sessionCopy := dbSession.Copy()
@@ -150,7 +148,6 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -169,7 +166,6 @@ func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
 func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -205,7 +201,6 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -227,53 +222,81 @@ func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
 func (s *Server) GetAllUserTags(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
 	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
-	temp0, _ := json.Marshal(rpcResult)
-	_ = json.Unmarshal(temp0, &profile)
+	if err := json.Unmarshal(rpcResult, &profile); err != nil {
+		println(err.Error())
+	}
 
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	c := sessionCopy.DB("TagService").C("tag")
 	var results []Tag
-	if profile.Id == "" {
-		results = []Tag{}
-	} else {
-		sessionCopy := dbSession.Copy()
-		defer sessionCopy.Close()
-
-		c := sessionCopy.DB("TagService").C("tag")
-		if err := c.Find(bson.M{"meal.profile._id": bson.ObjectIdHex(profile.Id.Hex())}).All(&results); err != nil {
-			panic(err)
-		}
+	if err := c.Find(bson.M{"profile._id": bson.ObjectIdHex(profile.Id.Hex())}).All(&results); err != nil {
+		panic(err)
 	}
 
 	if len(results) == 0 {
 		results = []Tag{}
 	}
 
+	for i := 0; i < len(results); i++ {
+		results[i].ServedBy = GetIP()
+	}
+
 	*jsonResponse, _ = json.Marshal(results)
 	return nil
+
+	/*
+	var meals []Meal
+	rpcResult = ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Port);
+	fmt.Println(string(rpcResult))
+	if err := json.Unmarshal(rpcResult, &meals); err != nil {
+		println(err.Error())
+	}
+
+
+	var results []Tag
+	if profile.Id == "" {
+		results = []Tag{}
+	} else {
+		for i := 0; i < len(meals); i++ {
+			meal := meals[i]
+			for t := 0; t < len(meal.Tags); t++ {
+				results = append(results, meal.Tags[t])
+			}
+		}
+	}*/
 }
 
-func ServiceCallData(method string, data map[string]interface{}, servicePort string) map[string]interface{} {
+func ServiceCallData(method string, data map[string]interface{}, servicePort string) []byte {
 
 	c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
 	if err != nil {
+		fmt.Println(err.Error())
+		return nil
+	}
+
+	if data["sid"] == "" {
+		fmt.Println("Missing sid from rpc data request")
 		return nil
 	}
 
 	var rpcData []byte
-	var result map[string]interface{}
 	jsonData, _ := json.Marshal(data)
 	err = c.Call("Server."+method, jsonData, &rpcData)
+
 	if err != nil {
+		fmt.Println(err.Error())
 		return nil
 	} else {
-		_ = json.Unmarshal(rpcData, &result)
-		return result
+		return rpcData
 	}
 }
 

@@ -137,8 +137,9 @@
 </div>
 <script type="application/javascript">
     var mealsJson = "{{.vars.mealsJson}}";
-    var possibleUserTags = [{"value":1,"text":"Amsterdam","continent":"Europe"},{"value":2,"text":"London","continent":"Europe"},{"value":3,"text":"Paris","continent":"Europe"},{"value":4,"text":"Washington","continent":"America"},{"value":5,"text":"Mexico City","continent":"America"},{"value":6,"text":"jela pećena u pećnicic","continent":"America"},{"value":7,"text":"Sydney","continent":"Australia"},{"value":8,"text":"Wellington","continent":"Australia"},{"value":9,"text":"Canberra","continent":"Australia"},{"value":10,"text":"Beijing","continent":"Asia"},{"value":11,"text":"New Delhi","continent":"Asia"},{"value":12,"text":"Kathmandu","continent":"Asia"},{"value":13,"text":"Cairo","continent":"Africa"},{"value":14,"text":"Cape Town","continent":"Africa"},{"value":15,"text":"Kinshasa","continent":"Africa"}];
+    //var possibleUserTags = [{"value":1,"text":"Amsterdam","continent":"Europe"},{"value":2,"text":"London","continent":"Europe"},{"value":3,"text":"Paris","continent":"Europe"},{"value":4,"text":"Washington","continent":"America"},{"value":5,"text":"Mexico City","continent":"America"},{"value":6,"text":"jela pećena u pećnicic","continent":"America"},{"value":7,"text":"Sydney","continent":"Australia"},{"value":8,"text":"Wellington","continent":"Australia"},{"value":9,"text":"Canberra","continent":"Australia"},{"value":10,"text":"Beijing","continent":"Asia"},{"value":11,"text":"New Delhi","continent":"Asia"},{"value":12,"text":"Kathmandu","continent":"Asia"},{"value":13,"text":"Cairo","continent":"Africa"},{"value":14,"text":"Cape Town","continent":"Africa"},{"value":15,"text":"Kinshasa","continent":"Africa"}];
     var possibleUserTags = {{.vars.tagsJson}};
+    possibleUserTags = JSON.parse(possibleUserTags);
     window.addEventListener('load', function () {
         loadTable('#meals-table', JSON.parse(mealsJson));
     })

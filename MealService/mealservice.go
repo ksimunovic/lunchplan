@@ -25,7 +25,7 @@ type Profile struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Firstname string        `json:"firstname,omitempty"`
 	Lastname  string        `json:"lastname,omitempty"`
-	ServedBy  string        `json:"served_by,omitempty"`
+	ServedBy  string        `json:"served_by,omitempty" bson:"-"`
 }
 type Session struct {
 	Id      bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
@@ -38,13 +38,14 @@ type Meal struct {
 	Description string        `json:"description,omitempty"`
 	Profile     Profile       `json:"profile,omitempty"`
 	Timestamp   int           `json:"timestamp,omitempty"`
-	ServedBy    string        `json:"served_by,omitempty"`
 	Tags        []Tag         `json:"tags,omitempty"`
+	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
 }
 type Tag struct {
 	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Name string        `json:"name,omitempty"`
-	Meal Meal          `json:"meal,omitempty"`
+	Profile     Profile       `json:"profile,omitempty"`
+	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
 }
 
 type Config struct {
@@ -140,15 +141,18 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 		for i := 0; i < len(data["tags"].([]interface{})); i++ {
 			var tag Tag
 			tagData := data["tags"].([]interface{})[i].(map[string]interface{})
-			if tagData["id"].(string) != "" {
-				rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().TagService.Port)
-				temp0, _ := json.Marshal(rpcResult)
-				_ = json.Unmarshal(temp0, &tag)
+			tagData["sid"] = data["sid"].(string)
+			if tagData["id"] != nil && tagData["id"].(string) != "" {
+				tagData["get_id"] = tagData["id"]
+				tagResult := ServiceCallData("Read", tagData, LoadConfiguration().TagService.Port)
+				temp1, _ := json.Marshal(tagResult)
+				_ = json.Unmarshal(temp1, &tag)
 			} else {
-				//Kreiraj tag preko rpca i njegov odgovor spremi ovdje, kasnije updejtaj taj isti tag meal_idem asinkrono
+				tagResult := ServiceCallData("Create", tagData, LoadConfiguration().TagService.Port)
+				temp1, _ := json.Marshal(tagResult)
+				_ = json.Unmarshal(temp1, &tag)
 			}
 			tags = append(tags, tag)
-			fmt.Println(tagData["name"].(string))
 		}
 	}
 

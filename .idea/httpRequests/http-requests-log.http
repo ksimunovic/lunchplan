@@ -1,231 +1,84 @@
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
+Authorization: Bearer 5afc825c4c751e45415c6449
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-
-<> 2018-05-13T075157.200.json
-
-###
-
-POST https://localhost:4430/api/meal
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-
-<> 2018-05-13T075128.200.txt
-
-###
-
-POST https://localhost:4430/api/meal
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-
-<> 2018-05-13T074953.200.txt
-
-###
-
-POST https://localhost:4430/api/meal
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-
-<> 2018-05-13T074833.200.txt
-
-###
-
-POST https://localhost:4430/api/meal
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-
-<> 2018-05-13T074753.200.txt
-
-###
-
-POST https://localhost:4430/api/calendar/5ae5e06f3cd0501264f6d380
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-{
-    "date":"2018-05-25"
-}
-
-<> 2018-05-13T074359.200.json
-
-###
-
-GET https://localhost:4430/api/calendar/5ae5e06f3cd0501264f6d380
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-<> 2018-05-13T074356.200.json
-
-###
-
-GET https://localhost:4430/api/calendar/all
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-<> 2018-05-13T074352.200.json
-
-###
-
-POST https://localhost:4430/api/calendar
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-{
-    "date":"2018-04-28",
-    "meal_id":"5ae4b3323cd05032c8153057"
-}
-
-<> 2018-05-13T074350.200.json
-
-###
-
-DELETE https://localhost:4430/api/tag/5ae5dff13cd0502e40d8af29
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-<> 2018-05-13T074348.200.json
-
-###
-
-POST https://localhost:4430/api/tag/5ae5dff13cd0502e40d8af29
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-{
-    "name":"AžuriranoIme2"
-}
-
-<> 2018-05-13T074347.200.json
-
-###
-
-GET https://localhost:4430/api/tag/5ae5dff13cd0502e40d8af29
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-<> 2018-05-13T074346.200.json
+<> 2018-05-16T091712.200.json
 
 ###
 
 GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
+Authorization: Bearer 5afc825c4c751e45415c6449
 
-<> 2018-05-13T074343.200.json
+<> 2018-05-16T091649.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5afc825c4c751e45415c6449
+
+<> 2018-05-16T091604.200.json
 
 ###
 
 POST https://localhost:4430/api/tag
 Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
+Authorization: Bearer 5afc825c4c751e45415c6449
 
 {
-    "name":"naslov taga",
-    "meal_id":"5ae4a10c239c97ba44011744"
+    "name":"naslov taga"
 }
 
-<> 2018-05-13T074340.200.json
+<> 2018-05-16T091550.200.json
 
 ###
 
-DELETE https://localhost:4430/api/meal/5af879414c751e15da7dd9a1
+POST https://localhost:4430/api/tag
 Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-<> 2018-05-13T074338.200.json
-
-###
-
-POST https://localhost:4430/api/meal/5af879414c751e15da7dd9a1
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
+Authorization: Bearer 5afc825c4c751e45415c6449
 
 {
-"id": "5ade281d239c97ba4400e6cc2",
-    "title":"WHAaat?2",
-    "description":"Izmjenjeni content meal-a"
+    "name":"naslov taga"
 }
 
-<> 2018-05-13T074335.200.json
+<> 2018-05-16T091414.200.json
 
 ###
 
-GET https://localhost:4430/api/meal/5af879414c751e15da7dd9a1
+POST https://localhost:4430/api/tag
 Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-<> 2018-05-13T074334.200.json
-
-###
-
-GET https://localhost:4430/api/meal/all
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
-
-<> 2018-05-13T074331.200.json
-
-###
-
-POST https://localhost:4430/api/meal
-Content-Type: application/json
-Authorization: Bearer 5af8793c4c751e15cb335067
+Authorization: Bearer 5afc825c4c751e45415c6449
 
 {
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
+    "name":"naslov taga"
 }
 
-<> 2018-05-13T074329.200.json
+<> 2018-05-16T091358.200.json
 
 ###
 
-GET https://localhost:4430/api/account
-Authorization: Bearer 5af8793c4c751e15cb335067
+POST https://localhost:4430/api/tag
+Content-Type: application/json
+Authorization: Bearer 5afc825c4c751e45415c6449
 
-<> 2018-05-13T074327.200.json
+{
+    "name":"naslov taga"
+}
+
+<> 2018-05-16T091206.200.json
+
+###
+
+POST https://localhost:4430/api/tag
+Content-Type: application/json
+Authorization: Bearer 5afc825c4c751e45415c6449
+
+{
+    "name":"naslov taga"
+}
+
+<> 2018-05-16T091131.200.json
 
 ###
 
@@ -237,7 +90,43 @@ Content-Type: application/json
   "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-05-13T074324.200.json
+<> 2018-05-16T091124.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5afb2eb64c751e0444c02e8f
+
+<> 2018-05-15T090241.200.json
+
+###
+
+GET https://localhost:4430/api/meal/all
+Content-Type: application/json
+Authorization: Bearer 5afb2eb64c751e0444c02e8f
+
+<> 2018-05-15T090219.200.json
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-05-15T090214.200.json
+
+###
+
+GET https://localhost:4430/api/meal/all
+Content-Type: application/json
+Authorization: Bearer 5afb2ea94c751e0444c02e8e
+
+<> 2018-05-15T090208.200.json
 
 ###
 
@@ -249,103 +138,45 @@ Content-Type: application/json
   "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-05-13T074322.200.json
+<> 2018-05-15T090201.200.json
 
 ###
 
-POST https://localhost:4430/api/register
-Content-Type: application/json
+GET http://localhost:50000
 
-{
-  "email": "peroslav@gmail.com",
-  "password": "dugackaSigurnaSifra",
-  "firstname": "Pero",
-  "lastname": "Slav"
-}
+<> 2018-05-15T090155.200.json
 
 ###
 
-POST https://localhost:4430/api/register
+POST https://localhost:{{port}}/api/login
 Content-Type: application/json
 
 {
   "email": "probniEmail",
-  "password": "dugackaSigurnaSifra",
-  "firstname": "Karlo",
-  "lastname": "Šimunović"
+  "password": "dugackaSigurnaSifra"
 }
 
 ###
 
-GET http://localhost:50000
-
-<> 2018-05-13T074309.200.json
-
-###
-
-GET https://localhost:4430/api/meal/5af876c84c751e1475a954cf
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
 
-<> 2018-05-13T073407.200.txt
-
-###
-
-DELETE https://localhost:4430/api/meal/5af876c84c751e1475a954cf
-Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
-
-<> 2018-05-13T073405.200.json
-
-###
-
-GET https://localhost:4430/api/meal/5af876c84c751e1475a954cf
-Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
-
-<> 2018-05-13T073401.200.json
-
-###
-
-POST https://localhost:4430/api/meal/5af876c84c751e1475a954cf
-Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
-
-{
-"id": "5ade281d239c97ba4400e6cc2",
-    "title":"WHAaat?2",
-    "description":"Izmjenjeni content meal-a"
-}
-
-<> 2018-05-13T073356.200.json
-
-###
-
-GET https://localhost:4430/api/meal/5af876c84c751e1475a954cf
-Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
-
-<> 2018-05-13T073353.200.json
-
-###
-
-GET https://localhost4430/api/meal/5af876c84c751e1475a954cf
-Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+<> 2018-05-14T094525.200.json
 
 ###
 
 GET https://localhost:4430/api/meal/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
 
-<> 2018-05-13T073325.200.json
+<> 2018-05-14T094458.200.json
 
 ###
 
 POST https://localhost:4430/api/meal
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
 
 {
     "title":"Naslov",
@@ -355,235 +186,263 @@ Authorization: Bearer 5af870c54c751e07e12a4875
      }]
 }
 
-<> 2018-05-13T073256.200.json
+<> 2018-05-14T094433.200.json
 
 ###
 
-GET http://localhost:50000
-
-<> 2018-05-13T073241.200.json
-
-###
-
-GET https://localhost:50000
-
-###
-
-GET https://localhost/api/meal/5af8766b4c751e1475a954ce
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T094422.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T094306.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T094200.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T094114.200.txt
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T094101.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T093650.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T093542.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T093454.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T093428.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T093254.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T093048.200.txt
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T092959.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
+
+<> 2018-05-14T092819.200.txt
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
 
 ###
 
 GET https://localhost:4430/api/meal/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
 
-<> 2018-05-13T073128.200.json
-
-###
-
-POST https://localhost:4430/api/meal
-Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
-
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-
-<> 2018-05-13T073123.200.json
+<> 2018-05-14T092737.200.json
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/meal/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
-
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-
-<> 2018-05-13T072921.200.json
+Authorization: Bearer 5af9e2fc4c751e4fa0db44f9
 
 ###
 
-POST https://localhost:4430/api/meal
+POST https://localhost:4430/api/login
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
 
 {
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
 }
 
-<> 2018-05-13T072851.200.txt
+<> 2018-05-14T092652.200.json
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
-
-<> 2018-05-13T072452.200.txt
+<> 2018-05-14T092635.200.txt
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
-
-<> 2018-05-13T072311.200.txt
+<> 2018-05-14T092604.200.json
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
+<> 2018-05-14T092436.200.txt
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
-
-<> 2018-05-13T071555.200.txt
+<> 2018-05-14T092400.200.json
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
-
-<> 2018-05-13T071527.200.txt
+<> 2018-05-14T092350.200.json
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
-
-<> 2018-05-13T071427.200.txt
+<> 2018-05-14T092345.200.txt
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/all
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst"
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
+<> 2018-05-14T092309.200.json
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/5af9dfdf4c751e54a1c25efc
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst"
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
-
-<> 2018-05-13T071120.200.txt
+<> 2018-05-14T091403.200.txt
 
 ###
 
-POST https://localhost:4430/api/meal
+DELETE https://localhost:4430/api/tag/5af9dfdf4c751e54a1c25efc
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst"
-    "tags": [{
-         "title": "hey hey"
-     }]
-}
-
-<> 2018-05-13T071024.200.txt
+<> 2018-05-14T091401.200.json
 
 ###
 
-POST https://localhost:4430/api/meal
+GET https://localhost:4430/api/tag/5af9dfdf4c751e54a1c25efc
 Content-Type: application/json
-Authorization: Bearer 5af870c54c751e07e12a4875
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
+
+<> 2018-05-14T091356.200.json
+
+###
+
+POST https://localhost:4430/api/tag/5af9dfdf4c751e54a1c25efc
+Content-Type: application/json
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
 
 {
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst"
-    "tags": [{
-         "title": "hey hey"
-     }]
+    "name":"AžuriranoIme2"
 }
 
-<> 2018-05-13T070827.200.txt
+<> 2018-05-14T091354.200.json
+
+###
+
+GET https://localhost:4430/api/tag/5af9dfdf4c751e54a1c25efc
+Content-Type: application/json
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
+
+<> 2018-05-14T091350.200.json
+
+###
+
+GET https://localhost:4430/api/tag/all
+Content-Type: application/json
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
+
+<> 2018-05-14T091337.200.json
+
+###
+
+POST https://localhost:4430/api/tag
+Content-Type: application/json
+Authorization: Bearer 5af9dfce4c751e4fa0db44f8
+
+{
+    "name":"naslov taga"
+}
+
+<> 2018-05-14T091335.200.json
 
 ###
 

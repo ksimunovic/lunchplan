@@ -1,4 +1,4 @@
-2018/05/13 19:42:22 apigateway.go:236: [REQUEST]  /login   GET /login HTTP/2.0
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /login   GET /login HTTP/2.0
 Host: localhost:4430
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Encoding: gzip, deflate, br
@@ -7,17 +7,47 @@ Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:42:23 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
 Host: localhost:4430
-Accept: */*
+Accept: text/css,*/*;q=0.1
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
-If-Modified-Since: Sun, 13 May 2018 16:34:30 GMT
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
 Referer: https://localhost:4430/login
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:42:23 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/login
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/login
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+If-Modified-Since: Wed, 16 May 2018 19:04:57 GMT
+Referer: https://localhost:4430/login
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
 Host: localhost:4430
 Accept: text/css,*/*;q=0.1
 Accept-Encoding: gzip, deflate, br
@@ -27,7 +57,17 @@ Referer: https://localhost:4430/login
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:42:23 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/login
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
 Host: localhost:4430
 Accept: */*
 Accept-Encoding: gzip, deflate, br
@@ -37,7 +77,17 @@ Referer: https://localhost:4430/login
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:42:25 apigateway.go:236: [REQUEST]  /login   POST /login HTTP/2.0
+2018/05/17 20:00:06 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:00:08 apigateway.go:236: [REQUEST]  /login   POST /login HTTP/2.0
 Host: localhost:4430
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Encoding: gzip, deflate, br
@@ -49,572 +99,3278 @@ Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 email=probniEmail&password=dugackaSigurnaSifra
-2018/05/13 19:42:25 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+2018/05/17 20:00:08 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
 Host: localhost:4430
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 Referer: https://localhost:4430/login
 Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:42:43 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
-Host: localhost:4430
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/login
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
-Host: localhost:4430
-Accept: text/css,*/*;q=0.1
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
-Host: localhost:4430
-Accept: text/css,*/*;q=0.1
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
-Host: localhost:4430
-Accept: text/css,*/*;q=0.1
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:44 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: no-cache
-Cookie: sid=5af879014c751e15cb335065
-Pragma: no-cache
-Referer: https://localhost:4430/static/css/main.css
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:42:57 apigateway.go:236: [REQUEST]  /api/meal/5af813894c751e07f12b462a   DELETE /api/meal/5af813894c751e07f12b462a HTTP/2.0
+2018/05/17 20:08:16 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
 Host: localhost:4430
 Accept: application/json, text/javascript, */*; q=0.01
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
-Authorization: Bearer 5af879014c751e15cb335065
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 77
 Content-Type: application/json; charset=UTF-8
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 X-Requested-With: XMLHttpRequest
 
-
-2018/05/13 19:42:57 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+{"title":"What","description":"shall","tags":[{"name":"Ido"},{"name":"now"}]}
+2018/05/17 20:08:16 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
 Host: localhost:4430
 Accept: */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
-Authorization: Bearer 5af879014c751e15cb335065
-Cookie: sid=5af879014c751e15cb335065
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 X-Requested-With: XMLHttpRequest
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+2018/05/17 20:08:18 apigateway.go:236: [REQUEST]  /api/meal/5afdc5104c751e62b755de26   GET /api/meal/5afdc5104c751e62b755de26 HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
 Host: localhost:4430
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 Referer: https://localhost:4430/login
 Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
 Host: localhost:4430
 Accept: text/css,*/*;q=0.1
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
 Host: localhost:4430
 Accept: text/css,*/*;q=0.1
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
 Host: localhost:4430
 Accept: text/css,*/*;q=0.1
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
 Host: localhost:4430
 Accept: */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
-If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
-If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
-Referer: https://localhost:4430/
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
-
-
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
-Host: localhost:4430
-Accept: */*
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.5
-Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
 Host: localhost:4430
 Accept: */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
 If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
 Host: localhost:4430
 Accept: */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
-If-Modified-Since: Sun, 13 May 2018 16:34:30 GMT
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Wed, 16 May 2018 19:04:57 GMT
 Referer: https://localhost:4430/
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:02 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+2018/05/17 20:08:26 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
 Host: localhost:4430
 Accept: */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.5
 Cache-Control: max-age=0
-Cookie: sid=5af879014c751e15cb335065
+Cookie: sid=5afdc3284c751e62a909d2ad
 If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
 Referer: https://localhost:4430/static/css/main.css
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:12 apigateway.go:236: [REQUEST]  /api/register   POST /api/register HTTP/1.1
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Connection: Keep-Alive
-Content-Length: 118
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra",
-  "firstname": "Karlo",
-  "lastname": "Šimunović"
-}
-2018/05/13 19:43:19 apigateway.go:236: [REQUEST]  /api/register   POST /api/register HTTP/1.1
+
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Connection: Keep-Alive
-Content-Length: 117
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-  "email": "peroslav@gmail.com",
-  "password": "dugackaSigurnaSifra",
-  "firstname": "Pero",
-  "lastname": "Slav"
-}
-2018/05/13 19:43:21 apigateway.go:236: [REQUEST]  /api/login   POST /api/login HTTP/1.1
+
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Connection: Keep-Alive
-Content-Length: 65
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-  "email": "probniEmail",
-  "password": "dugackaSigurnaSifra"
-}
-2018/05/13 19:43:24 apigateway.go:236: [REQUEST]  /api/login   POST /api/login HTTP/1.1
+
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Connection: Keep-Alive
-Content-Length: 72
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-  "email": "peroslav@gmail.com",
-  "password": "dugackaSigurnaSifra"
-}
-2018/05/13 19:43:27 apigateway.go:236: [REQUEST]  /api/account   GET /api/account HTTP/1.1
+
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:29 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/1.1
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 119
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-2018/05/13 19:43:31 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/1.1
+
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:34 apigateway.go:236: [REQUEST]  /api/meal/5af879414c751e15da7dd9a1   GET /api/meal/5af879414c751e15da7dd9a1 HTTP/1.1
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:35 apigateway.go:236: [REQUEST]  /api/meal/5af879414c751e15da7dd9a1   POST /api/meal/5af879414c751e15da7dd9a1 HTTP/1.1
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 108
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Wed, 16 May 2018 19:04:57 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-"id": "5ade281d239c97ba4400e6cc2",
-    "title":"WHAaat?2",
-    "description":"Izmjenjeni content meal-a"
-}
-2018/05/13 19:43:38 apigateway.go:236: [REQUEST]  /api/meal/5af879414c751e15da7dd9a1   DELETE /api/meal/5af879414c751e15da7dd9a1 HTTP/1.1
+
+2018/05/17 20:19:49 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:40 apigateway.go:236: [REQUEST]  /api/tag   POST /api/tag HTTP/1.1
+2018/05/17 20:20:03 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 70
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 241
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
 
-{
-    "name":"naslov taga",
-    "meal_id":"5ae4a10c239c97ba44011744"
-}
-2018/05/13 19:43:43 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/1.1
+{"title":"aaa","description":"ss","tags":[{"id":"5afdc5104c751e62c530b736","name":"Ido","profile":{"id":"5ac8ac143cd050255c1a6eca","firstname":"Karlo","lastname":"Šimunović"},"served_by":"Dev-Macbook.local 192.168.1.188"},{"name":"vvvv"}]}
+2018/05/17 20:20:03 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
 
 
-2018/05/13 19:43:46 apigateway.go:236: [REQUEST]  /api/tag/5ae5dff13cd0502e40d8af29   GET /api/tag/5ae5dff13cd0502e40d8af29 HTTP/1.1
+2018/05/17 20:20:42 apigateway.go:236: [REQUEST]  /api/tags/all   GET /api/tags/all HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
 
 
-2018/05/13 19:43:47 apigateway.go:236: [REQUEST]  /api/tag/5ae5dff13cd0502e40d8af29   POST /api/tag/5ae5dff13cd0502e40d8af29 HTTP/1.1
+2018/05/17 20:21:16 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 31
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "name":"AžuriranoIme2"
-}
-2018/05/13 19:43:48 apigateway.go:236: [REQUEST]  /api/tag/5ae5dff13cd0502e40d8af29   DELETE /api/tag/5ae5dff13cd0502e40d8af29 HTTP/1.1
+
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:50 apigateway.go:236: [REQUEST]  /api/calendar   POST /api/calendar HTTP/1.1
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 69
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "date":"2018-04-28",
-    "meal_id":"5ae4b3323cd05032c8153057"
-}
-2018/05/13 19:43:52 apigateway.go:236: [REQUEST]  /api/calendar/all   GET /api/calendar/all HTTP/1.1
+
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:56 apigateway.go:236: [REQUEST]  /api/calendar/5ae5e06f3cd0501264f6d380   GET /api/calendar/5ae5e06f3cd0501264f6d380 HTTP/1.1
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
 
-2018/05/13 19:43:59 apigateway.go:236: [REQUEST]  /api/calendar/5ae5e06f3cd0501264f6d380   POST /api/calendar/5ae5e06f3cd0501264f6d380 HTTP/1.1
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 27
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "date":"2018-05-25"
-}
-2018/05/13 19:47:53 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/1.1
+
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 119
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-2018/05/13 19:48:33 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/1.1
+
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 119
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-2018/05/13 19:49:24 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/1.1
+
+2018/05/17 20:21:17 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 119
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:19:47 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-2018/05/13 19:51:25 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/1.1
+
+2018/05/17 20:21:19 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 119
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
-2018/05/13 19:51:57 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/1.1
+
+2018/05/17 20:21:31 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
 Host: localhost:4430
-Accept-Encoding: gzip,deflate
-Authorization: Bearer 5af8793c4c751e15cb335067
-Connection: Keep-Alive
-Content-Length: 119
-Content-Type: application/json
-User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release)
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 243
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
 
-{
-    "title":"Naslov",
-    "description":"Nekakav dugački tekst",
-    "tags": [{
-         "name": "hey hey"
-     }]
-}
+{"title":"Demo","description":"demo","tags":[{"id":"5afdc5104c751e62c530b736","name":"Ido","profile":{"id":"5ac8ac143cd050255c1a6eca","firstname":"Karlo","lastname":"Šimunović"},"served_by":"Dev-Macbook.local 192.168.1.188"},{"name":"www"}]}
+2018/05/17 20:21:31 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:21:31 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:21:15 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:41 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:25:42 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:26:19 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 58
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"tt","description":"tt","tags":[{"name":"tttt"}]}
+2018/05/17 20:26:19 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:26:20 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:35:32 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css.map   GET /static/css/bootstrap.min.css.map HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+If-Modified-Since: Sat, 12 May 2018 10:44:12 GMT
+Origin: null
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:37 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:38 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:37:39 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css.map   GET /static/css/bootstrap.min.css.map HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+If-Modified-Since: Sat, 12 May 2018 10:44:12 GMT
+Origin: null
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:05 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:07 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css.map   GET /static/css/bootstrap.min.css.map HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+If-Modified-Since: Sat, 12 May 2018 10:44:12 GMT
+Origin: null
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:07 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:39:15 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 62
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"rrr","description":"rrrrr","tags":[{"name":"rrrr"}]}
+2018/05/17 20:39:15 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:39:15 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:45:04 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:05 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:26:37 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:06 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:07 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css.map   GET /static/css/bootstrap.min.css.map HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+If-Modified-Since: Sat, 12 May 2018 10:44:12 GMT
+Origin: null
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:27 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:28 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:28 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:28 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:29 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:29 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:29 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:29 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:29 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:45:02 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:30 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:31 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css.map   GET /static/css/bootstrap.min.css.map HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+If-Modified-Since: Sat, 12 May 2018 10:44:12 GMT
+Origin: null
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:45:37 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 58
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"ff","description":"ff","tags":[{"name":"ffff"}]}
+2018/05/17 20:45:37 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:45:38 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:06 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:45:26 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:07 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:07 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css.map   GET /static/css/bootstrap.min.css.map HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+If-Modified-Since: Sat, 12 May 2018 10:44:12 GMT
+Origin: null
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:22 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 58
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"ss","description":"ss","tags":[{"name":"ssss"}]}
+2018/05/17 20:49:23 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:49:23 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:49:45 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:46 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:49:03 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:48 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:49:55 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 60
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"ddd","description":"ddd","tags":[{"name":"dddd"}]}
+2018/05/17 20:49:55 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:49:55 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:52:54 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:49:44 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:55 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:52:56 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:53:04 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 60
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"ggg","description":"ggg","tags":[{"name":"gggg"}]}
+2018/05/17 20:53:04 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:53:04 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:54:14 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:15 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:49:44 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:16 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:54:23 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 57
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"hh","description":"hh","tags":[{"name":"hhh"}]}
+2018/05/17 20:54:23 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:54:23 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:31 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:49:44 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:33 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 20:56:44 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 57
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"yy","description":"yy","tags":[{"name":"yyy"}]}
+2018/05/17 20:56:44 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 20:56:44 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:05 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:01:06 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:42 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:43 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:56:29 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:06:44 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:55 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 18:56:29 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:56 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:17:57 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:08 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:09 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 19:17:53 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:18:10 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:04 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 19:17:53 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:06 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:29 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:30 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 19:18:58 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:19:31 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:56 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:57 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:24:58 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:29 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:30 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 19:24:53 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:31 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:41 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 19:25:27 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:42 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:43 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:51 apigateway.go:236: [REQUEST]  /   GET / HTTP/2.0
+Host: localhost:4430
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/login
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/css/font-awesome.min.css   GET /static/css/font-awesome.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/css/bootstrap.min.css   GET /static/css/bootstrap.min.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/css/main.css   GET /static/css/main.css HTTP/2.0
+Host: localhost:4430
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 16:12:05 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/js/jquery.min.js   GET /static/js/jquery.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/js/bootstrap.min.js   GET /static/js/bootstrap.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 07:16:59 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/js/typeahead.bundle.min.js   GET /static/js/typeahead.bundle.min.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sun, 13 May 2018 15:44:39 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/js/bootstrap-tagsinput.js   GET /static/js/bootstrap-tagsinput.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Mon, 02 Nov 2015 18:26:42 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:52 apigateway.go:236: [REQUEST]  /static/js/app.js   GET /static/js/app.js HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Thu, 17 May 2018 19:25:40 GMT
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:25:54 apigateway.go:236: [REQUEST]  /static/img/7034060-swiss-alps-wallpaper-14990.jpg   GET /static/img/7034060-swiss-alps-wallpaper-14990.jpg HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cache-Control: max-age=0
+Cookie: sid=5afdc3284c751e62a909d2ad
+If-Modified-Since: Sat, 12 May 2018 09:54:24 GMT
+Referer: https://localhost:4430/static/css/main.css
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+
+
+2018/05/17 21:26:07 apigateway.go:236: [REQUEST]  /api/meal   POST /api/meal HTTP/2.0
+Host: localhost:4430
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Content-Length: 60
+Content-Type: application/json; charset=UTF-8
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+{"title":"ccc","description":"vcc","tags":[{"name":"cccc"}]}
+2018/05/17 21:26:07 apigateway.go:236: [REQUEST]  /api/meal/all   GET /api/meal/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+
+2018/05/17 21:26:07 apigateway.go:236: [REQUEST]  /api/tag/all   GET /api/tag/all HTTP/2.0
+Host: localhost:4430
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Authorization: Bearer 5afdc3284c751e62a909d2ad
+Cookie: sid=5afdc3284c751e62a909d2ad
+Referer: https://localhost:4430/
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:60.0) Gecko/20100101 Firefox/60.0
+X-Requested-With: XMLHttpRequest
+
+

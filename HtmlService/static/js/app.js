@@ -5,7 +5,16 @@ window.addEventListener('load', function () {
         let $modal = $(this).closest('.modal');
         let $form = $modal.find('form');
 
-        var formData = objectifyForm($form.serializeArray());
+        let formData = objectifyForm($form.serializeArray());
+        formData.tags = $(".tagsinput").tagsinput('items');
+        let tagsInput = $(".tagsinput").parent().find('.tt-input').val() + ";";
+          tagsInput =   tagsInput.split(';');
+        for(i = 0; i < tagsInput.length; i++){
+            let newTag = tagsInput[i].trim();
+            if(newTag != ""){
+                formData.tags.push({"name": tagsInput[i].trim()});
+            }
+        }
         $.ajax({
             url: "/api/meal",
             type: 'POST',
@@ -26,6 +35,7 @@ window.addEventListener('load', function () {
                         loadTable("#meals-table", data);
                         $form.trigger('reset');
                         $modal.modal('hide');
+                        getAllUserTags();
                     },
                 });
             },
@@ -104,34 +114,36 @@ window.addEventListener('load', function () {
     })
 
 
-    cities = new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
-        queryTokenizer: Bloodhound.tokenizers.whitespace,
-       /* prefetch: {
-            url: 'static/cities.json',
-            cache: false
-        }*/
-        local: possibleUserTags
-    })
-    cities.initialize();
+    if (typeof possibleUserTags != "undefinde") {
 
-    var elt = $('.tagsinput');
-    elt.tagsinput({
-        itemValue: 'value',
-        itemText: 'text',
-        typeaheadjs: {
-            name: 'cities',
-            displayKey: 'text',
-            source: cities.ttAdapter()
-        }
-    });
-    elt.tagsinput('add', possibleUserTags[0]);
-    elt.tagsinput('add', possibleUserTags[2]);
-    elt.tagsinput('add', possibleUserTags[3]);
-    elt.tagsinput('add', possibleUserTags[4]);
-    elt.tagsinput('add', possibleUserTags[5]);
+        // $(".tagsinput").tagsinput('items')
+        tags = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            local: possibleUserTags
+        })
+        tags.initialize();
+        var elt = $('.tagsinput');
+        //elt.tagsinput('destroy');
+        elt.tagsinput({
+            itemValue: 'id',
+            itemText: 'name',
+            typeaheadjs: {
+                name: 'tags',
+                displayKey: 'name',
+                source: tags.ttAdapter(),
+                
+                //source: demoa()
+            }
+        });
+        elt.on('typeahead:selected', function (event, data) {
+            $('.tagsinput').val(data);
+        });
+        elt.tagsinput('add', possibleUserTags[0]);
 
-    $(".twitter-typeahead").css('display', 'inline');
+        $(".twitter-typeahead").css('display', 'inline');
+
+    }
 
 });
 
@@ -253,3 +265,51 @@ function loadTable(table, data) {
     });
 }
 
+function demoa(q, p){
+    console.log(q);
+    console.log(p);
+
+    return [];
+}
+
+function getAllUserTags(){
+    $.ajax({
+        url: "/api/tag/all",
+        type: 'GET',
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+        },
+        data: {},
+        success: function (data) {
+            possibleUserTags = data;
+
+            tags.clear();
+
+            tags.local = possibleUserTags;
+            tags.initialize();
+            /*tags = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                local: possibleUserTags
+            })*/
+
+
+            $('.tagsinput').tagsinput('destroy');
+/*
+            $('.tagsinput').tagsinput({
+                typeaheadjs: {
+                    name: 'tags',
+                    displayKey: 'name',
+                    valueKey: 'id',
+                    source: tags.ttAdapter()
+                }
+            });
+            */
+
+            $('.tagsinput').tagsinput()[0].options.typeaheadjs.source = tags.ttAdapter()
+
+        },
+        error: function () {
+        },
+    });
+}

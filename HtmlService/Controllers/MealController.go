@@ -12,7 +12,7 @@ type Profile struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Firstname string        `json:"firstname,omitempty"`
 	Lastname  string        `json:"lastname,omitempty"`
-	ServedBy  string        `json:"served_by,omitempty"`
+	ServedBy  string        `json:"served_by,omitempty" bson:"-"`
 }
 
 type Meal struct {
@@ -21,12 +21,14 @@ type Meal struct {
 	Description string        `json:"description,omitempty"`
 	Profile     Profile       `json:"profile,omitempty"`
 	Timestamp   int           `json:"timestamp,omitempty"`
-	ServedBy    string        `json:"served_by,omitempty"`
+	Tags        []Tag         `json:"tags,omitempty"`
+	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
 }
 type Tag struct {
 	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Name string        `json:"name,omitempty"`
-	Meal Meal          `json:"meal,omitempty"`
+	Profile     Profile       `json:"profile,omitempty"`
+	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
 }
 
 func (c *Controller) Index() http.HandlerFunc {
