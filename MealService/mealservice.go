@@ -230,17 +230,36 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 	defer sessionCopy.Close()
 
 	c := sessionCopy.DB("MealService").C("meal")
-	var result Meal
-	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}).One(&result); err != nil {
+	var meal Meal
+	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}).One(&meal); err != nil {
 		return errors.New("Meal with id: " + data["get_id"].(string) + " from user: " + profile.Id.String() + " doesn't exist")
-	} else {
-		*jsonResponse, _ = json.Marshal(make(map[string]interface{}))
 	}
 
-	if _, ok := data["get_id"]; !ok {
-		return errors.New("Can't update without meal id")
+	var tags []Tag
+	if data["tags"] != nil {
+		for i := 0; i < len(data["tags"].([]interface{})); i++ {
+			var tag Tag
+			tagData := data["tags"].([]interface{})[i].(map[string]interface{})
+			tagData["sid"] = data["sid"].(string)
+			if tagData["id"] != nil && tagData["id"].(string) != "" {
+				tagData["get_id"] = tagData["id"]
+				tagResult := ServiceCallData("Read", tagData, LoadConfiguration().TagService.Port)
+				temp1, _ := json.Marshal(tagResult)
+				_ = json.Unmarshal(temp1, &tag)
+			} else {
+				tagResult := ServiceCallData("Create", tagData, LoadConfiguration().TagService.Port)
+				temp1, _ := json.Marshal(tagResult)
+				_ = json.Unmarshal(temp1, &tag)
+			}
+			tags = append(tags, tag)
+		}
 	}
 
+	updatedMeal := meal
+	updatedMeal.Title = data["title"].(string)
+	updatedMeal.Description = data["description"].(string)
+	updatedMeal.Tags	= tags
+	/*
 	data["id"] = data["get_id"]
 
 	cleanUp := make(map[string]string)
@@ -255,11 +274,13 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 	if err = json.Unmarshal(finalbody, &finalbodymap); err != nil {
 		return err
 	}
-
-	change := bson.M{"$set": finalbodymap}
-	err = c.Update(result, change)
+*/
+	change := bson.M{"$set": updatedMeal}
+	err := c.Update(meal, change)
 	if err != nil {
 		return err
+	} else {
+		*jsonResponse,_ = json.Marshal(make(map[string]interface{}))
 	}
 
 	return nil
@@ -286,6 +307,15 @@ func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
 	defer sessionCopy.Close()
 
 	c := sessionCopy.DB("MealService").C("meal")
+
+	/*
+	var result Meal
+	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}).One(&result); err != nil {
+		return errors.New("Meal with id: " + data["get_id"].(string) + " from user: " + profile.Id.String() + " doesn't exist")
+	}
+	//TODO: Loop through all tags, if occurances in database == 1 then delete
+	*/
+
 	if err := c.Remove(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string)), "profile._id": bson.ObjectIdHex(profile.Id.Hex())}); err != nil {
 		return errors.New("Unable to remove meal with id: " + data["get_id"].(string) + " from user: " + profile.Id.String())
 	} else {
@@ -325,6 +355,35 @@ func (s *Server) GetAllUserMeals(jsonData []byte, jsonResponse *[]byte) error {
 	}
 
 	*jsonResponse, _ = json.Marshal(results)
+	return nil
+}
+
+
+func (s *Server) Suggest(jsonData []byte, jsonResponse *[]byte) error {
+	var data map[string]interface{}
+	_ = json.Unmarshal(jsonData, &data)
+
+	rpcData := map[string]interface{}{
+		"sid": data["sid"].(string),
+	}
+	var profile Profile
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	temp0, _ := json.Marshal(rpcResult)
+	_ = json.Unmarshal(temp0, &profile)
+
+	sessionCopy := dbSession.Copy()
+	defer sessionCopy.Close()
+
+	c := sessionCopy.DB("MealService").C("meal")
+	var results []Meal
+	pipe := c.Pipe([]bson.M{{"$sample": bson.M{"size":1}},{"$match": bson.M{"profile._id": bson.ObjectIdHex(profile.Id.Hex())}}})
+	err := pipe.All(&results)
+	if err != nil {
+		panic(err)
+	}
+
+	*jsonResponse, _ = json.Marshal(results[0])
+
 	return nil
 }
 

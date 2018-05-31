@@ -71,6 +71,10 @@ GET https://localhost:{{port}}/api/meal/all
 Content-Type: application/json
 Authorization: Bearer {{auth_token}}
 
+### Suggest - Dohvaćanje radnom meal-a
+GET https://localhost:{{port}}/api/meal/suggest
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
 
 ### Read - Dohvaćanje meal-a prema id-u
 GET https://localhost:{{port}}/api/meal/{{meal1}}

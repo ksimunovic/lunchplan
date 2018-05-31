@@ -31,6 +31,9 @@ type Config struct {
 	TagService struct {
 		Port string `json:"port"`
 	} `json:"tag_service"`
+	CalendarService struct {
+		Port string `json:"port"`
+	} `json:"calendar_service"`
 }
 
 var Configuration Config

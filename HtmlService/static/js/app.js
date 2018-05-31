@@ -1,4 +1,3 @@
-var cities;
 window.addEventListener('load', function () {
     $('#addEmployeeModal [type="submit"]').on('click', function (e) {
         e.preventDefault();
@@ -6,9 +5,9 @@ window.addEventListener('load', function () {
         let $form = $modal.find('form');
 
         let formData = objectifyForm($form.serializeArray());
-        formData.tags = $(".tagsinput").tagsinput('items');
-        let tagsInput = $(".tagsinput").parent().find('.tt-input').val() + ";";
-          tagsInput =   tagsInput.split(';');
+        formData.tags = $form.find(".tagsinput").not(':first').tagsinput('items');
+        let tagsInput = $form.find(".tagsinput").not(':first').parent().find('.tt-input').val() + ";";
+        tagsInput =   tagsInput.split(';');
         for(i = 0; i < tagsInput.length; i++){
             let newTag = tagsInput[i].trim();
             if(newTag != ""){
@@ -35,7 +34,7 @@ window.addEventListener('load', function () {
                         loadTable("#meals-table", data);
                         $form.trigger('reset');
                         $modal.modal('hide');
-                        getAllUserTags();
+
                     },
                 });
             },
@@ -49,7 +48,16 @@ window.addEventListener('load', function () {
         let $modal = $(this).closest('.modal');
         let $form = $modal.find('form');
 
-        var formData = objectifyForm($form.serializeArray());
+        let formData = objectifyForm($form.serializeArray());
+        formData.tags = $form.find(".tagsinput").not(':first').tagsinput('items');
+        let tagsInput = $form.find(".tagsinput").not(':first').parent().find('.tt-input').val() + ";";
+        tagsInput =   tagsInput.split(';');
+        for(i = 0; i < tagsInput.length; i++){
+            let newTag = tagsInput[i].trim();
+            if(newTag != ""){
+                formData.tags.push({"name": tagsInput[i].trim()});
+            }
+        }
         $.ajax({
             url: "/api/meal/" + $form.find('[name="id"]').val(),
             type: 'POST',
@@ -113,38 +121,95 @@ window.addEventListener('load', function () {
         });
     })
 
+    /// Calendar section starts here
 
-    if (typeof possibleUserTags != "undefinde") {
+    $('#calendar').fullCalendar({
+        height: 500,
+        events: eventsJson,
+        header: {
+            left: 'prev month agendaWeek today ',
+            center: 'title',
+            right: 'meals_page add_event next'
+        },
+        eventClick: function (calEvent, jsEvent, view) {
+            editEvent(calEvent);
+        },
+        customButtons: {
+            add_event: {
+                text: 'Add',
+                click: function () {
+                    $('#addEventModal').modal('show');
+                }
+            },
+            meals_page: {
+                text: 'Meals',
+                click: function () {
+                    window.location = '/';
+                }
+            }
+        },
+    });
 
-        // $(".tagsinput").tagsinput('items')
-        tags = new Bloodhound({
-            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
-            queryTokenizer: Bloodhound.tokenizers.whitespace,
-            local: possibleUserTags
-        })
-        tags.initialize();
-        var elt = $('.tagsinput');
-        //elt.tagsinput('destroy');
-        elt.tagsinput({
-            itemValue: 'id',
-            itemText: 'name',
-            typeaheadjs: {
-                name: 'tags',
-                displayKey: 'name',
-                source: tags.ttAdapter(),
-                
-                //source: demoa()
+    $('#addEventModal [type="submit"], #editEventModal [type="submit"]').on('click', function (e) {
+        e.preventDefault();
+        let $modal = $(this).closest('.modal');
+        let $form = $modal.find('form');
+        let $calendar = $('#calendar');
+        let link = '';
+        if ($(e.target).closest('div .modal').attr('id') == "editEventModal") {
+            link = '/' + $form.find('[name="id"]').val();
+        }
+
+        let formData = objectifyForm($form.serializeArray());
+        $.ajax({
+            url: "/api/calendar" + link,
+            type: 'POST',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+                xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+            },
+            data: JSON.stringify(formData),
+            dataType: "json",
+            success: function () {
+                $.ajax({
+                    url: "/api/calendar/all",
+                    type: 'GET',
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+                    },
+                    success: function (data) {
+                        eventsJson = data;
+                        $calendar.fullCalendar('removeEventSources');
+                        $calendar.fullCalendar('addEventSource', eventsJson);
+                        $form.trigger('reset');
+                        $modal.modal('hide');
+
+                    },
+                });
+            },
+            error: function () {
+            },
+        });
+    });
+
+    $('.datepicker').datepicker({
+        autoclose: true
+    });
+
+    $('.meal_search').each(function (index, value) {
+        let $searchInput = $(value);
+        $searchInput.typeahead({
+            source: mealsJson,
+            displayText: function (item) {
+                $searchInput.parent().find(".meal_id").val('');
+                return item.title
+            },
+            afterSelect: function (item) {
+                $searchInput.parent().find(".meal_id").val(item.id);
             }
         });
-        elt.on('typeahead:selected', function (event, data) {
-            $('.tagsinput').val(data);
-        });
-        elt.tagsinput('add', possibleUserTags[0]);
-
-        $(".twitter-typeahead").css('display', 'inline');
-
-    }
-
+    });
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 function editEntity(target) {
@@ -162,6 +227,11 @@ function editEntity(target) {
                 if ($modal.find('[name="' + key + '"]').length != 0) {
                     $modal.find('[name="' + key + '"]').val(data[key]);
                 }
+            }
+            let $tagsInput = $modal.find('.tagsinput').not(':first');
+            $tagsInput.tagsinput('removeAll');
+            for (let tagIndex in data.tags){
+                $tagsInput.tagsinput('add', data.tags[tagIndex]);
             }
             $modal.modal('show');
         },
@@ -231,8 +301,6 @@ function loadTable(table, data) {
         $row.show();
     });
 
-    $('[data-toggle="tooltip"]').tooltip();
-
     $("#selectAll").unbind('click');
     $("#selectAll").click(function () {
         if (this.checked) {
@@ -263,13 +331,8 @@ function loadTable(table, data) {
             $("#selectAll").prop("checked", false);
         }
     });
-}
 
-function demoa(q, p){
-    console.log(q);
-    console.log(p);
-
-    return [];
+    getAllUserTags();
 }
 
 function getAllUserTags(){
@@ -283,31 +346,103 @@ function getAllUserTags(){
         success: function (data) {
             possibleUserTags = data;
 
-            tags.clear();
+            $('.tags-input-template-clone').remove();
+            $('.tags-input-template').each(function (index, value) {
+                $template = $(value);
+                $templateClone = $template.clone();
 
-            tags.local = possibleUserTags;
-            tags.initialize();
-            /*tags = new Bloodhound({
-                datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
-                queryTokenizer: Bloodhound.tokenizers.whitespace,
-                local: possibleUserTags
-            })*/
+                $template.after($templateClone);
+                $templateClone.show();
+                $templateClone.addClass('tags-input-template-clone');
 
+                tags = new Bloodhound({
+                    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+                    queryTokenizer: Bloodhound.tokenizers.whitespace,
+                    local: possibleUserTags
+                })
+                tags.initialize();
+                var elt = $templateClone.find('.tagsinput');
+                elt.tagsinput({
+                    itemValue: 'id',
+                    itemText: 'name',
+                    typeaheadjs: {
+                        name: 'tags',
+                        displayKey: 'name',
+                        source: tags.ttAdapter(),
+                    }
+                });
+                elt.on('typeahead:selected', function (event, data) {
+                    $('.tagsinput').val(data);
+                });
+                //elt.tagsinput('add', possibleUserTags[0]);
 
-            $('.tagsinput').tagsinput('destroy');
-/*
-            $('.tagsinput').tagsinput({
-                typeaheadjs: {
-                    name: 'tags',
-                    displayKey: 'name',
-                    valueKey: 'id',
-                    source: tags.ttAdapter()
-                }
+                $(".twitter-typeahead").css('display', 'inline');
             });
-            */
 
-            $('.tagsinput').tagsinput()[0].options.typeaheadjs.source = tags.ttAdapter()
 
+        },
+        error: function () {
+        },
+    });
+}
+
+
+
+function editEvent(target) {
+    let id = target.id;
+    let $modal = $('#editEventModal');
+    $.ajax({
+        url: "/api/calendar/" + id,
+        type: 'GET',
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+        },
+        data: {},
+        success: function (data) {
+            for (var key in data) {
+                if ($modal.find('[name="' + key + '"]').length != 0) {
+                    $modal.find('[name="' + key + '"]').val(data[key]);
+                }
+            }
+            $modal.find('#datepicker').datepicker('setDate', data.date.split('T')[0]);
+            $modal.find('.meal_id').val(data.meal.id);
+            $modal.find('.meal_search').val(data.meal.title);
+            $modal.modal('show');
+        },
+        error: function () {
+        },
+    });
+}
+
+function deleteEvent(target) {
+    let $modal = $(target).closest('div .modal');
+    let $form = $modal.find('form');
+    let id = $form.find('input[name="id"]').val();
+    let $calendar = $('#calendar');
+
+    $.ajax({
+        url: "/api/calendar/" + id,
+        type: 'DELETE',
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+            xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+        },
+        dataType: "json",
+        success: function (data) {
+            $.ajax({
+                url: "/api/calendar/all",
+                type: 'GET',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+                },
+                success: function (data) {
+                    eventsJson = data;
+                    $calendar.fullCalendar('removeEventSources');
+                    $calendar.fullCalendar('addEventSource', eventsJson);
+                    $form.trigger('reset');
+                    $modal.modal('hide');
+                },
+            });
         },
         error: function () {
         },

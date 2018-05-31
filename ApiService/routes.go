@@ -45,6 +45,12 @@ var routes = Routes{
 		ServiceCall("GetAllUserMeals", LoadConfiguration().MealService.Port),
 	},
 	Route{
+		"Suggest",
+		"GET",
+		"/meal/suggest",
+		ServiceCall("Suggest", LoadConfiguration().MealService.Port),
+	},
+	Route{
 		"Read",
 		"GET",
 		"/meal/{id}",

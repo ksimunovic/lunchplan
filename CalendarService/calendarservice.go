@@ -20,7 +20,7 @@ type Profile struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 	Firstname string        `json:"firstname,omitempty"`
 	Lastname  string        `json:"lastname,omitempty"`
-	ServedBy  string        `json:"served_by,omitempty"`
+	ServedBy  string        `json:"served_by,omitempty" bson:"-"`
 }
 type Meal struct {
 	Id          bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
@@ -28,12 +28,16 @@ type Meal struct {
 	Description string        `json:"description,omitempty"`
 	Profile     Profile       `json:"profile,omitempty"`
 	Timestamp   int           `json:"timestamp,omitempty"`
-	ServedBy    string        `json:"served_by,omitempty"`
+	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
 }
 type Calendar struct {
-	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
-	Date time.Time     `json:"date,omitempty"`
-	Meal Meal          `json:"meal,omitempty"`
+	Id       bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Date     time.Time     `json:"date,omitempty"`
+	Meal     Meal          `json:"meal,omitempty"`
+	Start    string        `json:"start,omitempty" bson:"-"`
+	End      string        `json:"end,omitempty" bson:"-"`
+	Title      string        `json:"title,omitempty" bson:"-"`
+	ServedBy string        `json:"served_by,omitempty" bson:"-"`
 }
 
 type Config struct {
@@ -116,7 +120,7 @@ func GetIP() string {
 func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
+
 	rpcData := map[string]interface{}{
 		"sid":    data["sid"].(string),
 		"get_id": data["meal_id"].(string),
@@ -156,7 +160,6 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -166,6 +169,7 @@ func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
 	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string))}).One(&result); err != nil {
 		return errors.New("Calendar with id: " + data["get_id"].(string) + " doesn't exist")
 	} else {
+		result.ServedBy = GetIP()
 		*jsonResponse, _ = json.Marshal(result)
 	}
 
@@ -175,7 +179,6 @@ func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
 func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -185,8 +188,8 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 	}
 
 	c := sessionCopy.DB("CalendarService").C("calendar")
-	var result Calendar
-	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string))}).One(&result); err != nil {
+	var calendar Calendar
+	if err := c.Find(bson.M{"_id": bson.ObjectIdHex(data["get_id"].(string))}).One(&calendar); err != nil {
 		return errors.New("Calendar with id: " + data["get_id"].(string) + " doesn't exist")
 	} else {
 		*jsonResponse, _ = json.Marshal(make(map[string]interface{}))
@@ -196,18 +199,29 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 		return errors.New("Can't update without calendar id")
 	}
 
-	data["id"] = data["get_id"]
+	rpcData := map[string]interface{}{
+		"sid":    data["sid"].(string),
+		"get_id": data["meal_id"].(string),
+	}
+	var meal Meal
+	rpcResult := ServiceCallData("Read", rpcData, LoadConfiguration().MealService.Port)
+	temp0, _ := json.Marshal(rpcResult)
+	_ = json.Unmarshal(temp0, &meal)
+
+	if meal.Id == "" {
+		return errors.New("Meal with id " + meal.Id.String() + " doesn't exist")
+	}
 
 	date, err := time.Parse("2006-01-02", data["date"].(string))
 	if err != nil {
 		return errors.New("Date must be in format YYYY-MM-DD, given: " + data["date"].(string))
 	}
 
-	finalbodymap := make( map[string]interface{})
-	finalbodymap["date"] = date
+	calendarModified := calendar
+	calendarModified.Date = date
+	calendarModified.Meal = meal
 
-	change := bson.M{"$set": finalbodymap}
-	err = c.Update(result, change)
+	err = c.Update(calendar, bson.M{"$set": calendarModified})
 	if err != nil {
 		return err
 	}
@@ -218,7 +232,6 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -237,11 +250,9 @@ func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
 	return nil
 }
 
-
 func (s *Server) GetAllUserCalendars(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
-	
 
 	rpcData := map[string]interface{}{
 		"sid": data["sid"].(string),
@@ -264,10 +275,16 @@ func (s *Server) GetAllUserCalendars(jsonData []byte, jsonResponse *[]byte) erro
 		results = []Calendar{}
 	}
 
+	for i := 0; i < len(results); i++ {
+		results[i].ServedBy = GetIP()
+		results[i].Start = results[i].Date.Format("2006-01-02") + " 12:00:00"
+		results[i].End = results[i].Date.Format("2006-01-02") + " 15:00:00"
+		results[i].Title = results[i].Meal.Title;
+	}
+
 	*jsonResponse, _ = json.Marshal(results)
 	return nil
 }
-
 
 func ServiceCallData(method string, data map[string]interface{}, servicePort string) map[string]interface{} {
 

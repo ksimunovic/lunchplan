@@ -24,6 +24,12 @@ var routes = Routes{
 		Controller.MealController.Index(),
 	},
 	Route{
+		"Index",
+		"GET",
+		"/calendar",
+		Controller.CalendarController.ShowCalendar(),
+	},
+	Route{
 		"Login",
 		"GET",
 		"/login",

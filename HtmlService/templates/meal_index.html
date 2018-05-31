@@ -14,6 +14,10 @@
                            data-toggle="modal">
                             <i class="material-icons">&#xE15C;</i> <span>Delete</span>
                         </a>
+
+                        <a href="/calendar" class="btn btn-warning">
+                            <span>Calendar</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -74,9 +78,10 @@
                     <div class="form-group">
                         <label>Description</label>
                         <input name="description" type="email" class="form-control" required></div>
-                    <div class="form-group">
+                    <div class="form-group tags-input-template" style="display: none;">
                         <label>Tags</label>
-                        <input name="tags" type="text" class="form-control tagsinput"></div>
+                        <input name="tags" type="text" class="form-control tagsinput">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -101,6 +106,10 @@
                     <div class="form-group">
                         <label>Description</label>
                         <input name="description" type="email" class="form-control" required></div>
+                    <div class="form-group tags-input-template" style="display: none;">
+                        <label>Tags</label>
+                        <input name="tags" type="text" class="form-control tagsinput">
+                    </div>
                     <div class="form-group">
                         <label>Served By</label>
                         <input name="served_by" class="form-control" disabled></input>
@@ -125,7 +134,7 @@
                 <div class="modal-body">
                     <p>Are you sure you want to delete these Records?</p>
                     <p class="text-warning">
-                        <small>This action cannot be undone.</small>
+                        <small>This action cannot be <undone class=""></undone></small>
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -137,9 +146,7 @@
 </div>
 <script type="application/javascript">
     var mealsJson = "{{.vars.mealsJson}}";
-    //var possibleUserTags = [{"value":1,"text":"Amsterdam","continent":"Europe"},{"value":2,"text":"London","continent":"Europe"},{"value":3,"text":"Paris","continent":"Europe"},{"value":4,"text":"Washington","continent":"America"},{"value":5,"text":"Mexico City","continent":"America"},{"value":6,"text":"jela pećena u pećnicic","continent":"America"},{"value":7,"text":"Sydney","continent":"Australia"},{"value":8,"text":"Wellington","continent":"Australia"},{"value":9,"text":"Canberra","continent":"Australia"},{"value":10,"text":"Beijing","continent":"Asia"},{"value":11,"text":"New Delhi","continent":"Asia"},{"value":12,"text":"Kathmandu","continent":"Asia"},{"value":13,"text":"Cairo","continent":"Africa"},{"value":14,"text":"Cape Town","continent":"Africa"},{"value":15,"text":"Kinshasa","continent":"Africa"}];
-    var possibleUserTags = {{.vars.tagsJson}};
-    possibleUserTags = JSON.parse(possibleUserTags);
+    var possibleUserTags = JSON.parse({{.vars.tagsJson}});
     window.addEventListener('load', function () {
         loadTable('#meals-table', JSON.parse(mealsJson));
     })
