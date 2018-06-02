@@ -7,10 +7,10 @@ window.addEventListener('load', function () {
         let formData = objectifyForm($form.serializeArray());
         formData.tags = $form.find(".tagsinput").not(':first').tagsinput('items');
         let tagsInput = $form.find(".tagsinput").not(':first').parent().find('.tt-input').val() + ";";
-        tagsInput =   tagsInput.split(';');
-        for(i = 0; i < tagsInput.length; i++){
+        tagsInput = tagsInput.split(';');
+        for (i = 0; i < tagsInput.length; i++) {
             let newTag = tagsInput[i].trim();
-            if(newTag != ""){
+            if (newTag != "") {
                 formData.tags.push({"name": tagsInput[i].trim()});
             }
         }
@@ -36,9 +36,15 @@ window.addEventListener('load', function () {
                         $modal.modal('hide');
 
                     },
+                    error: function () {
+                        $form.trigger('reset');
+                        $modal.modal('hide');
+                    },
                 });
             },
             error: function () {
+                $form.trigger('reset');
+                $modal.modal('hide');
             },
         });
     })
@@ -51,10 +57,10 @@ window.addEventListener('load', function () {
         let formData = objectifyForm($form.serializeArray());
         formData.tags = $form.find(".tagsinput").not(':first').tagsinput('items');
         let tagsInput = $form.find(".tagsinput").not(':first').parent().find('.tt-input').val() + ";";
-        tagsInput =   tagsInput.split(';');
-        for(i = 0; i < tagsInput.length; i++){
+        tagsInput = tagsInput.split(';');
+        for (i = 0; i < tagsInput.length; i++) {
             let newTag = tagsInput[i].trim();
-            if(newTag != ""){
+            if (newTag != "") {
                 formData.tags.push({"name": tagsInput[i].trim()});
             }
         }
@@ -79,9 +85,15 @@ window.addEventListener('load', function () {
                         $form.trigger('reset');
                         $modal.modal('hide');
                     },
+                    error: function () {
+                        $form.trigger('reset');
+                        $modal.modal('hide');
+                    },
                 });
             },
             error: function () {
+                $form.trigger('reset');
+                $modal.modal('hide');
             },
         });
     })
@@ -118,6 +130,10 @@ window.addEventListener('load', function () {
                 $form.trigger('reset');
                 $modal.modal('hide');
             },
+            error: function () {
+                $form.trigger('reset');
+                $modal.modal('hide');
+            },
         });
     })
 
@@ -148,6 +164,11 @@ window.addEventListener('load', function () {
                 }
             }
         },
+        dayClick: function (date, jsEvent, view) {
+            $addEventModal = $('#addEventModal');
+            $addEventModal.find('#datepicker').datepicker('setDate', date.format());
+            $addEventModal.modal('show');
+        }
     });
 
     $('#addEventModal [type="submit"], #editEventModal [type="submit"]').on('click', function (e) {
@@ -183,11 +204,16 @@ window.addEventListener('load', function () {
                         $calendar.fullCalendar('addEventSource', eventsJson);
                         $form.trigger('reset');
                         $modal.modal('hide');
-
+                    },
+                    error: function () {
+                        $form.trigger('reset');
+                        $modal.modal('hide');
                     },
                 });
             },
             error: function () {
+                $form.trigger('reset');
+                $modal.modal('hide');
             },
         });
     });
@@ -210,6 +236,31 @@ window.addEventListener('load', function () {
         });
     });
     $('[data-toggle="tooltip"]').tooltip();
+
+    $('.glyphicon-refresh').parent().on('click', function (e) {
+        let $this = $(e.target);
+        $this.attr('disabled', 'disabled');
+
+        let $mealAc = $this.parent().parent().find('.meal_search');
+        let $mealInput = $this.parent().parent().find('[name="meal_id"]');
+        $.ajax({
+            url: "/api/meal/suggest",
+            type: 'GET',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer ' + getCookieValue("sid"));
+            },
+            success: function (data) {
+                $this.removeAttr('disabled');
+                $mealAc.val(data.title);
+                $mealInput.val(data.id);
+            },
+            error: function () {
+                $this.removeAttr('disabled');
+                $mealAc.val('');
+                $mealInput.val('');
+            },
+        });
+    })
 });
 
 function editEntity(target) {
@@ -230,7 +281,7 @@ function editEntity(target) {
             }
             let $tagsInput = $modal.find('.tagsinput').not(':first');
             $tagsInput.tagsinput('removeAll');
-            for (let tagIndex in data.tags){
+            for (let tagIndex in data.tags) {
                 $tagsInput.tagsinput('add', data.tags[tagIndex]);
             }
             $modal.modal('show');
@@ -335,7 +386,7 @@ function loadTable(table, data) {
     getAllUserTags();
 }
 
-function getAllUserTags(){
+function getAllUserTags() {
     $.ajax({
         url: "/api/tag/all",
         type: 'GET',
@@ -385,7 +436,6 @@ function getAllUserTags(){
         },
     });
 }
-
 
 
 function editEvent(target) {

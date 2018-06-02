@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe92f8b6-d04e-4186-80a9-08f551a7f6eb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HtmlService/Controllers/CalendarController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HtmlService/static/cal.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiService/go_build_apiservice_" beforeDir="false" afterPath="$PROJECT_DIR$/ApiService/go_build_apiservice_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiService/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/ApiService/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarService/calendarservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarService/calendarservice.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CalendarService/go_build_calendarservice_" beforeDir="false" afterPath="$PROJECT_DIR$/CalendarService/go_build_calendarservice_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HtmlService/Controllers/AppControler.go" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/Controllers/AppControler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HtmlService/go_build_htmlservice_" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/go_build_htmlservice_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HtmlService/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HtmlService/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HtmlService/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HtmlService/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HtmlService/templates/meal_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/templates/meal_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MealService/go_build_mealservice_" beforeDir="false" afterPath="$PROJECT_DIR$/MealService/go_build_mealservice_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MealService/mealservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/MealService/mealservice.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-api.http" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api.http" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,29 +41,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mealservice.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mealservice.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MealService/mealservice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="369" column="33" lean-forward="true" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
+            <state relative-caret-position="139">
+              <caret line="383" selection-start-line="383" selection-end-line="383" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HtmlService/static/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="511" column="30" selection-start-line="511" selection-start-column="30" selection-end-line="511" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HtmlService/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+            <state relative-caret-position="521">
+              <caret line="261" column="11" selection-start-line="261" selection-start-column="11" selection-end-line="261" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -84,14 +62,8 @@
       <file leaf-file-name="calendar_showcalendar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-              <folding>
-                <element signature="e#1226#1246#0#HTML" expanded="true" />
-                <element signature="e#2612#2632#0#HTML" expanded="true" />
-                <element signature="e#2844#2898#0#HTML" expanded="true" />
-                <element signature="e#2925#2949#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="-300">
+              <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -99,8 +71,8 @@
       <file leaf-file-name="rest-api.http" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-api.http">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+            <state relative-caret-position="47">
+              <caret line="74" column="47" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -108,7 +80,7 @@
       <file leaf-file-name="calendarservice.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CalendarService/calendarservice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
+            <state relative-caret-position="2970">
               <caret line="198" column="60" selection-start-line="198" selection-start-column="60" selection-end-line="198" selection-end-column="60" />
             </state>
           </provider>
@@ -125,7 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>loadTa</find>
       <find>tagsi</find>
       <find>.after</find>
       <find>$('.tags-input-template').get(0).eac</find>
@@ -155,6 +126,7 @@
       <find>toolti</find>
       <find>calen</find>
       <find>add new</find>
+      <find>fullCa</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -208,13 +180,13 @@
         <option value="$PROJECT_DIR$/HtmlService/Controllers/CalendarController.go" />
         <option value="$PROJECT_DIR$/HtmlService/templates/layout.html" />
         <option value="$PROJECT_DIR$/CalendarService/calendarservice.go" />
-        <option value="$PROJECT_DIR$/HtmlService/static/js/app.js" />
         <option value="$PROJECT_DIR$/HtmlService/templates/meal_index.html" />
-        <option value="$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html" />
         <option value="$PROJECT_DIR$/HtmlService/static/css/main.css" />
         <option value="$PROJECT_DIR$/ApiService/routes.go" />
         <option value="$PROJECT_DIR$/rest-api.http" />
+        <option value="$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html" />
         <option value="$PROJECT_DIR$/MealService/mealservice.go" />
+        <option value="$PROJECT_DIR$/HtmlService/static/js/app.js" />
       </list>
     </option>
   </component>
@@ -246,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,6 +247,34 @@
               <item name="lunchplan" type="b2602c69:ProjectViewProjectNode" />
               <item name="lunchplan" type="462c0819:PsiDirectoryNode" />
               <item name="HtmlService" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lunchplan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lunchplan" type="462c0819:PsiDirectoryNode" />
+              <item name="HtmlService" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lunchplan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lunchplan" type="462c0819:PsiDirectoryNode" />
+              <item name="HtmlService" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lunchplan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lunchplan" type="462c0819:PsiDirectoryNode" />
+              <item name="HtmlService" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lunchplan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lunchplan" type="462c0819:PsiDirectoryNode" />
+              <item name="HtmlService" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,7 +286,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,17 +302,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GolangProjects\lunchplan\certs" />
-      <recent name="D:\GolangProjects\lunchplan\HtmlService" />
-      <recent name="D:\GolangProjects\lunchplan\HtmlService\Controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/HtmlService/Controllers" />
       <recent name="$PROJECT_DIR$/HtmlService/templates" />
       <recent name="D:\GolangProjects\lunchplan\HtmlService\Controllers" />
       <recent name="D:\GolangProjects\lunchplan\HtmlService\templates" />
       <recent name="D:\GolangProjects\lunchplan\HtmlService\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GolangProjects\lunchplan\certs" />
+      <recent name="D:\GolangProjects\lunchplan\HtmlService" />
+      <recent name="D:\GolangProjects\lunchplan\HtmlService\Controllers" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -330,7 +330,7 @@
               </KeyValuePair>
               <KeyValuePair>
                 <option name="key" value="Authorization" />
-                <option name="value" value="Bearer 5b0aebe44c751e09ad47d892" />
+                <option name="value" value="Bearer 5b1038874c751eb1ddc10164" />
               </KeyValuePair>
             </list>
           </option>
@@ -351,6 +351,86 @@
           </option>
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;probniEmail&quot;,&#10;  &quot;password&quot;: &quot;dugackaSigurnaSifra&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:4430/api/meal/suggest" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer 5b1038764c751eb1ddc10163" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:4430/api/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;peroslav@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;dugackaSigurnaSifra&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:4430/api/meal/suggest" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer 5b10369f4c751eb1ddc10162" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:50000" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:4430/api/meal/suggest" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer 5b0aebe44c751e09ad47d892" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -409,13 +489,6 @@
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:50000" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
           <option name="urlBase" value="https://localhost:4430/api/tag/all" />
           <option name="urlPath" value="" />
           <option name="headers">
@@ -451,22 +524,6 @@
           </option>
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{&#10;    &quot;name&quot;:&quot;naslov taga&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://localhost:4430/api/login" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;peroslav@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;dugackaSigurnaSifra&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -1216,61 +1273,6 @@
           <option name="textToSend" value="{&#10;    &quot;date&quot;:&quot;2018-04-28&quot;,&#10;    &quot;meal_id&quot;:&quot;5ae4b3323cd05032c8153057&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost/api/login" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;peroslav@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;dugackaSigurnaSifra&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost/api/calendar" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer 5aeda75a3cd0502108044abe" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;    &quot;date&quot;:&quot;2018-04-28&quot;,&#10;    &quot;meal_id&quot;:&quot;5ae4b3323cd05032c8153057&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost/api/tag/all" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer 5aeda75a3cd0502108044abe" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1286,7 +1288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build mealservice/">
+  <component name="RunManager" selected="Go Build.go build calendarservice/">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="lunchplan" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -1417,24 +1419,24 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49609375" weight="0.33385828" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4811321" visible="true" weight="0.1984375" />
       <window_info id="Structure" order="1" sideWeight="0.5182292" side_tool="true" weight="0.1984375" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32598424" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32440946" />
       <window_info active="true" anchor="bottom" id="REST Client" order="12" visible="true" weight="0.45511812" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3952756" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3267974" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50390625" side_tool="true" weight="0.33228347" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32440946" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info id="Favorites" order="2" sideWeight="0.5188679" side_tool="true" weight="0.1984375" />
     </layout-to-restore>
   </component>
@@ -1460,8 +1462,13 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="217" />
+      <option name="time" value="221" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="results" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -1490,7 +1497,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/configurationservice/config.json" />
     <entry file="file://C:/Go/src/net/rpc/server.go" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/test-responses.http">
       <provider selected="true" editor-type-id="text-editor">
@@ -1651,9 +1657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding>
-            <element signature="e#20#83#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1706,20 +1709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="587" selection-start-line="587" selection-end-line="587" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HtmlService/static/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HtmlService/templates/meal_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1727,26 +1716,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HtmlService/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="511" column="30" selection-start-line="511" selection-start-column="30" selection-end-line="511" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-          <folding>
-            <element signature="e#1226#1246#0#HTML" expanded="true" />
-            <element signature="e#2612#2632#0#HTML" expanded="true" />
-            <element signature="e#2844#2898#0#HTML" expanded="true" />
-            <element signature="e#2925#2949#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HtmlService/static/css/main.css" />
     <entry file="file://$PROJECT_DIR$/ApiService/routes.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -1754,24 +1724,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-api.http">
+    <entry file="file://$PROJECT_DIR$/CalendarService/calendarservice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+        <state relative-caret-position="2970">
+          <caret line="198" column="60" selection-start-line="198" selection-start-column="60" selection-end-line="198" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalendarService/calendarservice.go">
+    <entry file="file:///usr/local/go/src/runtime/panic.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="198" column="60" selection-start-line="198" selection-start-column="60" selection-end-line="198" selection-end-column="60" />
+        <state relative-caret-position="28">
+          <caret line="587" selection-start-line="587" selection-end-line="587" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HtmlService/templates/calendar_showcalendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15871" column="17" selection-start-line="15871" selection-start-column="17" selection-end-line="15871" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-api.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="74" column="47" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MealService/mealservice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="369" column="33" lean-forward="true" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
+        <state relative-caret-position="139">
+          <caret line="383" selection-start-line="383" selection-end-line="383" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HtmlService/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="261" column="11" selection-start-line="261" selection-start-column="11" selection-end-line="261" selection-end-column="11" />
         </state>
       </provider>
     </entry>

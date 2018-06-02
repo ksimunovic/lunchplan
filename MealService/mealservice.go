@@ -358,7 +358,6 @@ func (s *Server) GetAllUserMeals(jsonData []byte, jsonResponse *[]byte) error {
 	return nil
 }
 
-
 func (s *Server) Suggest(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
@@ -376,13 +375,18 @@ func (s *Server) Suggest(jsonData []byte, jsonResponse *[]byte) error {
 
 	c := sessionCopy.DB("MealService").C("meal")
 	var results []Meal
-	pipe := c.Pipe([]bson.M{{"$sample": bson.M{"size":1}},{"$match": bson.M{"profile._id": bson.ObjectIdHex(profile.Id.Hex())}}})
+	help := []bson.M{{"$match": bson.M{"profile._id": bson.ObjectIdHex(profile.Id.Hex())}},{"$sample": bson.M{"size":1}}}
+	pipe := c.Pipe(help)
 	err := pipe.All(&results)
 	if err != nil {
 		panic(err)
 	}
 
-	*jsonResponse, _ = json.Marshal(results[0])
+	if len(results) != 0 {
+		*jsonResponse, _ = json.Marshal(results[0])
+	} else {
+		*jsonResponse, _ = json.Marshal(make(map[string]interface{}))
+	}
 
 	return nil
 }
