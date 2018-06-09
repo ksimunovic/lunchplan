@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"os"
 	"encoding/json"
+	"time"
 )
 
 var config Config
@@ -44,10 +45,12 @@ func LoadConfiguration() Config {
 	if (Config{}) != config {
 		return config
 	}
-	response, err := http.Get("http://localhost:50000/")
+	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s", err)
-		return Config{}
+		fmt.Printf("%s; ", err)
+		fmt.Println("Trying again in 5 seconds...")
+		time.Sleep(5 * time.Second)
+		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
@@ -72,7 +75,7 @@ func HandlerWrap(h http.Handler) http.HandlerFunc {
 
 func main() {
 	router := mux.NewRouter().StrictSlash(true)
-	router.PathPrefix("/static/").Handler(HandlerWrap(http.StripPrefix("/static/", http.FileServer(http.Dir("HtmlService/static")))))
+	router.PathPrefix("/static/").Handler(HandlerWrap(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 
 	for _, route := range routes {
 		router.Methods(route.Method).

@@ -24,15 +24,19 @@ type Controller struct {
 type Config struct {
 	UserService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"user_service"`
 	MealService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"meal_service"`
 	TagService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"tag_service"`
 	CalendarService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"calendar_service"`
 }
 
@@ -42,7 +46,7 @@ func LoadConfiguration() Config {
 	if (Config{}) != Configuration {
 		return Configuration
 	}
-	response, err := http.Get("http://localhost:50000/")
+	response, err := http.Get("http://configservice:50000/")
 	if err != nil {
 		fmt.Printf("%s", err)
 		return Config{}
@@ -62,8 +66,8 @@ func LoadConfiguration() Config {
 	}
 }
 func getTemplate(method string, controllerName string) *template.Template {
-	lp := filepath.Join("HtmlService", "templates", "layout.html")
-	fp := filepath.Join("HtmlService", "templates", controllerName+"_"+method+".html")
+	lp := filepath.Join("templates", "layout.html")
+	fp := filepath.Join("templates", controllerName+"_"+method+".html")
 
 	tmpl := template.New("home")
 
@@ -110,9 +114,9 @@ func render(w http.ResponseWriter, r *http.Request, tpl *template.Template, name
 	w.Write(buf.Bytes())
 }
 
-func ServiceCallData(method string, data map[string]interface{}, servicePort string) []byte {
+func ServiceCallData(method string, data map[string]interface{}, serviceHost string) []byte {
 
-	c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
+	c, err := rpc.Dial("tcp", serviceHost)
 	if err != nil {
 		fmt.Println(err.Error())
 		return nil

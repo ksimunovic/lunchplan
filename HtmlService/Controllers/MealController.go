@@ -43,7 +43,7 @@ func (c *Controller) Index() http.HandlerFunc {
 		}
 
 		var allUserMeals []Meal
-		rpcResult := ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Port);
+		rpcResult := ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserMeals); err != nil {
 			println(err.Error())
 			return
@@ -51,7 +51,7 @@ func (c *Controller) Index() http.HandlerFunc {
 		allUserMealsJson, _ := json.Marshal(allUserMeals)
 
 		var allUserTags []Tag
-		rpcResult = ServiceCallData("GetAllUserTags", rpcData, LoadConfiguration().TagService.Port);
+		rpcResult = ServiceCallData("GetAllUserTags", rpcData, LoadConfiguration().TagService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserTags); err != nil {
 			println(err.Error())
 			return

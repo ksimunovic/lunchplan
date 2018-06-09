@@ -7,14 +7,15 @@ import (
 	"log"
 	"net/http"
 	"net/http/httputil"
-	"net/url"
 	"os"
 	"strings"
 
-	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"net/rpc"
 	"time"
+	"net/url"
+	"github.com/gorilla/handlers"
+	"io"
 )
 
 type Session struct {
@@ -30,29 +31,34 @@ type Config struct {
 	} `json:"database"`
 	ApiGateway struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"api_gateway"`
 	ApiService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"api_service"`
 	HtmlService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"html_service"`
 	UserService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"user_service"`
 }
 
 var config Config
 
 func LoadConfiguration() Config {
-
 	if (Config{}) != config {
 		return config
 	}
-	response, err := http.Get("http://localhost:50000/")
+	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s", err)
-		return Config{}
+		fmt.Printf("%s; ", err)
+		fmt.Println("Trying again in 5 seconds...")
+		time.Sleep(5 * time.Second)
+		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
@@ -80,7 +86,7 @@ func ValidateApi(next http.HandlerFunc) http.HandlerFunc {
 					"bearerToken": bearerToken[1],
 				}
 
-				c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)
+				c, err := rpc.Dial("tcp", LoadConfiguration().UserService.Host)
 				if err != nil {
 					fmt.Println(err)
 					return
@@ -115,9 +121,9 @@ func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 
 			if req.RequestURI == "/logout" {
 				c := &http.Cookie{
-					Name:     "sid",
-					Value:    "",
-					Path:     "/",
+					Name:    "sid",
+					Value:   "",
+					Path:    "/",
 					Expires: time.Unix(0, 0),
 
 					HttpOnly: true,
@@ -131,7 +137,7 @@ func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 				"bearerToken": cookie.Value,
 			}
 
-			c, err := rpc.Dial("tcp", "127.0.0.1:"+LoadConfiguration().UserService.Port)
+			c, err := rpc.Dial("tcp", LoadConfiguration().UserService.Host)
 			if err != nil {
 				fmt.Println(err)
 				return
@@ -143,9 +149,9 @@ func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 			err = c.Call("Server.Validate", jsonData, &result)
 			if err != nil {
 				c := &http.Cookie{
-					Name:     "sid",
-					Value:    "",
-					Path:     "/",
+					Name:    "sid",
+					Value:   "",
+					Path:    "/",
 					Expires: time.Unix(0, 0),
 
 					HttpOnly: true,
@@ -170,9 +176,9 @@ func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 		} else {
 			if req.RequestURI != "/login" && !strings.HasPrefix(req.RequestURI, "/static") {
 				c := &http.Cookie{
-					Name:     "sid",
-					Value:    "",
-					Path:     "/",
+					Name:    "sid",
+					Value:   "",
+					Path:    "/",
 					Expires: time.Unix(0, 0),
 
 					HttpOnly: true,
@@ -195,22 +201,24 @@ func handler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Request) 
 
 func main() {
 	logPath := "development.log"
-
 	openLogFile(logPath)
 
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 
-	u, _ := url.Parse("http://localhost:" + LoadConfiguration().ApiService.Port)
+	u, _ := url.Parse("http://" + LoadConfiguration().ApiService.Host)
 	apiProxy := httputil.NewSingleHostReverseProxy(u)
 
-	h, _ := url.Parse("http://localhost:" + LoadConfiguration().HtmlService.Port)
+	h, _ := url.Parse("http://" + LoadConfiguration().HtmlService.Host)
 	htmlProxy := httputil.NewSingleHostReverseProxy(h)
+
+	log.Print(u)
+	log.Print(apiProxy)
+	log.Print(h)
+	log.Print(htmlProxy)
 
 	router := mux.NewRouter().StrictSlash(false)
 	router.HandleFunc("/api/{rest:.*}", ValidateApi(handler(apiProxy)))
 	router.HandleFunc("/{rest:.*}", ValidateHtml(handler(htmlProxy)))
-
-	fmt.Println("API Gateway is up and running...")
 
 	go http.ListenAndServe(":80", http.HandlerFunc(redirect))
 	log.Fatal(http.ListenAndServeTLS(":4430", "certs/localhost.crt", "certs/localhost.key", logRequest(handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router))))
@@ -234,7 +242,7 @@ func logRequest(handler http.Handler) http.Handler {
 		}
 		url := r.RequestURI
 		log.Println("[REQUEST] ", url, " ", string(requestDump))
-handler.ServeHTTP(w, r)
+		handler.ServeHTTP(w, r)
 		/*
 		rec := httptest.NewRecorder()
 		handler.ServeHTTP(rec, r)
@@ -260,9 +268,11 @@ handler.ServeHTTP(w, r)
 
 func openLogFile(logfile string) {
 	if logfile != "" {
-		err := os.Truncate(logfile, 100)
-		if err != nil {
-			log.Fatal(err)
+		if _, err := os.Stat(logfile); err == nil {
+			err := os.Truncate(logfile, 100)
+			if err != nil {
+				log.Fatal(err)
+			}
 		}
 
 		lf, err := os.OpenFile(logfile, os.O_WRONLY|os.O_CREATE, 0640)
@@ -271,6 +281,7 @@ func openLogFile(logfile string) {
 			log.Fatal("OpenLogfile: os.OpenFile:", err)
 		}
 
-		log.SetOutput(lf)
+		mw := io.MultiWriter(os.Stdout, lf)
+		log.SetOutput(mw)
 	}
 }

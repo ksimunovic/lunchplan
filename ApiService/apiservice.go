@@ -11,6 +11,7 @@ import (
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"time"
 )
 
 type Config struct {
@@ -21,21 +22,22 @@ type Config struct {
 	} `json:"database"`
 	ApiService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"api_service"`
 	HtmlService struct {
-		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"html_service"`
 	UserService struct {
-		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"user_service"`
 	MealService struct {
-		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"meal_service"`
 	TagService struct {
-		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"tag_service"`
 	CalendarService struct {
-		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"calendar_service"`
 }
 
@@ -45,10 +47,12 @@ func LoadConfiguration() Config {
 	if (Config{}) != config {
 		return config
 	}
-	response, err := http.Get("http://localhost:50000/")
+	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s", err)
-		return Config{}
+		fmt.Printf("%s; ", err)
+		fmt.Println("Trying again in 5 seconds...")
+		time.Sleep(5 * time.Second)
+		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
@@ -65,7 +69,7 @@ func LoadConfiguration() Config {
 	}
 }
 
-func ServiceCall(method string, servicePort string) http.HandlerFunc {
+func ServiceCall(method string, serviceHost string) http.HandlerFunc {
 	return func(w http.ResponseWriter, req *http.Request) {
 
 		var data map[string]interface{}
@@ -87,10 +91,10 @@ func ServiceCall(method string, servicePort string) http.HandlerFunc {
 
 		getVars := mux.Vars(req)
 		for k, v := range getVars {
-			data["get_" + k] = v
+			data["get_"+k] = v
 		}
 
-		c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
+		c, err := rpc.Dial("tcp", serviceHost)
 		if err != nil {
 			fmt.Println(err)
 			return

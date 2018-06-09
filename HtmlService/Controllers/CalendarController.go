@@ -31,7 +31,7 @@ func (c *Controller) ShowCalendar() http.HandlerFunc {
 		}
 
 		var allUserCalendars []Calendar
-		rpcResult := ServiceCallData("GetAllUserCalendars", rpcData, LoadConfiguration().CalendarService.Port);
+		rpcResult := ServiceCallData("GetAllUserCalendars", rpcData, LoadConfiguration().CalendarService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserCalendars); err != nil {
 			println(err.Error())
 			return
@@ -39,7 +39,7 @@ func (c *Controller) ShowCalendar() http.HandlerFunc {
 		allUserCalendarsJson, _ := json.Marshal(allUserCalendars)
 
 		var allUserMeals []Meal
-		rpcResult = ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Port);
+		rpcResult = ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserMeals); err != nil {
 			println(err.Error())
 			return

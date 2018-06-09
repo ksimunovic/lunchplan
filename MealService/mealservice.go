@@ -56,26 +56,30 @@ type Config struct {
 	} `json:"database"`
 	UserService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"user_service"`
 	MealService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"meal_service"`
 	TagService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"tag_service"`
 }
 
 var config Config
 
 func LoadConfiguration() Config {
-
 	if (Config{}) != config {
 		return config
 	}
-	response, err := http.Get("http://localhost:50000/")
+	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s", err)
-		return Config{}
+		fmt.Printf("%s; ", err)
+		fmt.Println("Trying again in 5 seconds...")
+		time.Sleep(5 * time.Second)
+		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
@@ -132,7 +136,7 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
@@ -144,11 +148,11 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 			tagData["sid"] = data["sid"].(string)
 			if tagData["id"] != nil && tagData["id"].(string) != "" {
 				tagData["get_id"] = tagData["id"]
-				tagResult := ServiceCallData("Read", tagData, LoadConfiguration().TagService.Port)
+				tagResult := ServiceCallData("Read", tagData, LoadConfiguration().TagService.Host)
 				temp1, _ := json.Marshal(tagResult)
 				_ = json.Unmarshal(temp1, &tag)
 			} else {
-				tagResult := ServiceCallData("Create", tagData, LoadConfiguration().TagService.Port)
+				tagResult := ServiceCallData("Create", tagData, LoadConfiguration().TagService.Host)
 				temp1, _ := json.Marshal(tagResult)
 				_ = json.Unmarshal(temp1, &tag)
 			}
@@ -187,7 +191,7 @@ func (s *Server) Read(jsonData []byte, jsonResponse *[]byte) error {
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
@@ -218,7 +222,7 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
@@ -243,11 +247,11 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 			tagData["sid"] = data["sid"].(string)
 			if tagData["id"] != nil && tagData["id"].(string) != "" {
 				tagData["get_id"] = tagData["id"]
-				tagResult := ServiceCallData("Read", tagData, LoadConfiguration().TagService.Port)
+				tagResult := ServiceCallData("Read", tagData, LoadConfiguration().TagService.Host)
 				temp1, _ := json.Marshal(tagResult)
 				_ = json.Unmarshal(temp1, &tag)
 			} else {
-				tagResult := ServiceCallData("Create", tagData, LoadConfiguration().TagService.Port)
+				tagResult := ServiceCallData("Create", tagData, LoadConfiguration().TagService.Host)
 				temp1, _ := json.Marshal(tagResult)
 				_ = json.Unmarshal(temp1, &tag)
 			}
@@ -295,7 +299,7 @@ func (s *Server) Delete(jsonData []byte, jsonResponse *[]byte) error {
 	}
 
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
@@ -333,7 +337,7 @@ func (s *Server) GetAllUserMeals(jsonData []byte, jsonResponse *[]byte) error {
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
@@ -366,7 +370,7 @@ func (s *Server) Suggest(jsonData []byte, jsonResponse *[]byte) error {
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	temp0, _ := json.Marshal(rpcResult)
 	_ = json.Unmarshal(temp0, &profile)
 
@@ -391,9 +395,9 @@ func (s *Server) Suggest(jsonData []byte, jsonResponse *[]byte) error {
 	return nil
 }
 
-func ServiceCallData(method string, data map[string]interface{}, servicePort string) map[string]interface{} {
+func ServiceCallData(method string, data map[string]interface{}, serviceHost string) map[string]interface{} {
 
-	c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
+	c, err := rpc.Dial("tcp", serviceHost)
 	if err != nil {
 		return nil
 	}
@@ -415,7 +419,7 @@ var dbSession *mgo.Session
 func main() {
 
 	mongoDBDialInfo := &mgo.DialInfo{
-		Addrs:    []string{"localhost:27017"},
+		Addrs:    []string{"mongodb:27017"},
 		Timeout:  60 * time.Second,
 		Database: "admin",
 		Username: "root",

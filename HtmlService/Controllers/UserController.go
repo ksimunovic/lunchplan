@@ -29,7 +29,7 @@ func (c *Controller) ProcessLogin() http.HandlerFunc {
 		}
 
 		var result map[string]string
-		rpcResult := ServiceCallData("Login", rpcData, LoadConfiguration().UserService.Port);
+		rpcResult := ServiceCallData("Login", rpcData, LoadConfiguration().UserService.Host);
 		if err := json.Unmarshal(rpcResult, &result); err != nil {
 			println(err.Error())
 			return

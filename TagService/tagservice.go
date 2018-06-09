@@ -45,27 +45,30 @@ type Config struct {
 	} `json:"database"`
 	UserService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"user_service"`
 	MealService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"meal_service"`
 	TagService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"tag_service"`
 }
 
 var config Config
 
 func LoadConfiguration() Config {
-
 	if (Config{}) != config {
 		return config
 	}
-
-	response, err := http.Get("http://localhost:50000/")
+	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s", err)
-		return Config{}
+		fmt.Printf("%s; ", err)
+		fmt.Println("Trying again in 5 seconds...")
+		time.Sleep(5 * time.Second)
+		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
@@ -122,7 +125,7 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	if err := json.Unmarshal(rpcResult, &profile); err != nil {
 		println(err.Error())
 	}
@@ -227,7 +230,7 @@ func (s *Server) GetAllUserTags(jsonData []byte, jsonResponse *[]byte) error {
 		"sid": data["sid"].(string),
 	}
 	var profile Profile
-	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Port)
+	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	if err := json.Unmarshal(rpcResult, &profile); err != nil {
 		println(err.Error())
 	}
@@ -275,9 +278,9 @@ func (s *Server) GetAllUserTags(jsonData []byte, jsonResponse *[]byte) error {
 	}*/
 }
 
-func ServiceCallData(method string, data map[string]interface{}, servicePort string) []byte {
+func ServiceCallData(method string, data map[string]interface{}, serviceHost string) []byte {
 
-	c, err := rpc.Dial("tcp", "127.0.0.1:"+servicePort)
+	c, err := rpc.Dial("tcp", serviceHost)
 	if err != nil {
 		fmt.Println(err.Error())
 		return nil
@@ -305,7 +308,7 @@ var dbSession *mgo.Session
 func main() {
 
 	mongoDBDialInfo := &mgo.DialInfo{
-		Addrs:    []string{"localhost:27017"},
+		Addrs:    []string{"mongodb:27017"},
 		Timeout:  60 * time.Second,
 		Database: "admin",
 		Username: "root",

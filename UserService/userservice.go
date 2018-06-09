@@ -42,6 +42,7 @@ type Config struct {
 	} `json:"database"`
 	UserService struct {
 		Port string `json:"port"`
+		Host string `json:"host"`
 	} `json:"user_service"`
 }
 
@@ -52,7 +53,7 @@ func LoadConfiguration() Config {
 	if (Config{}) != config {
 		return config
 	}
-	response, err := http.Get("http://localhost:50000/")
+	response, err := http.Get("http://configservice:50000/")
 	if err != nil {
 		fmt.Printf("%s", err)
 		return Config{}
@@ -231,7 +232,7 @@ var dbSession *mgo.Session
 func main() {
 
 	mongoDBDialInfo := &mgo.DialInfo{
-		Addrs:    []string{"localhost:27017"},
+		Addrs:    []string{"mongodb:27017"},
 		Timeout:  60 * time.Second,
 		Database: "admin",
 		Username: "root",

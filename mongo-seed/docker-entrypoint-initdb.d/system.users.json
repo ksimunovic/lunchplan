@@ -1,0 +1,125 @@
+{ 
+    "_id" : "CalendarService.root", 
+    "user" : "root", 
+    "db" : "CalendarService", 
+    "credentials" : {
+        "SCRAM-SHA-1" : {
+            "iterationCount" : NumberInt(10000), 
+            "salt" : "/8FZ90YxOX4+r5rcZ6VntQ==", 
+            "storedKey" : "cAgFyE/JNkmPHUkT2xAaGXQO7ko=", 
+            "serverKey" : "Pvb4ta8/NKYgAfBjN1wSbJu8fP4="
+        }
+    }, 
+    "roles" : [
+        {
+            "role" : "userAdminAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "readWriteAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "dbAdminAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "clusterAdmin", 
+            "db" : "admin"
+        }
+    ]
+}
+{ 
+    "_id" : "admin.root", 
+    "user" : "root", 
+    "db" : "admin", 
+    "credentials" : {
+        "SCRAM-SHA-1" : {
+            "iterationCount" : NumberInt(10000), 
+            "salt" : "e34DLVCw2EJv6iLhDbrzOg==", 
+            "storedKey" : "NgIlVn0iI/MrBN5CZVsaNAeAZiI=", 
+            "serverKey" : "AcxpaYm24xphpeoE4CUKye1/N88="
+        }
+    }, 
+    "customData" : {
+
+    }, 
+    "roles" : [
+        {
+            "role" : "__queryableBackup", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "__system", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "backup", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "clusterAdmin", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "clusterManager", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "clusterMonitor", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "dbAdmin", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "dbAdminAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "dbOwner", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "enableSharding", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "hostManager", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "read", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "readAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "readWrite", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "readWriteAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "restore", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "root", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "userAdmin", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "userAdminAnyDatabase", 
+            "db" : "admin"
+        }
+    ]
+}
