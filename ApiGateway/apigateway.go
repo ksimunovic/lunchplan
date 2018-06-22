@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -15,7 +14,8 @@ import (
 	"time"
 	"net/url"
 	"github.com/gorilla/handlers"
-	"io"
+	"regexp"
+	"net"
 )
 
 type Session struct {
@@ -55,15 +55,15 @@ func LoadConfiguration() Config {
 	}
 	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s; ", err)
-		fmt.Println("Trying again in 5 seconds...")
+		log.Fatalf("%s", err)
+		log.Printf("Trying again in 5 seconds...")
 		time.Sleep(5 * time.Second)
 		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
 		if err != nil {
-			fmt.Printf("%s", err)
+			log.Fatalf("%s", err)
 			os.Exit(1)
 		}
 		config := Config{}
@@ -73,6 +73,31 @@ func LoadConfiguration() Config {
 		}
 		return config
 	}
+}
+
+func GetIP() string {
+	name, err := os.Hostname()
+	if err != nil {
+		log.Fatalln(err)
+	}
+	addrs, err := net.InterfaceAddrs()
+	if err != nil {
+		return "error"
+	}
+	var realIp string
+
+	for _, address := range addrs {
+		if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
+				realIp = ipnet.IP.String()
+			}
+		}
+	}
+	if realIp != "" {
+		return name + " " + realIp
+	}
+
+	return name + " unkownIP"
 }
 
 func ValidateApi(next http.HandlerFunc) http.HandlerFunc {
@@ -88,7 +113,7 @@ func ValidateApi(next http.HandlerFunc) http.HandlerFunc {
 
 				c, err := rpc.Dial("tcp", LoadConfiguration().UserService.Host)
 				if err != nil {
-					fmt.Println(err)
+					log.Fatalln(err)
 					return
 				}
 
@@ -139,7 +164,7 @@ func ValidateHtml(next http.HandlerFunc) http.HandlerFunc {
 
 			c, err := rpc.Dial("tcp", LoadConfiguration().UserService.Host)
 			if err != nil {
-				fmt.Println(err)
+				log.Fatalln(err)
 				return
 			}
 
@@ -200,10 +225,14 @@ func handler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Request) 
 }
 
 func main() {
-	logPath := "development.log"
-	openLogFile(logPath)
-
+	/*
+		Run Mac OS to get https://localhost/ to work
+		echo "
+		rdr pass inet proto tcp from any to any port 443 -> 127.0.0.1 port 4430
+		" | sudo pfctl -ef -
+	 */
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	log.SetPrefix("["+ GetIP()+ "] ")
 
 	u, _ := url.Parse("http://" + LoadConfiguration().ApiService.Host)
 	apiProxy := httputil.NewSingleHostReverseProxy(u)
@@ -211,16 +240,13 @@ func main() {
 	h, _ := url.Parse("http://" + LoadConfiguration().HtmlService.Host)
 	htmlProxy := httputil.NewSingleHostReverseProxy(h)
 
-	log.Print(u)
-	log.Print(apiProxy)
-	log.Print(h)
-	log.Print(htmlProxy)
-
 	router := mux.NewRouter().StrictSlash(false)
 	router.HandleFunc("/api/{rest:.*}", ValidateApi(handler(apiProxy)))
 	router.HandleFunc("/{rest:.*}", ValidateHtml(handler(htmlProxy)))
 
 	go http.ListenAndServe(":80", http.HandlerFunc(redirect))
+
+	log.Println("API Gateway service is up and running...")
 	log.Fatal(http.ListenAndServeTLS(":4430", "certs/localhost.crt", "certs/localhost.key", logRequest(handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router))))
 }
 
@@ -238,50 +264,12 @@ func logRequest(handler http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		requestDump, err := httputil.DumpRequest(r, true)
 		if err != nil {
-			log.Println(err)
+			log.Fatalln(err)
 		}
 		url := r.RequestURI
-		log.Println("[REQUEST] ", url, " ", string(requestDump))
+		re := regexp.MustCompile(`\r?\n`)
+		log.Println("[REQUEST] ", url, " ", re.ReplaceAllString(string(requestDump), "; "))
 		handler.ServeHTTP(w, r)
-		/*
-		rec := httptest.NewRecorder()
-		handler.ServeHTTP(rec, r)
-
-		dump, err := httputil.DumpResponse(rec.Result(), false)
-		if err != nil {
-			log.Fatal(err)
-		}
-		log.Println( "[RESPONSE] ", url, " ", string(dump))
-
-		// we copy the captured response headers to our new response
-		for k, v := range rec.Header() {
-			w.Header()[k] = v
-		}
-
-		// grab the captured response body
-		data := rec.Body.Bytes()
-
-		w.Write(data)
-		*/
 	})
 }
 
-func openLogFile(logfile string) {
-	if logfile != "" {
-		if _, err := os.Stat(logfile); err == nil {
-			err := os.Truncate(logfile, 100)
-			if err != nil {
-				log.Fatal(err)
-			}
-		}
-
-		lf, err := os.OpenFile(logfile, os.O_WRONLY|os.O_CREATE, 0640)
-
-		if err != nil {
-			log.Fatal("OpenLogfile: os.OpenFile:", err)
-		}
-
-		mw := io.MultiWriter(os.Stdout, lf)
-		log.SetOutput(mw)
-	}
-}

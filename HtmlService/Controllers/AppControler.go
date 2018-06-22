@@ -15,6 +15,7 @@ import (
 	"io/ioutil"
 	"os"
 	"log"
+	"time"
 )
 
 type Controller struct {
@@ -48,13 +49,15 @@ func LoadConfiguration() Config {
 	}
 	response, err := http.Get("http://configservice:50000/")
 	if err != nil {
-		fmt.Printf("%s", err)
-		return Config{}
+		log.Fatalf("%s", err)
+		log.Printf("Trying again in 5 seconds...")
+		time.Sleep(5 * time.Second)
+		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
 		if err != nil {
-			fmt.Printf("%s", err)
+			log.Fatalf("%s", err)
 			os.Exit(1)
 		}
 		config := Config{}
@@ -66,8 +69,13 @@ func LoadConfiguration() Config {
 	}
 }
 func getTemplate(method string, controllerName string) *template.Template {
-	lp := filepath.Join("templates", "layout.html")
-	fp := filepath.Join("templates", controllerName+"_"+method+".html")
+	dir := ""
+	if _, err := os.Stat("HtmlService"); err == nil {
+		dir = "HtmlService"
+	}
+
+	lp := filepath.Join(dir, "templates", "layout.html")
+	fp := filepath.Join(dir, "templates", controllerName+"_"+method+".html")
 
 	tmpl := template.New("home")
 
@@ -108,7 +116,7 @@ func currentFunctionName() string {
 func render(w http.ResponseWriter, r *http.Request, tpl *template.Template, name string, data interface{}) {
 	buf := new(bytes.Buffer)
 	if err := tpl.ExecuteTemplate(buf, name, data); err != nil {
-		fmt.Printf("\nRender Error: %v\n", err)
+		log.Fatalf("\nRender Error: %v\n", err)
 		return
 	}
 	w.Write(buf.Bytes())
@@ -118,12 +126,12 @@ func ServiceCallData(method string, data map[string]interface{}, serviceHost str
 
 	c, err := rpc.Dial("tcp", serviceHost)
 	if err != nil {
-		fmt.Println(err.Error())
+		log.Fatalln(err.Error())
 		return nil
 	}
 
 	if data["sid"] == "" {
-		fmt.Println("Missing sid from rpc data request")
+		log.Fatalln("Missing sid from rpc data request")
 		return nil
 	}
 
@@ -132,7 +140,7 @@ func ServiceCallData(method string, data map[string]interface{}, serviceHost str
 	err = c.Call("Server."+method, jsonData, &rpcData)
 
 	if err != nil {
-		fmt.Println(err.Error())
+		log.Fatalln(err.Error())
 		return nil
 	} else {
 		return rpcData

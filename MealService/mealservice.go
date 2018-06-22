@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net"
@@ -42,10 +41,10 @@ type Meal struct {
 	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
 }
 type Tag struct {
-	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
-	Name string        `json:"name,omitempty"`
-	Profile     Profile       `json:"profile,omitempty"`
-	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
+	Id       bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Name     string        `json:"name,omitempty"`
+	Profile  Profile       `json:"profile,omitempty"`
+	ServedBy string        `json:"served_by,omitempty" bson:"-"`
 }
 
 type Config struct {
@@ -76,15 +75,15 @@ func LoadConfiguration() Config {
 	}
 	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s; ", err)
-		fmt.Println("Trying again in 5 seconds...")
+		log.Fatalf("%s", err)
+		log.Printf("Trying again in 5 seconds...")
 		time.Sleep(5 * time.Second)
 		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
 		if err != nil {
-			fmt.Printf("%s", err)
+			log.Fatalf("%s", err)
 			os.Exit(1)
 		}
 		config := Config{}
@@ -96,17 +95,10 @@ func LoadConfiguration() Config {
 	}
 }
 
-type Server struct{}
-
-func (s *Server) Negate(i int64, reply *int64) error {
-	*reply = -i
-	return nil
-}
-
 func GetIP() string {
 	name, err := os.Hostname()
 	if err != nil {
-		panic(err)
+		log.Fatalln(err)
 	}
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
@@ -126,6 +118,13 @@ func GetIP() string {
 	}
 
 	return name + " unkownIP"
+}
+
+type Server struct{}
+
+func (s *Server) Negate(i int64, reply *int64) error {
+	*reply = -i
+	return nil
 }
 
 func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
@@ -262,7 +261,7 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 	updatedMeal := meal
 	updatedMeal.Title = data["title"].(string)
 	updatedMeal.Description = data["description"].(string)
-	updatedMeal.Tags	= tags
+	updatedMeal.Tags = tags
 	/*
 	data["id"] = data["get_id"]
 
@@ -284,7 +283,7 @@ func (s *Server) Update(jsonData []byte, jsonResponse *[]byte) error {
 	if err != nil {
 		return err
 	} else {
-		*jsonResponse,_ = json.Marshal(make(map[string]interface{}))
+		*jsonResponse, _ = json.Marshal(make(map[string]interface{}))
 	}
 
 	return nil
@@ -379,7 +378,7 @@ func (s *Server) Suggest(jsonData []byte, jsonResponse *[]byte) error {
 
 	c := sessionCopy.DB("MealService").C("meal")
 	var results []Meal
-	help := []bson.M{{"$match": bson.M{"profile._id": bson.ObjectIdHex(profile.Id.Hex())}},{"$sample": bson.M{"size":1}}}
+	help := []bson.M{{"$match": bson.M{"profile._id": bson.ObjectIdHex(profile.Id.Hex())}}, {"$sample": bson.M{"size": 1}}}
 	pipe := c.Pipe(help)
 	err := pipe.All(&results)
 	if err != nil {
@@ -417,6 +416,8 @@ func ServiceCallData(method string, data map[string]interface{}, serviceHost str
 var dbSession *mgo.Session
 
 func main() {
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	log.SetPrefix("[" + GetIP() + "] ")
 
 	mongoDBDialInfo := &mgo.DialInfo{
 		Addrs:    []string{"mongodb:27017"},
@@ -438,10 +439,10 @@ func main() {
 	defer mongoSession.Close()
 
 	rpc.Register(new(Server))
-	fmt.Println("Meal Service RPC server online!")
+	log.Println("Meal Service RPC server online!")
 	ln, err := net.Listen("tcp", ":"+LoadConfiguration().MealService.Port)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatalln(err)
 		return
 	}
 	for {

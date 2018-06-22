@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 
@@ -11,6 +10,7 @@ import (
 	"os"
 	"encoding/json"
 	"time"
+	"net"
 )
 
 var config Config
@@ -47,15 +47,15 @@ func LoadConfiguration() Config {
 	}
 	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s; ", err)
-		fmt.Println("Trying again in 5 seconds...")
+		log.Fatalf("%s; ", err)
+		log.Printf("Trying again in 5 seconds...")
 		time.Sleep(5 * time.Second)
 		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
 		if err != nil {
-			fmt.Printf("%s", err)
+			log.Fatalf("%s", err)
 			os.Exit(1)
 		}
 		config := Config{}
@@ -67,6 +67,31 @@ func LoadConfiguration() Config {
 	}
 }
 
+func GetIP() string {
+	name, err := os.Hostname()
+	if err != nil {
+		log.Fatalln(err)
+	}
+	addrs, err := net.InterfaceAddrs()
+	if err != nil {
+		return "error"
+	}
+	var realIp string
+
+	for _, address := range addrs {
+		if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
+				realIp = ipnet.IP.String()
+			}
+		}
+	}
+	if realIp != "" {
+		return name + " " + realIp
+	}
+
+	return name + " unkownIP"
+}
+
 func HandlerWrap(h http.Handler) http.HandlerFunc {
 	return func(w http.ResponseWriter, req *http.Request) {
 		h.ServeHTTP(w, req)
@@ -74,8 +99,16 @@ func HandlerWrap(h http.Handler) http.HandlerFunc {
 }
 
 func main() {
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	log.SetPrefix("[" + GetIP() + "] ")
+
+	dir := ""
+	if _, err := os.Stat("HtmlService"); err == nil {
+		dir = "HtmlService/"
+	}
+
 	router := mux.NewRouter().StrictSlash(true)
-	router.PathPrefix("/static/").Handler(HandlerWrap(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
+	router.PathPrefix("/static/").Handler(HandlerWrap(http.StripPrefix("/static/", http.FileServer(http.Dir(dir+"static")))))
 
 	for _, route := range routes {
 		router.Methods(route.Method).
@@ -84,6 +117,6 @@ func main() {
 			Handler(route.HandlerFunc)
 	}
 
-	fmt.Println("HTML Service is up and running...")
+	log.Println("HTML Service is up and running...")
 	log.Fatal(http.ListenAndServe(":"+LoadConfiguration().HtmlService.Port, handlers.CORS(handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"}), handlers.AllowedMethods([]string{"GET", "POST", "PUT", "HEAD", "OPTIONS"}), handlers.AllowedOrigins([]string{"*"}))(router)))
 }

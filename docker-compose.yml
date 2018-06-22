@@ -1,0 +1,105 @@
+version: '3'
+
+services:
+
+  configservice:
+    image: launchplan/configservice
+    ports:
+      - 50000:50000
+      
+  logspout:
+    image: gliderlabs/logspout:v3
+    command: 'syslog://logstash:5000'
+    #links:
+    #  - logstash
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+
+  logstash:  
+    image: logstash:5.6.8
+    command: 'logstash -e "input { udp { port => 5000 } } output { elasticsearch { hosts => elasticsearch } }"'
+    #links:
+    #  - elasticsearch
+    ports:
+      - '5000:5000'
+
+  kibana:
+    image: kibana
+    environment:
+      - LOGSPOUT=ignore
+    #links:
+    #  - elasticsearch
+    ports:
+      - '5601:5601'
+
+  elasticsearch:
+    image: elasticsearch
+    environment:
+      - LOGSPOUT=ignore
+    #volumes:
+    #  - $pwd/esdata:/usr/share/elasticsearch/data
+
+  mongodb:
+    image: launchplan/mongo-seed
+    ports:
+      - "27017:27017"
+    environment:
+      - LOGSPOUT=ignore
+
+  portainer:
+    image: portainer/portainer
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 9000:9000
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    # Setting admin password to 'admin'
+    command: --admin-password '$$2y$$05$$7/1USzltvCnkJQTSmOtj8.pXnExAOv4yY.fAiFza2VT7kxptSDk5m'
+
+  apiservice:
+    image: launchplan/apiservice
+    ports:
+      - 50001:50001
+
+  htmlservice:
+    image: launchplan/htmlservice
+    ports:
+      - 50002:50002
+
+  userservice:
+    image: launchplan/userservice
+    ports:
+      - 50003:50003
+
+  mealservice:
+    image: launchplan/mealservice
+    ports:
+      - 50004:50004
+
+  tagservice:
+    image: launchplan/tagservice
+    ports:
+      - 50005:50005
+
+  calendarservice:
+    image: launchplan/calendarservice
+    ports:
+      - 50006:50006
+
+  apigateway:
+    image: launchplan/apigateway
+    ports:
+      - 80:80
+      - 4430:4430
+
+  viz:
+    image: dockersamples/visualizer
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    ports:
+      - 9090:8080

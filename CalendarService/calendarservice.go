@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net"
@@ -68,15 +67,15 @@ func LoadConfiguration() Config {
 	}
 	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s; ", err)
-		fmt.Println("Trying again in 5 seconds...")
+		log.Printf("%s; ", err)
+		log.Println("Trying again in 5 seconds...")
 		time.Sleep(5 * time.Second)
 		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
 		if err != nil {
-			fmt.Printf("%s", err)
+			log.Printf("%s", err)
 			os.Exit(1)
 		}
 		config := Config{}
@@ -311,6 +310,8 @@ func ServiceCallData(method string, data map[string]interface{}, serviceHost str
 var dbSession *mgo.Session
 
 func main() {
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	log.SetPrefix("["+ GetIP()+ "] ")
 
 	mongoDBDialInfo := &mgo.DialInfo{
 		Addrs:    []string{"mongodb:27017"},
@@ -332,10 +333,10 @@ func main() {
 	defer mongoSession.Close()
 
 	rpc.Register(new(Server))
-	fmt.Println("Calendar Service RPC server online!")
+	log.Println("Calendar Service RPC server online!")
 	ln, err := net.Listen("tcp", ":"+LoadConfiguration().CalendarService.Port)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatalln(err)
 		return
 	}
 	for {

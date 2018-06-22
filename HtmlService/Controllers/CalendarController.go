@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"gopkg.in/mgo.v2/bson"
 	"time"
+	"log"
 )
 
 type Calendar struct {
@@ -27,13 +28,13 @@ func (c *Controller) ShowCalendar() http.HandlerFunc {
 		}
 
 		if rpcData["sid"] == "" {
-			println("HALLO calendarcontroller nema sid")
+			log.Fatalln("HALLO calendarcontroller nema sid")
 		}
 
 		var allUserCalendars []Calendar
 		rpcResult := ServiceCallData("GetAllUserCalendars", rpcData, LoadConfiguration().CalendarService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserCalendars); err != nil {
-			println(err.Error())
+			log.Fatalln(err.Error())
 			return
 		}
 		allUserCalendarsJson, _ := json.Marshal(allUserCalendars)
@@ -41,7 +42,7 @@ func (c *Controller) ShowCalendar() http.HandlerFunc {
 		var allUserMeals []Meal
 		rpcResult = ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserMeals); err != nil {
-			println(err.Error())
+			log.Fatalln(err.Error())
 			return
 		}
 		allUserMealsJson, _ := json.Marshal(allUserMeals)

@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net"
@@ -31,10 +30,10 @@ type Meal struct {
 	Tags        []Tag         `json:"tags,omitempty"`
 }
 type Tag struct {
-	Id   bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
-	Name string        `json:"name,omitempty"`
-	Profile     Profile       `json:"profile,omitempty"`
-	ServedBy    string        `json:"served_by,omitempty" bson:"-"`
+	Id       bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
+	Name     string        `json:"name,omitempty"`
+	Profile  Profile       `json:"profile,omitempty"`
+	ServedBy string        `json:"served_by,omitempty" bson:"-"`
 }
 
 type Config struct {
@@ -65,15 +64,15 @@ func LoadConfiguration() Config {
 	}
 	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s; ", err)
-		fmt.Println("Trying again in 5 seconds...")
+		log.Fatalf("%s", err)
+		log.Printf("Trying again in 5 seconds...")
 		time.Sleep(5 * time.Second)
 		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
 		if err != nil {
-			fmt.Printf("%s", err)
+			log.Fatalf("%s", err)
 			os.Exit(1)
 		}
 		config := Config{}
@@ -85,17 +84,10 @@ func LoadConfiguration() Config {
 	}
 }
 
-type Server struct{}
-
-func (s *Server) Negate(i int64, reply *int64) error {
-	*reply = -i
-	return nil
-}
-
 func GetIP() string {
 	name, err := os.Hostname()
 	if err != nil {
-		panic(err)
+		log.Fatalln(err)
 	}
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
@@ -117,6 +109,13 @@ func GetIP() string {
 	return name + " unkownIP"
 }
 
+type Server struct{}
+
+func (s *Server) Negate(i int64, reply *int64) error {
+	*reply = -i
+	return nil
+}
+
 func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 	var data map[string]interface{}
 	_ = json.Unmarshal(jsonData, &data)
@@ -127,12 +126,12 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 	var profile Profile
 	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	if err := json.Unmarshal(rpcResult, &profile); err != nil {
-		println(err.Error())
+		log.Fatalln(err)
 	}
 
 	tag := Tag{
-		Id:   bson.NewObjectId(),
-		Name: data["name"].(string),
+		Id:      bson.NewObjectId(),
+		Name:    data["name"].(string),
 		Profile: profile,
 	}
 
@@ -141,7 +140,7 @@ func (s *Server) Create(jsonData []byte, jsonResponse *[]byte) error {
 
 	c := sessionCopy.DB("TagService").C("tag")
 	if err := c.Insert(tag); err != nil {
-		panic(err)
+		log.Fatalln(err)
 	}
 
 	*jsonResponse, _ = json.Marshal(tag)
@@ -232,9 +231,8 @@ func (s *Server) GetAllUserTags(jsonData []byte, jsonResponse *[]byte) error {
 	var profile Profile
 	rpcResult := ServiceCallData("GetAccount", rpcData, LoadConfiguration().UserService.Host)
 	if err := json.Unmarshal(rpcResult, &profile); err != nil {
-		println(err.Error())
+		log.Fatalln(err.Error())
 	}
-
 
 	sessionCopy := dbSession.Copy()
 	defer sessionCopy.Close()
@@ -259,9 +257,9 @@ func (s *Server) GetAllUserTags(jsonData []byte, jsonResponse *[]byte) error {
 	/*
 	var meals []Meal
 	rpcResult = ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Port);
-	fmt.Println(string(rpcResult))
+	log.Println(string(rpcResult))
 	if err := json.Unmarshal(rpcResult, &meals); err != nil {
-		println(err.Error())
+		log.Fatalln(err.Error())
 	}
 
 
@@ -282,12 +280,12 @@ func ServiceCallData(method string, data map[string]interface{}, serviceHost str
 
 	c, err := rpc.Dial("tcp", serviceHost)
 	if err != nil {
-		fmt.Println(err.Error())
+		log.Fatalln(err.Error())
 		return nil
 	}
 
 	if data["sid"] == "" {
-		fmt.Println("Missing sid from rpc data request")
+		log.Fatalln("Missing sid from rpc data request")
 		return nil
 	}
 
@@ -296,7 +294,7 @@ func ServiceCallData(method string, data map[string]interface{}, serviceHost str
 	err = c.Call("Server."+method, jsonData, &rpcData)
 
 	if err != nil {
-		fmt.Println(err.Error())
+		log.Fatalln(err.Error())
 		return nil
 	} else {
 		return rpcData
@@ -306,6 +304,8 @@ func ServiceCallData(method string, data map[string]interface{}, serviceHost str
 var dbSession *mgo.Session
 
 func main() {
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	log.SetPrefix("[" + GetIP() + "] ")
 
 	mongoDBDialInfo := &mgo.DialInfo{
 		Addrs:    []string{"mongodb:27017"},
@@ -327,10 +327,10 @@ func main() {
 	defer mongoSession.Close()
 
 	rpc.Register(new(Server))
-	fmt.Println("Tag Service RPC server online!")
+	log.Println("Tag Service RPC server online!")
 	ln, err := net.Listen("tcp", ":"+LoadConfiguration().TagService.Port)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatalln(err)
 		return
 	}
 	for {

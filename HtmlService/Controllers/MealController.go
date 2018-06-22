@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"encoding/json"
 	"gopkg.in/mgo.v2/bson"
+	"log"
 )
 
 var MealController = Controller{ControllerName: "meal"}
@@ -39,13 +40,14 @@ func (c *Controller) Index() http.HandlerFunc {
 		}
 
 		if rpcData["sid"] == "" {
-			println("HALLO mealcontroller nema sid")
+			log.Fatalln("HALLO mealcontroller nema sid")
+			http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 		}
 
 		var allUserMeals []Meal
 		rpcResult := ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserMeals); err != nil {
-			println(err.Error())
+			log.Fatalln(err.Error())
 			return
 		}
 		allUserMealsJson, _ := json.Marshal(allUserMeals)
@@ -53,7 +55,7 @@ func (c *Controller) Index() http.HandlerFunc {
 		var allUserTags []Tag
 		rpcResult = ServiceCallData("GetAllUserTags", rpcData, LoadConfiguration().TagService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserTags); err != nil {
-			println(err.Error())
+			log.Fatalln(err.Error())
 			return
 		}
 		allUserTagsJson, _ := json.Marshal(allUserTags)

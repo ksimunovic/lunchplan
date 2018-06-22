@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net"
@@ -49,19 +48,20 @@ type Config struct {
 var config Config
 
 func LoadConfiguration() Config {
-
 	if (Config{}) != config {
 		return config
 	}
-	response, err := http.Get("http://configservice:50000/")
+	response, err := http.Get("http://configservice:50000")
 	if err != nil {
-		fmt.Printf("%s", err)
-		return Config{}
+		log.Fatalf("%s", err)
+		log.Printf("Trying again in 5 seconds...")
+		time.Sleep(5 * time.Second)
+		return LoadConfiguration()
 	} else {
 		defer response.Body.Close()
 		body, err := ioutil.ReadAll(response.Body)
 		if err != nil {
-			fmt.Printf("%s", err)
+			log.Fatalf("%s", err)
 			os.Exit(1)
 		}
 		config := Config{}
@@ -76,7 +76,7 @@ func LoadConfiguration() Config {
 func GetIP() string {
 	name, err := os.Hostname()
 	if err != nil {
-		panic(err)
+		log.Fatalln(err)
 	}
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
@@ -230,6 +230,8 @@ func (s *Server) Validate(jsonData []byte, jsonResponse *[]byte) error {
 var dbSession *mgo.Session
 
 func main() {
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	log.SetPrefix("[" + GetIP() + "] ")
 
 	mongoDBDialInfo := &mgo.DialInfo{
 		Addrs:    []string{"mongodb:27017"},
@@ -251,10 +253,10 @@ func main() {
 	defer mongoSession.Close()
 
 	rpc.Register(new(Server))
-	fmt.Println("User Service RPC server online!")
+	log.Println("User Service RPC server online!")
 	ln, err := net.Listen("tcp", ":"+LoadConfiguration().UserService.Port)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatalln(err)
 		return
 	}
 	for {

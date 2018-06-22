@@ -1,2 +1,2 @@
-2018/06/09 19:44:34 apigateway.go:215: http://apiservice:50001
-2018/06/09 19:44:34 apigateway.go:216
+[INFO] 2018/06/10 09:15:55 apigateway.go:243: [REQUEST]  /api/login   POST /api/login HTTP/1.1; Host: localhost:4430; Accept-Encoding: gzip,deflate; Connection: Keep-Alive; Content-Length: 65; Content-Type: application/json; User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_152-release); ; {;   "email": "probniEmail",;   "password": "dugackaSigurnaSifra"; }
+[INFO] 2018/06/10 09:15:55 reverseproxy.go:321: http: proxy error: dial tcp 127.0.0.1:50001: connect: connection refused

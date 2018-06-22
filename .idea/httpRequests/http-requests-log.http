@@ -1,3 +1,105 @@
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+GET http://localhost:50000
+
+<> 2018-06-10T115835.200.json
+
+###
+
+POST https://localhost:{{port}}/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+GET http://localhost:50000
+
+<> 2018-06-10T102909.200.json
+
+###
+
 POST https://192.168.99.101:4430/api/login
 Content-Type: application/json
 
@@ -327,94 +429,6 @@ Content-Type: application/json
 Authorization: Bearer 5b1038874c751eb1ddc10164
 
 <> 2018-05-31T082053.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082046.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082044.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082041.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082039.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082032.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082030.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082028.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082025.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082020.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082016.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082003.200.json
 
 ###
 
