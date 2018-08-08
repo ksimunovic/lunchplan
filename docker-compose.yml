@@ -67,6 +67,8 @@ services:
     image: launchplan/htmlservice
     ports:
       - 50002:50002
+    deploy:
+      replicas: 2
 
   userservice:
     image: launchplan/userservice

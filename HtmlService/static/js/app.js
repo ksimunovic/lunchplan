@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 
         let formData = objectifyForm($form.serializeArray());
         formData.tags = $form.find(".tagsinput").not(':first').tagsinput('items');
-        let tagsInput = $form.find(".tagsinput").not(':first').parent().find('.tt-input').val() + ";";
+        let tagsInput = $form.find(".tagsinput").not(':first').parent().find('[type="text"][placeholder]').val() + ";";
         tagsInput = tagsInput.split(';');
         for (i = 0; i < tagsInput.length; i++) {
             let newTag = tagsInput[i].trim();
@@ -56,7 +56,7 @@ window.addEventListener('load', function () {
 
         let formData = objectifyForm($form.serializeArray());
         formData.tags = $form.find(".tagsinput").not(':first').tagsinput('items');
-        let tagsInput = $form.find(".tagsinput").not(':first').parent().find('.tt-input').val() + ";";
+        let tagsInput = $form.find(".tagsinput").not(':first').parent().find('[type="text"][placeholder]').val() + ";";
         tagsInput = tagsInput.split(';');
         for (i = 0; i < tagsInput.length; i++) {
             let newTag = tagsInput[i].trim();
@@ -96,7 +96,7 @@ window.addEventListener('load', function () {
                 $modal.modal('hide');
             },
         });
-    })
+    });
 
     $('#deleteEmployeeModal [type="submit"]').on('click', function (e) {
         e.preventDefault();
@@ -118,7 +118,7 @@ window.addEventListener('load', function () {
                 error: function () {
                 },
             });
-        })
+        });
         $.ajax({
             url: "/api/meal/all",
             type: 'GET',
@@ -135,41 +135,43 @@ window.addEventListener('load', function () {
                 $modal.modal('hide');
             },
         });
-    })
+    });
 
     /// Calendar section starts here
 
-    $('#calendar').fullCalendar({
-        height: 500,
-        events: eventsJson,
-        header: {
-            left: 'prev month agendaWeek today ',
-            center: 'title',
-            right: 'meals_page add_event next'
-        },
-        eventClick: function (calEvent, jsEvent, view) {
-            editEvent(calEvent);
-        },
-        customButtons: {
-            add_event: {
-                text: 'Add',
-                click: function () {
-                    $('#addEventModal').modal('show');
+    if($('#calendar').length != 0){
+        $('#calendar').fullCalendar({
+            height: 500,
+            events: eventsJson,
+            header: {
+                left: 'prev month agendaWeek today ',
+                center: 'title',
+                right: 'meals_page add_event next'
+            },
+            eventClick: function (calEvent, jsEvent, view) {
+                editEvent(calEvent);
+            },
+            customButtons: {
+                add_event: {
+                    text: 'Add',
+                    click: function () {
+                        $('#addEventModal').modal('show');
+                    }
+                },
+                meals_page: {
+                    text: 'Meals',
+                    click: function () {
+                        window.location = '/';
+                    }
                 }
             },
-            meals_page: {
-                text: 'Meals',
-                click: function () {
-                    window.location = '/';
-                }
+            dayClick: function (date, jsEvent, view) {
+                $addEventModal = $('#addEventModal');
+                $addEventModal.find('#datepicker').datepicker('setDate', date.format());
+                $addEventModal.modal('show');
             }
-        },
-        dayClick: function (date, jsEvent, view) {
-            $addEventModal = $('#addEventModal');
-            $addEventModal.find('#datepicker').datepicker('setDate', date.format());
-            $addEventModal.modal('show');
-        }
-    });
+        });
+    }
 
     $('#addEventModal [type="submit"], #editEventModal [type="submit"]').on('click', function (e) {
         e.preventDefault();
@@ -410,7 +412,7 @@ function getAllUserTags() {
                     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
                     queryTokenizer: Bloodhound.tokenizers.whitespace,
                     local: possibleUserTags
-                })
+                });
                 tags.initialize();
                 var elt = $templateClone.find('.tagsinput');
                 elt.tagsinput({

@@ -1,4 +1,4 @@
-FROM golang:latest AS builder
+FROM launchplan/gocompileimage AS builder
 ARG foldername
 LABEL maintainer ksimunovic
 WORKDIR $foldername

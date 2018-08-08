@@ -28,13 +28,13 @@ func (c *Controller) ShowCalendar() http.HandlerFunc {
 		}
 
 		if rpcData["sid"] == "" {
-			log.Fatalln("HALLO calendarcontroller nema sid")
+			log.Println("HALLO calendarcontroller nema sid")
 		}
 
 		var allUserCalendars []Calendar
 		rpcResult := ServiceCallData("GetAllUserCalendars", rpcData, LoadConfiguration().CalendarService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserCalendars); err != nil {
-			log.Fatalln(err.Error())
+			log.Println(err.Error())
 			return
 		}
 		allUserCalendarsJson, _ := json.Marshal(allUserCalendars)
@@ -42,7 +42,7 @@ func (c *Controller) ShowCalendar() http.HandlerFunc {
 		var allUserMeals []Meal
 		rpcResult = ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserMeals); err != nil {
-			log.Fatalln(err.Error())
+			log.Println(err.Error())
 			return
 		}
 		allUserMealsJson, _ := json.Marshal(allUserMeals)

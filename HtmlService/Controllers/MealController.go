@@ -40,14 +40,15 @@ func (c *Controller) Index() http.HandlerFunc {
 		}
 
 		if rpcData["sid"] == "" {
-			log.Fatalln("HALLO mealcontroller nema sid")
-			http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
+			log.Println("HALLO mealcontroller nema sid")
+			http.Redirect(w, r, "/login", http.StatusTemporaryRedirect)
+			return
 		}
 
 		var allUserMeals []Meal
 		rpcResult := ServiceCallData("GetAllUserMeals", rpcData, LoadConfiguration().MealService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserMeals); err != nil {
-			log.Fatalln(err.Error())
+			log.Println(err.Error())
 			return
 		}
 		allUserMealsJson, _ := json.Marshal(allUserMeals)
@@ -55,7 +56,7 @@ func (c *Controller) Index() http.HandlerFunc {
 		var allUserTags []Tag
 		rpcResult = ServiceCallData("GetAllUserTags", rpcData, LoadConfiguration().TagService.Host);
 		if err := json.Unmarshal(rpcResult, &allUserTags); err != nil {
-			log.Fatalln(err.Error())
+			log.Println(err.Error())
 			return
 		}
 		allUserTagsJson, _ := json.Marshal(allUserTags)

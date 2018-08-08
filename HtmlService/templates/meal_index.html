@@ -5,16 +5,18 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2>Manage <b>Employees</b></h2></div>
+                        <h2>Manage <b>Meals</b></h2></div>
                     <div class="col-sm-6">
+                        <a href="#" class="btn btn-danger" onclick="deleteAllCookies(); window.location='/';" style="padding-left: 14px;">
+                            <i class="material-icons">power_settings_new</i>
+                        </a>
                         <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
-                            <i class="material-icons">&#xE147;</i> <span>Add New Employee</span>
+                            <i class="material-icons">&#xE147;</i> <span>Add New Meal</span>
                         </a>
                         <a href="#deleteEmployeeModal" class="btn btn-danger" onclick="deleteEntity('checkbox')"
                            data-toggle="modal">
                             <i class="material-icons">&#xE15C;</i> <span>Delete</span>
                         </a>
-
                         <a href="/calendar" class="btn btn-warning">
                             <span>Calendar</span>
                         </a>
@@ -68,7 +70,7 @@
         <div class="modal-content">
             <form>
                 <div class="modal-header">
-                    <h4 class="modal-title">Add Employee</h4>
+                    <h4 class="modal-title">Add Meal</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -80,7 +82,7 @@
                         <input name="description" type="email" class="form-control" required></div>
                     <div class="form-group tags-input-template" style="display: none;">
                         <label>Tags</label>
-                        <input name="tags" type="text" class="form-control tagsinput">
+                        <input name="tags" type="text" class="form-control tagsinput demo">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -95,7 +97,7 @@
         <div class="modal-content">
             <form>
                 <div class="modal-header">
-                    <h4 class="modal-title">Edit Employee</h4>
+                    <h4 class="modal-title">Edit Meal</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -128,7 +130,7 @@
             <form>
                 <input name="id" type="text" hidden value="">
                 <div class="modal-header">
-                    <h4 class="modal-title">Delete Employee</h4>
+                    <h4 class="modal-title">Delete Meal</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -150,5 +152,15 @@
     window.addEventListener('load', function () {
         loadTable('#meals-table', JSON.parse(mealsJson));
     })
+	function deleteAllCookies() {
+		var cookies = document.cookie.split(";");
+
+		for (var i = 0; i < cookies.length; i++) {
+			var cookie = cookies[i];
+			var eqPos = cookie.indexOf("=");
+			var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+			document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+		}
+	}
 </script>
 {{end}}
