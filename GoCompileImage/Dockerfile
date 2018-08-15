@@ -1,6 +1,6 @@
 FROM golang:latest AS builder
 ARG foldername
-LABEL maintainer ksimunovic
+LABEL maintainer = ksimunovic
 WORKDIR $foldername
 COPY . .
 RUN go get -u github.com/gorilla/handlers

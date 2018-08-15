@@ -1,6 +1,6 @@
-FROM launchplan/gocompileimage AS builder
+FROM lunchplan/gocompileimage AS builder
 ARG foldername
-LABEL maintainer ksimunovic
+LABEL maintainer = ksimunovic
 WORKDIR $foldername/ApiGateway
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .

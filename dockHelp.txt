@@ -1,39 +1,39 @@
-docker service rm $(docker service ls -q) && docker stack deploy -c *.yml launchplan
+docker service rm $(docker service ls -q) && docker stack deploy -c *.yml lunchplan
 
 export SERVICE_FOLDER=ConfigService
 export SERVICE_NAME=$(echo "$SERVICE_FOLDER" | awk '{print tolower($0)}')
-docker stop $(docker ps --filter=name=launchplan_$SERVICE_NAME -q -a) && docker rm $(docker ps --filter=name=launchplan_$SERVICE_NAME -q -a) && docker rmi launchplan/$SERVICE_NAME -f
-docker build --no-cache -t launchplan/$SERVICE_NAME --build-arg foldername=$LPDIR/$SERVICE_FOLDER $SERVICE_NAME/ && docker stack deploy -c ~/Desktop/aaaa.yaml launchplan
-docker service logs $(docker service ls --filter=name=launchplan_$SERVICE_NAME -q)
+docker stop $(docker ps --filter=name=lunchplan_$SERVICE_NAME -q -a) && docker rm $(docker ps --filter=name=lunchplan_$SERVICE_NAME -q -a) && docker rmi lunchplan/$SERVICE_NAME -f
+docker build --no-cache -t lunchplan/$SERVICE_NAME --build-arg foldername=$LPDIR/$SERVICE_FOLDER $SERVICE_NAME/ && docker stack deploy -c ~/Desktop/aaaa.yaml lunchplan
+docker service logs $(docker service ls --filter=name=lunchplan_$SERVICE_NAME -q)
 
 
 
-docker stop $(docker ps --filter=name=launchplan_mongodb -q -a) && docker rm $(docker ps --filter=name=launchplan_mongodb -q -a) && docker rmi launchplan/mongo-seed -f
-docker build --no-cache -t launchplan/mongo-seed mongo-seed/
-docker stack deploy -c *.yml launchplan
-docker service logs $(docker service ls --filter=name=launchplan_mongodb -q)
+docker stop $(docker ps --filter=name=lunchplan_mongodb -q -a) && docker rm $(docker ps --filter=name=lunchplan_mongodb -q -a) && docker rmi lunchplan/mongo-seed -f
+docker build --no-cache -t lunchplan/mongo-seed mongo-seed/
+docker stack deploy -c *.yml lunchplan
+docker service logs $(docker service ls --filter=name=lunchplan_mongodb -q)
 
 
 
 export SERVICE_NAME=htmlservice
-docker service ps --no-trunc $(docker service ls --filter=name=launchplan_$SERVICE_NAME -q)
-docker service logs $(docker service ls --filter=name=launchplan_$SERVICE_NAME -q)
+docker service ps --no-trunc $(docker service ls --filter=name=lunchplan_$SERVICE_NAME -q)
+docker service logs $(docker service ls --filter=name=lunchplan_$SERVICE_NAME -q)
 
 
 
 
 $$ PROMJENA NA SERVISU
 export SERVICE_NAME=htmlservice
-docker service rm $(docker service ls --filter=name=launchplan_$SERVICE_NAME -q)
+docker service rm $(docker service ls --filter=name=lunchplan_$SERVICE_NAME -q)
 sleep 1 && docker images -a | grep "$SERVICE_NAME*" | awk '{print $3}' | xargs docker rmi -f
-docker build --no-cache -t launchplan/$SERVICE_NAME --build-arg foldername=/usr/src/app $SERVICE_NAME/
-docker stack deploy -c *.yml launchplan
-docker service logs $(docker service ls --filter=name=launchplan_htmlservice -q)
+docker build --no-cache -t lunchplan/$SERVICE_NAME --build-arg foldername=/usr/src/app $SERVICE_NAME/
+docker stack deploy -c *.yml lunchplan
+docker service logs $(docker service ls --filter=name=lunchplan_htmlservice -q)
 
 
 
-docker build --no-cache -t launchplan/gocompileimage --build-arg foldername=/usr/src/app GoCompileImage/
-docker build --no-cache -t launchplan/apiservice --build-arg foldername=/usr/src/app ApiService/
+docker build --no-cache -t lunchplan/gocompileimage --build-arg foldername=/usr/src/app GoCompileImage/
+docker build --no-cache -t lunchplan/apiservice --build-arg foldername=/usr/src/app ApiService/
 
 
 docker exec -it $(docker ps --filter=name=htmlservice -q -a) sh
@@ -44,13 +44,13 @@ docker exec -it $(docker ps --filter=name=htmlservice -q -a) sh
 *********************************************************************************************************************
 
 ######### Reset whole services stack
-docker service rm $(docker service ls -q) && docker stack deploy launchplan -c *.yml --prune
+docker service rm $(docker service ls -q) && docker stack deploy lunchplan -c *.yml --prune
 
 ############ Starting swarm mode after first boot
 cd D:/GolangProjects/lunchplan
 docker-machine start swarm-manager-0
 eval "$(docker-machine env swarm-manager-0)"
-docker stack deploy -c *.yml launchplan
+docker stack deploy -c *.yml lunchplan
 
 ############ Starting swarm mode for the first time
 cd D:/GolangProjects/lunchplan
@@ -58,12 +58,12 @@ docker-machine create --driver virtualbox --virtualbox-memory 4096 --virtualbox-
 eval "$(docker-machine env swarm-manager-0)"
 docker swarm init --advertise-addr 192.168.99.101
 docker network create --driver overlay my_network
-docker stack deploy -c *.yml launchplan
+docker stack deploy -c *.yml lunchplan
 
 ########## See service status
-export SERVICE_NAME=mongodb
-docker service ps --no-trunc $(docker service ls --filter=name=launchplan_$SERVICE_NAME -q)
-docker service logs $(docker service ls --filter=name=launchplan_$SERVICE_NAME -q)
+export SERVICE_NAME=mongo-seed
+docker service ps --no-trunc $(docker service ls --filter=name=lunchplan_$SERVICE_NAME -q)
+docker service logs $(docker service ls --filter=name=lunchplan_$SERVICE_NAME -q)
 
 ########## Connect to service shell
 export SERVICE_NAME=mongo-seed
@@ -72,9 +72,9 @@ docker exec -it $(docker ps --filter=name=$SERVICE_NAME -q -a) sh
 ########## Recompile and redeploy service
 export SERVICE_FOLDER=ApiService
 export SERVICE_NAME=$(echo "$SERVICE_FOLDER" | awk '{print tolower($0)}')
-docker stop $(docker ps --filter=name=launchplan_$SERVICE_NAME -q -a) && docker rm $(docker ps --filter=name=launchplan_$SERVICE_NAME -q -a) && docker rmi launchplan/$SERVICE_NAME -f
-docker build --no-cache -t launchplan/$SERVICE_NAME --build-arg foldername=$LPDIR/$SERVICE_FOLDER $SERVICE_NAME/ && docker stack deploy -c ~/Desktop/aaaa.yaml launchplan
-docker service logs $(docker service ls --filter=name=launchplan_$SERVICE_NAME -q)
+docker stop $(docker ps --filter=name=lunchplan_$SERVICE_NAME -q -a) && docker rm $(docker ps --filter=name=lunchplan_$SERVICE_NAME -q -a) && docker rmi lunchplan/$SERVICE_NAME -f
+docker build --no-cache -t lunchplan/$SERVICE_NAME --build-arg foldername=$LPDIR/$SERVICE_FOLDER $SERVICE_NAME/ && docker stack deploy -c ~/Desktop/aaaa.yaml lunchplan
+docker service logs $(docker service ls --filter=name=lunchplan_$SERVICE_NAME -q)
 
 ########## Connecting to swarm manager from another terminal
 export MANAGER_TOKEN=`docker-machine ssh swarm-manager-0 "docker swarm join-token manager -q"`
@@ -91,18 +91,18 @@ docker-machine rm swarm-manager-0 -y
 export LPDIR=D:/GolangProjects/lunchplan
 cd $LPDIR
 docker service rm $(docker service ls -q)
-sleep 3 && docker images -a | grep "launchplan_*" | awk '{print $3}' | xargs docker rmi -f
-docker build --no-cache -t launchplan/mongo-seed mongo-seed/
-docker build --no-cache -t launchplan/gocompileimage --build-arg foldername=/usr/src/app GoCompileImage/
-docker build --no-cache -t launchplan/configservice --build-arg foldername=/usr/src/app configservice/
-docker build --no-cache -t launchplan/apigateway --build-arg foldername=/usr/src/app apigateway/
-docker build --no-cache -t launchplan/apiservice --build-arg foldername=/usr/src/app apiservice/
-docker build --no-cache -t launchplan/htmlservice --build-arg foldername=/usr/src/app htmlservice/
-docker build --no-cache -t launchplan/userservice --build-arg foldername=/usr/src/app userservice/
-docker build --no-cache -t launchplan/mealservice --build-arg foldername=/usr/src/app mealservice/
-docker build --no-cache -t launchplan/tagservice --build-arg foldername=/usr/src/app tagservice/
-docker build --no-cache -t launchplan/calendarservice --build-arg foldername=/usr/src/app calendarservice/
-docker stack deploy -c *.yml launchplan
+sleep 3 && docker images -a | grep "lunchplan_*" | awk '{print $3}' | xargs docker rmi -f
+docker build --no-cache -t lunchplan/mongo-seed mongo-seed/
+docker build --no-cache -t lunchplan/gocompileimage --build-arg foldername=/usr/src/app GoCompileImage/
+docker build --no-cache -t lunchplan/configservice --build-arg foldername=/usr/src/app configservice/
+docker build --no-cache -t lunchplan/apigateway --build-arg foldername=/usr/src/app apigateway/
+docker build --no-cache -t lunchplan/apiservice --build-arg foldername=/usr/src/app apiservice/
+docker build --no-cache -t lunchplan/htmlservice --build-arg foldername=/usr/src/app htmlservice/
+docker build --no-cache -t lunchplan/userservice --build-arg foldername=/usr/src/app userservice/
+docker build --no-cache -t lunchplan/mealservice --build-arg foldername=/usr/src/app mealservice/
+docker build --no-cache -t lunchplan/tagservice --build-arg foldername=/usr/src/app tagservice/
+docker build --no-cache -t lunchplan/calendarservice --build-arg foldername=/usr/src/app calendarservice/
+docker stack deploy -c *.yml lunchplan
 
 ######### Compiling golang locally - *notinuse*
 export GOOS=linux
@@ -129,15 +129,15 @@ cd HtmlService/;go build -o service_linux_amd64;echo built `pwd`;cd ..
 docker service rm $(docker service ls -q)
 export LPDIR=D:/GolangProjects/lunchplan
 cd $LPDIR
-docker images -a | grep "launchplan_*" | awk '{print $3}' | xargs docker rmi -f
-docker build --no-cache -t launchplan/mongo-seed mongo-seed/
-docker build --no-cache -t launchplan/configservice --build-arg foldername=$LPDIR/ConfigService configservice/
-docker build --no-cache -t launchplan/apigateway --build-arg foldername=$LPDIR/ApiGateway apigateway/
-docker build --no-cache -t launchplan/apiservice --build-arg foldername=$LPDIR/ApiService apiservice/
-docker build --no-cache -t launchplan/htmlservice --build-arg foldername=$LPDIR/HtmlService htmlservice/
-docker build --no-cache -t launchplan/userservice --build-arg foldername=$LPDIR/UserService userservice/
-docker build --no-cache -t launchplan/mealservice --build-arg foldername=$LPDIR/MealService mealservice/
-docker build --no-cache -t launchplan/tagservice --build-arg foldername=$LPDIR/TagService tagservice/
-docker build --no-cache -t launchplan/calendarservice --build-arg foldername=$LPDIR/CalendarService calendarservice/
-docker stack deploy -c *.yml launchplan
+docker images -a | grep "lunchplan_*" | awk '{print $3}' | xargs docker rmi -f
+docker build --no-cache -t lunchplan/mongo-seed mongo-seed/
+docker build --no-cache -t lunchplan/configservice --build-arg foldername=$LPDIR/ConfigService configservice/
+docker build --no-cache -t lunchplan/apigateway --build-arg foldername=$LPDIR/ApiGateway apigateway/
+docker build --no-cache -t lunchplan/apiservice --build-arg foldername=$LPDIR/ApiService apiservice/
+docker build --no-cache -t lunchplan/htmlservice --build-arg foldername=$LPDIR/HtmlService htmlservice/
+docker build --no-cache -t lunchplan/userservice --build-arg foldername=$LPDIR/UserService userservice/
+docker build --no-cache -t lunchplan/mealservice --build-arg foldername=$LPDIR/MealService mealservice/
+docker build --no-cache -t lunchplan/tagservice --build-arg foldername=$LPDIR/TagService tagservice/
+docker build --no-cache -t lunchplan/calendarservice --build-arg foldername=$LPDIR/CalendarService calendarservice/
+docker stack deploy -c *.yml lunchplan
 
