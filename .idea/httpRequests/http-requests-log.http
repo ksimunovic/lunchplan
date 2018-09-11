@@ -1,3 +1,45 @@
+POST https://docker:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+<> 2018-08-15T070256.200.json
+
+###
+
+POST https://localhost:4430/api/login
+Content-Type: application/json
+
+{
+  "email": "peroslav@gmail.com",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
+GET http://docker:50000
+
+<> 2018-08-15T070227.200.json
+
+###
+
+GET http://localhost:50000
+
+###
+
+POST https://localhost:{{port}}/api/login
+Content-Type: application/json
+
+{
+  "email": "probniEmail",
+  "password": "dugackaSigurnaSifra"
+}
+
+###
+
 POST https://localhost:4430/api/login
 Content-Type: application/json
 
@@ -389,46 +431,6 @@ Content-Type: application/json
 Authorization: Bearer 5b1038874c751eb1ddc10164
 
 <> 2018-05-31T082101.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082100.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082059.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082057.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082056.200.json
-
-###
-
-GET https://localhost:4430/api/meal/suggest
-Content-Type: application/json
-Authorization: Bearer 5b1038874c751eb1ddc10164
-
-<> 2018-05-31T082053.200.json
 
 ###
 

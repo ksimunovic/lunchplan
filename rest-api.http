@@ -1,4 +1,4 @@
-GET http://localhost:50000/
+GET http://docker:50000/
 
 > {% client.global.set("port", 4430); %}
 
@@ -36,7 +36,7 @@ Content-Type: application/json
 > {% client.global.set("auth_token", response.body.sid); %}
 
 ### Login Peroslav
-POST https://localhost:4430/api/login
+POST https://docker:{{port}}/api/login
 Content-Type: application/json
 
 {
